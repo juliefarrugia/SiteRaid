@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://jelix.org/ns/forms/1.1">
+   
+    <group ref="participant" >
+    <label>Informations nécessaires à l'inscription</label>
+        
+    <input ref="nomEquipe" required="true">
+        <label>Nom de l'équipe</label>
+        <alert type="required">Le nom de l'équipe est obligatoire</alert>  
+    </input>
+              
+    <input ref="mailParticipant" type="email" required="true">
+        <label>E-mail</label>
+        <alert type="required">L'adresse e-mail est obligatoire</alert> 
+        <alert type="invalid">Indiquez une adresse e-mail valide</alert> 
+    </input> 
+    
+    <secret ref="passwordParticipant" required="true">
+        <label>Mot de passe</label>
+        <hint>Indiquez votre mot de passe</hint>
+        <confirm>Retapez ce mot de passe</confirm>
+        <help>Votre mot de passe doit contenir 10 caractères maximum</help>
+        <alert type="required">Le mot de passe est obligatoire</alert>
+    </secret>
+    
+    <input ref="nomParticipant" required="true">
+        <label>Nom</label>
+        <alert type="required">Le nom est obligatoire</alert>  
+    </input>
+    
+    <input ref="prenomParticipant" required="true">
+        <label>Prénom</label>
+        <alert type="required">Le prénom est obligatoire</alert>  
+    </input>
+    
+    <menulist ref="sexeParticipant" required="true">
+      <label>Sexe</label>
+      <item value="Femme">Feminin</item>
+      <item value="Homme">Masculin</item>
+      <alert type="required">Veuillez indiquer votre sexe</alert>
+    </menulist>
+    
+    <input ref="telParticipant" type="string" required="true" minlength="10" maxlength="10">
+        <label>Numéro de portable</label>
+        <alert type="required">Le numéro de portable est obligatoire</alert>
+        <alert type="invalid">Indiquez un numéro de téléphone valide</alert> 
+    </input>
+
+    <menulist ref="statutParticipant" required="true">
+      <label>Statut</label>
+      <item value="Etudiant">Etudiant</item>
+      <item value="Salarié">Salarié</item>
+      <alert type="required">Le statut est obligatoire</alert>
+    </menulist>
+    
+    <input ref="ecole_entreprise" required="true">
+        <label>Nom de votre école ou entreprise</label>
+        <alert type="required">Le nom de votre école ou entreprise est obligatoire</alert>
+    </input>
+    
+    <menulist ref="tailleMaillot" required="true">
+      <label>Taille de maillot</label>
+      <item value="XS">XS</item>
+      <item value="S">S</item>
+      <item value="M">M</item>
+      <item value="L">L</item>
+      <item value="XL">XL</item>
+      <alert type="required">La taille de maillot est obligatoire</alert>
+    </menulist>
+    
+    <input ref="nomUrgence" required="true">
+        <label>Nom de la personne à contacter en cas d'urgence</label>
+        <alert type="required">Le nom de la personne à contacter en cas d'urgence est obligatoire</alert>
+    </input> 
+    
+    <input ref="telUrgence" type="string" required="true" minlength="10" maxlength="10">
+        <label>Numéro de la personne à contacter en cas d'urgence</label>
+        <alert type="required">Le numéro de la personne à contacter en cas d'urgence est obligatoire</alert>
+        <alert type="invalid">Indiquez un numéro de téléphone valide</alert> 
+    </input>  
+    
+    <menulist ref="velo" required="true">
+      <label>Amenez-vous votre propre VTT ?</label>
+      <item value="1">Oui</item>
+      <item value="0">Non</item>
+      <alert type="required">Veuillez dire si vous amenez votre propre vélo</alert>
+    </menulist>
+    
+    <menulist ref="bus" required="true">
+      <label>Venez-vous avec les bus mis à disposition ?</label>
+      <item value="1">Oui</item>
+      <item value="0">Non</item>
+      <alert type="required">Veuillez dire si vous venez avec les bus mis à disposition</alert>
+    </menulist>
+    
+    </group>
+    
+ 
+    <captcha ref="antispam">
+        <label>Vérification anti-spam</label>
+    </captcha>
+
+<submit ref="submit">
+    <label>Confirmer l'inscription</label>
+</submit>
+
+</form>
