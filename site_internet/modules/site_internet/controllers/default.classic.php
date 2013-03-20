@@ -13,7 +13,6 @@ class defaultCtrl extends jController {
         $rep->addJSLink(jApp::config()->urlengine['basePath'].'js/connexion.js');
         $rep->addJSLink(jApp::config()->urlengine['basePath'].'js/rejoindre.js');
         $rep->bodyTpl = "main";
-        $rep->bodyTpl = "menu";
 
         $equipeFactory = jDao::get("equipe");
         $listofAllEquipe = $equipeFactory->findAll();
@@ -249,42 +248,7 @@ class defaultCtrl extends jController {
         else { return $this->addParticipant();}  
         
             }     
-   
-    function tableaurecap(){
-        
-        $rep = $this->getResponse('html');
-        $rep->addCSSLink(jApp::config()->urlengine['basePath'].'css/menu.css');
-        $rep->addCSSLink(jApp::config()->urlengine['basePath'].'css/reste.css');
-        $rep->addCssLink(jApp::config()->urlengine['basePath'].'css/jquery-ui.css');
-        $rep->addJSLink(jApp::config()->urlengine['basePath'].'js/jquery.min.js'); 
-        $rep->addJSLink(jApp::config()->urlengine['basePath'].'js/jquery-ui.min.js');
-        $rep->addJSLink(jApp::config()->urlengine['basePath'].'js/connexion.js');
-        $rep->addJSLink(jApp::config()->urlengine['basePath'].'js/rejoindre.js');
-        $rep->bodyTpl = "inscription";
-
-        $equipeFactory = jDao::get("equipe");
-        $listofAllEquipe = $equipeFactory->findAll();
-        $rep->body->assign('ALLEQUIPE', $listofAllEquipe);
-        
-        $participantFactory = jDao::get("participant");
-        $listofAllParticipant = $participantFactory->findAll();
-        
-        $nbparticipant=count($listofAllParticipant);
-        for ($i=0;$i<$nbparticipant;$i++)
-        {
-            if ()
-        };
-        
-
-        return $rep;
-        
-        
-        
-    }
-            
-            
-            
-            
+         
 }
 
 
