@@ -7,3 +7,9 @@ startAction="default:index"
 [responses]
 [modules]
 site_internet.access=2
+
+jauth.access=2
+jauthdb.access=2
+[coordplugins]
+auth="index/auth.coord.ini.php"
+

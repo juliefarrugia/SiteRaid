@@ -45,7 +45,7 @@ bad_ip_action="jauth~login:out"
 on_error_sleep=3
 
 ; action to redirect after the login
-after_login="Bibli~default:index"
+after_login="jauth~login:form"
 
 ; action to redirect after a logout
 after_logout="jauth~login:form"
@@ -75,13 +75,13 @@ persistant_duration=1
 ;------- parameters for the "Db" driver
 [Db]
 ; name of the dao to get user data
-dao="Bibli~user"
+dao="jauthdb~jelixuser"
 
 ; profile to use for jDb 
-profile=bibli
+profile=
 
 ; name of the php function to crypt the password in the database
-password_crypt_function=
+password_crypt_function=sha1
 ; if you want to use a salt with sha1:
 ;password_crypt_function = "1:sha1WithSalt"
 ;password_salt = "here_your_salt"

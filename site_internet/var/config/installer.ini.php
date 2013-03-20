@@ -12,10 +12,10 @@ jacl2db.installed=0
 jacl2db.version=
 jacldb.installed=0
 jacldb.version=
-jauth.installed=0
-jauth.version=
-jauthdb.installed=0
-jauthdb.version=
+jauth.installed=1
+jauth.version=1.2.1
+jauthdb.installed=1
+jauthdb.version=1.2.1
 junittests.installed=0
 junittests.version=
 jWSDL.installed=0
@@ -25,6 +25,16 @@ jelix.firstversion=1.4.1
 jelix.firstversion.date="2012-10-25 17:08"
 site_internet.installed=1
 site_internet.version=0.1pre
+jauth.version.date=2011-10-18
+jauth.firstversion=1.2.1
+jauth.firstversion.date=2011-10-18
+jauthdb.version.date=2011-10-18
+jauthdb.firstversion=1.2.1
+jauthdb.firstversion.date=2011-10-18
 [__modules_data]
 jelix.contexts="db:default"
 
+
+jauth.contexts="auth:index/auth.coord.ini.php"
+
+jauthdb.contexts="index/auth.coord.ini.php,db:default"
