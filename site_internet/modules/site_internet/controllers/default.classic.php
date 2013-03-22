@@ -12,7 +12,8 @@ class defaultCtrl extends jController {
         $rep->addJSLink(jApp::config()->urlengine['basePath'].'js/jquery-ui.min.js');
         $rep->addJSLink(jApp::config()->urlengine['basePath'].'js/connexion.js');
         $rep->addJSLink(jApp::config()->urlengine['basePath'].'js/rejoindre.js');
-        $rep->bodyTpl = "main";
+        $rep->bodyTpl ="main";
+        //$rep->bodyTpl->assign("menu");
 
         $equipeFactory = jDao::get("equipe");
         $listofAllEquipe = $equipeFactory->findAll();
@@ -248,7 +249,15 @@ class defaultCtrl extends jController {
         else { return $this->addParticipant();}  
         
             }     
-         
+   
+        
+        
+        
+    
+            
+            
+            
+            
 }
 
 

@@ -4304,3 +4304,256 @@ array ( )
 	5	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
 
 
+2013-03-20 16:10:42	127.0.0.1	error	2013-03-20 16:10:42	127.0.0.1	[1]	Vous n'êtes pas connecté, vous devez vous identifier	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/coord/auth/auth.coord.php	112
+	/site_internet/www/index.php/site_internet/default/connexion
+array (   'module' => 'site_internet',   'action' => 'default:connexion',   'login' => 'raidhei@hei.fr',   'password' => 'admin', )
+
+	0	AuthCoordPlugin->beforeAction()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 183
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-03-20 16:10:44	127.0.0.1	error	2013-03-20 16:10:44	127.0.0.1	[1]	Vous n'êtes pas connecté, vous devez vous identifier	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/coord/auth/auth.coord.php	112
+	/site_internet/www/index.php/site_internet/default/connexion
+array (   'module' => 'site_internet',   'action' => 'default:connexion',   'login' => 'raidhei@hei.fr',   'password' => 'admin', )
+
+	0	AuthCoordPlugin->beforeAction()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 183
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-03-21 13:12:13	127.0.0.1	[2]	parse_ini_file(/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/var/config/index/auth.coord.ini.php): failed to open stream: No such file or directory	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	104
+	/site_internet/www/index.php
+
+
+	0	parse_ini_file()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 104
+	1	jCoordinator->_loadPlugins()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 83
+	2	jCoordinator->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 18
+2013-03-21 13:12:13	127.0.0.1	[13]	Error in a plugin configuration file -- plugin: auth  file: /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/var/config/index/auth.coord.ini.php	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	105
+	/site_internet/www/index.php
+
+
+	0	jCoordinator->_loadPlugins()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 83
+	1	jCoordinator->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 18
+2013-03-21 13:13:02	127.0.0.1	[2]	parse_ini_file(/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/var/config/index/auth.coord.ini.php): failed to open stream: No such file or directory	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	104
+	/site_internet/www/index.php
+
+
+	0	parse_ini_file()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 104
+	1	jCoordinator->_loadPlugins()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 83
+	2	jCoordinator->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 18
+2013-03-21 13:13:02	127.0.0.1	[13]	Error in a plugin configuration file -- plugin: auth  file: /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/var/config/index/auth.coord.ini.php	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	105
+	/site_internet/www/index.php
+
+
+	0	jCoordinator->_loadPlugins()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 83
+	1	jCoordinator->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 18
+2013-03-21 13:13:32	127.0.0.1	[2]	parse_ini_file(/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/var/config/index/auth.coord.ini.php): failed to open stream: No such file or directory	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	104
+	/site_internet/www/index.php
+
+
+	0	parse_ini_file()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 104
+	1	jCoordinator->_loadPlugins()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 83
+	2	jCoordinator->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 18
+2013-03-21 13:13:32	127.0.0.1	[13]	Error in a plugin configuration file -- plugin: auth  file: /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/var/config/index/auth.coord.ini.php	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	105
+	/site_internet/www/index.php
+
+
+	0	jCoordinator->_loadPlugins()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 83
+	1	jCoordinator->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 18
+2013-03-21 13:13:41	127.0.0.1	[2]	parse_ini_file(/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/var/config/index/auth.coord.ini.php): failed to open stream: No such file or directory	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	104
+	/site_internet/www/index.php
+
+
+	0	parse_ini_file()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 104
+	1	jCoordinator->_loadPlugins()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 83
+	2	jCoordinator->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 18
+2013-03-21 13:13:41	127.0.0.1	[13]	Error in a plugin configuration file -- plugin: auth  file: /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/var/config/index/auth.coord.ini.php	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	105
+	/site_internet/www/index.php
+
+
+	0	jCoordinator->_loadPlugins()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 83
+	1	jCoordinator->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 18
+2013-03-21 13:13:46	127.0.0.1	[2]	parse_ini_file(/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/var/config/index/auth.coord.ini.php): failed to open stream: No such file or directory	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	104
+	/site_internet/www/index.php
+
+
+	0	parse_ini_file()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 104
+	1	jCoordinator->_loadPlugins()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 83
+	2	jCoordinator->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 18
+2013-03-21 13:13:46	127.0.0.1	[13]	Error in a plugin configuration file -- plugin: auth  file: /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/var/config/index/auth.coord.ini.php	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	105
+	/site_internet/www/index.php
+
+
+	0	jCoordinator->_loadPlugins()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 83
+	1	jCoordinator->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 18
+2013-03-21 13:25:23	127.0.0.1	[2]	parse_ini_file(/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/var/config/index/auth.coord.ini.php): failed to open stream: No such file or directory	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	104
+	/site_internet/www/index.php
+
+
+	0	parse_ini_file()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 104
+	1	jCoordinator->_loadPlugins()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 83
+	2	jCoordinator->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 18
+2013-03-21 13:25:23	127.0.0.1	[13]	Error in a plugin configuration file -- plugin: auth  file: /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/var/config/index/auth.coord.ini.php	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	105
+	/site_internet/www/index.php
+
+
+	0	jCoordinator->_loadPlugins()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 83
+	1	jCoordinator->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 18
+2013-03-21 13:25:42	127.0.0.1	[2]	parse_ini_file(/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/var/config/index/auth.coord.ini.php): failed to open stream: No such file or directory	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	104
+	/site_internet/www/index.php
+
+
+	0	parse_ini_file()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 104
+	1	jCoordinator->_loadPlugins()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 83
+	2	jCoordinator->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 18
+2013-03-21 13:25:42	127.0.0.1	[13]	Error in a plugin configuration file -- plugin: auth  file: /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/var/config/index/auth.coord.ini.php	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	105
+	/site_internet/www/index.php
+
+
+	0	jCoordinator->_loadPlugins()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 83
+	1	jCoordinator->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 18
+2013-03-21 13:41:53	127.0.0.1	[2]	parse_ini_file(/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/var/config/index/auth.coord.ini.php): failed to open stream: No such file or directory	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	104
+	/site_internet/www/index.php
+
+
+	0	parse_ini_file()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 104
+	1	jCoordinator->_loadPlugins()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 83
+	2	jCoordinator->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 18
+2013-03-21 13:41:53	127.0.0.1	[13]	Error in a plugin configuration file -- plugin: auth  file: /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/var/config/index/auth.coord.ini.php	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	105
+	/site_internet/www/index.php
+
+
+	0	jCoordinator->_loadPlugins()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 83
+	1	jCoordinator->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 18
+2013-03-21 13:42:17	127.0.0.1	[2]	parse_ini_file(/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/var/config/index/auth.coord.ini.php): failed to open stream: No such file or directory	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	104
+	/site_internet/www/index.php
+
+
+	0	parse_ini_file()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 104
+	1	jCoordinator->_loadPlugins()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 83
+	2	jCoordinator->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 18
+2013-03-21 13:42:17	127.0.0.1	[13]	Error in a plugin configuration file -- plugin: auth  file: /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/var/config/index/auth.coord.ini.php	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	105
+	/site_internet/www/index.php
+
+
+	0	jCoordinator->_loadPlugins()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 83
+	1	jCoordinator->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 18
+2013-03-21 13:47:53	127.0.0.1	[2]	parse_ini_file(/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/var/config/index/auth.coord.ini.php): failed to open stream: No such file or directory	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	104
+	/site_internet/www/index.php
+
+
+	0	parse_ini_file()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 104
+	1	jCoordinator->_loadPlugins()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 83
+	2	jCoordinator->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 18
+2013-03-21 13:47:53	127.0.0.1	[13]	Error in a plugin configuration file -- plugin: auth  file: /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/var/config/index/auth.coord.ini.php	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	105
+	/site_internet/www/index.php
+
+
+	0	jCoordinator->_loadPlugins()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 83
+	1	jCoordinator->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 18
+2013-03-21 13:48:35	127.0.0.1	[2]	parse_ini_file(/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/var/config/index/auth.coord.ini.php): failed to open stream: No such file or directory	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	104
+	/site_internet/www/index.php
+
+
+	0	parse_ini_file()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 104
+	1	jCoordinator->_loadPlugins()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 83
+	2	jCoordinator->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 18
+2013-03-21 13:48:35	127.0.0.1	[13]	Error in a plugin configuration file -- plugin: auth  file: /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/var/config/index/auth.coord.ini.php	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	105
+	/site_internet/www/index.php
+
+
+	0	jCoordinator->_loadPlugins()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 83
+	1	jCoordinator->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 18
+2013-03-21 13:49:08	127.0.0.1	[2]	parse_ini_file(/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/var/config/index/auth.coord.ini.php): failed to open stream: No such file or directory	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	104
+	/site_internet/www/index.php
+
+
+	0	parse_ini_file()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 104
+	1	jCoordinator->_loadPlugins()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 83
+	2	jCoordinator->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 18
+2013-03-21 13:49:08	127.0.0.1	[13]	Error in a plugin configuration file -- plugin: auth  file: /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/var/config/index/auth.coord.ini.php	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	105
+	/site_internet/www/index.php
+
+
+	0	jCoordinator->_loadPlugins()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 83
+	1	jCoordinator->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 18
+2013-03-21 13:50:59	127.0.0.1	[2]	parse_ini_file(/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/var/config/index/auth.coord.ini.php): failed to open stream: No such file or directory	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	104
+	/site_internet/www/index.php
+
+
+	0	parse_ini_file()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 104
+	1	jCoordinator->_loadPlugins()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 83
+	2	jCoordinator->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 18
+2013-03-21 13:50:59	127.0.0.1	[13]	Error in a plugin configuration file -- plugin: auth  file: /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/var/config/index/auth.coord.ini.php	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	105
+	/site_internet/www/index.php
+
+
+	0	jCoordinator->_loadPlugins()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 83
+	1	jCoordinator->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 18
+2013-03-21 13:52:40	127.0.0.1	[2]	parse_ini_file(/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/var/config/index/auth.coord.ini.php): failed to open stream: No such file or directory	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	104
+	/site_internet/www/index.php
+
+
+	0	parse_ini_file()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 104
+	1	jCoordinator->_loadPlugins()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 83
+	2	jCoordinator->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 18
+2013-03-21 13:52:40	127.0.0.1	[13]	Error in a plugin configuration file -- plugin: auth  file: /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/var/config/index/auth.coord.ini.php	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	105
+	/site_internet/www/index.php
+
+
+	0	jCoordinator->_loadPlugins()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 83
+	1	jCoordinator->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 18
+2013-03-21 13:53:27	127.0.0.1	[2]	parse_ini_file(/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/var/config/index/auth.coord.ini.php): failed to open stream: No such file or directory	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	104
+	/site_internet/www/index.php
+
+
+	0	parse_ini_file()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 104
+	1	jCoordinator->_loadPlugins()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 83
+	2	jCoordinator->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 18
+2013-03-21 13:53:27	127.0.0.1	[13]	Error in a plugin configuration file -- plugin: auth  file: /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/var/config/index/auth.coord.ini.php	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	105
+	/site_internet/www/index.php
+
+
+	0	jCoordinator->_loadPlugins()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 83
+	1	jCoordinator->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 18
+2013-03-21 13:54:57	127.0.0.1	[2]	parse_ini_file(/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/var/config/index/auth.coord.ini.php): failed to open stream: No such file or directory	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	104
+	/site_internet/www/index.php
+
+
+	0	parse_ini_file()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 104
+	1	jCoordinator->_loadPlugins()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 83
+	2	jCoordinator->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 18
+2013-03-21 13:54:57	127.0.0.1	[13]	Error in a plugin configuration file -- plugin: auth  file: /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/var/config/index/auth.coord.ini.php	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	105
+	/site_internet/www/index.php
+
+
+	0	jCoordinator->_loadPlugins()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 83
+	1	jCoordinator->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 18
+2013-03-22 12:24:13	127.0.0.1	error	2013-03-22 12:24:13	127.0.0.1	[16]	Syntax du sélecteur "site_internet~A-menu" invalide (type=tpl)	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/selector/jSelectorModule.class.php	47
+	/site_internet/www/index.php
+array ( )
+
+	0	jSelectorModule->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/selector/jSelectorTpl.class.php : 48
+	1	jSelectorTpl->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 193
+	2	jTpl->meta()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 3
+	3	template_meta_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 204
+	4	jTpl->meta()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 190
+	5	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	6	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-03-22 12:24:54	127.0.0.1	error	2013-03-22 12:24:54	127.0.0.1	[17]	Le sélecteur "site_internet~principal"  ne désigne pas une ressource de type template	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/selector/jSelectorTpl.class.php	101
+	/site_internet/www/index.php
+array ( )
+
+	0	jSelectorTpl->_createPath()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/selector/jSelectorModule.class.php : 44
+	1	jSelectorModule->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/selector/jSelectorTpl.class.php : 48
+	2	jSelectorTpl->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 193
+	3	jTpl->meta()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/Amenu_html_t.php : 3
+	4	template_meta_d18ac4db813e32a3206a7475955d4e26()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 204
+	5	jTpl->meta()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 3
+	6	template_meta_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 204
+	7	jTpl->meta()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 190
+	8	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	9	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+

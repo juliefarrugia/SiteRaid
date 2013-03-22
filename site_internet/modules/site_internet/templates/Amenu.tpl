@@ -11,7 +11,7 @@
                     <a href="index.html">Raid HEI 2013</a>
                         <ul class="sousMenu">
                             <li>
-                                <a href="index.html">Evènement</a>
+                                <a href="main.tpl">Evènement</a>
                             </li>
                             <li>
                                 <a href="raidLieu.html">Lieu</a>
@@ -90,6 +90,3 @@
     </p>
     </header>
 
-<footer>
-<p class="copyright"> Copyright - Raid HEI 2013 </p>
-</footer>
