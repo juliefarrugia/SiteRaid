@@ -4557,3 +4557,160 @@ array ( )
 	9	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
 
 
+2013-03-22 13:12:34	127.0.0.1	notice	2013-03-22 13:12:34	127.0.0.1	[8]	Undefined index: _GET	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php	5
+	/site_internet/www/index.php
+array ( )
+
+	0	template_meta_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 204
+	1	jTpl->meta()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 190
+	2	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	3	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-03-22 13:12:34	127.0.0.1	error	2013-03-22 13:12:34	127.0.0.1	[17]	Le sélecteur "site_internet~.php"  ne désigne pas une ressource de type template	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/selector/jSelectorTpl.class.php	101
+	/site_internet/www/index.php
+array ( )
+
+	0	jSelectorTpl->_createPath()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/selector/jSelectorModule.class.php : 44
+	1	jSelectorModule->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/selector/jSelectorTpl.class.php : 48
+	2	jSelectorTpl->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 193
+	3	jTpl->meta()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 5
+	4	template_meta_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 204
+	5	jTpl->meta()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 190
+	6	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	7	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-03-22 13:13:15	127.0.0.1	notice	2013-03-22 13:13:15	127.0.0.1	[8]	Undefined index: _GET	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php	5
+	/site_internet/www/index.php
+array ( )
+
+	0	template_meta_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 204
+	1	jTpl->meta()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 190
+	2	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	3	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-03-22 13:13:15	127.0.0.1	error	2013-03-22 13:13:15	127.0.0.1	[17]	Le sélecteur "site_internet~.php"  ne désigne pas une ressource de type template	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/selector/jSelectorTpl.class.php	101
+	/site_internet/www/index.php
+array ( )
+
+	0	jSelectorTpl->_createPath()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/selector/jSelectorModule.class.php : 44
+	1	jSelectorModule->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/selector/jSelectorTpl.class.php : 48
+	2	jSelectorTpl->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 193
+	3	jTpl->meta()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 5
+	4	template_meta_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 204
+	5	jTpl->meta()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 190
+	6	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	7	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-03-22 14:21:13	127.0.0.1	error	2013-03-22 14:21:13	127.0.0.1	[17]	Le sélecteur "site_internet~accueil.php"  ne désigne pas une ressource de type template	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/selector/jSelectorTpl.class.php	101
+	/site_internet/www/index.php
+array ( )
+
+	0	jSelectorTpl->_createPath()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/selector/jSelectorModule.class.php : 44
+	1	jSelectorModule->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/selector/jSelectorTpl.class.php : 48
+	2	jSelectorTpl->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 193
+	3	jTpl->meta()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 5
+	4	template_meta_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 204
+	5	jTpl->meta()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 190
+	6	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	7	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-03-22 15:18:50	127.0.0.1	error	2013-03-22 15:18:50	127.0.0.1	[17]	Le sélecteur "site_internet~accueil.php"  ne désigne pas une ressource de type template	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/selector/jSelectorTpl.class.php	101
+	/site_internet/www/index.php
+array ( )
+
+	0	jSelectorTpl->_createPath()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/selector/jSelectorModule.class.php : 44
+	1	jSelectorModule->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/selector/jSelectorTpl.class.php : 48
+	2	jSelectorTpl->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 193
+	3	jTpl->meta()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 5
+	4	template_meta_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 204
+	5	jTpl->meta()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 190
+	6	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	7	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-03-22 15:20:09	127.0.0.1	error	2013-03-22 15:20:09	127.0.0.1	[16]	Syntax du sélecteur "site_internet-main@classic" invalide (type=act)	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/selector/jSelectorAct.class.php	64
+	/site_internet/www/index.php
+array ( )
+
+	0	jSelectorAct->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jUrl.class.php : 160
+	1	jUrl::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/tpl/html/function.jurl.php : 23
+	2	jtpl_function_html_jurl()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/Amenu_html_t.php : 43
+	3	template_d18ac4db813e32a3206a7475955d4e26()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 223
+	4	jTpl->display()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	5	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	6	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	7	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	8	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-03-22 16:57:20	127.0.0.1	error	2013-03-22 16:57:20	127.0.0.1	[4096]	Object of class jTpl could not be converted to string	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php	18
+	/site_internet/www/index.php
+array ( )
+
+	0	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	1	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	2	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	3	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-03-22 17:00:12	127.0.0.1	notice	2013-03-22 17:00:12	127.0.0.1	[8]	Undefined property: myHtmlResponse::$tpl	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	21
+	/site_internet/www/index.php
+array ( )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-03-22 17:02:39	127.0.0.1	notice	2013-03-22 17:02:39	127.0.0.1	[8]	Undefined property: myHtmlResponse::$tpl	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	21
+	/site_internet/www/index.php
+array ( )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-03-22 17:03:23	127.0.0.1	error	2013-03-22 17:03:23	127.0.0.1	[4096]	Object of class myHtmlResponse could not be converted to string	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	18
+	/site_internet/www/index.php
+array ( )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-03-22 18:32:27	127.0.0.1	error	2013-03-22 18:32:27	127.0.0.1	[4096]	Object of class myHtmlResponse could not be converted to string	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	18
+	/site_internet/www/index.php
+array ( )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-03-22 18:35:01	127.0.0.1	error	2013-03-22 18:35:01	127.0.0.1	[4096]	Object of class myHtmlResponse could not be converted to string	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	18
+	/site_internet/www/index.php
+array ( )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-03-22 18:35:13	127.0.0.1	notice	2013-03-22 18:35:13	127.0.0.1	[8]	Undefined property: myHtmlResponse::$tpl	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	21
+	/site_internet/www/index.php
+array ( )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-03-22 18:35:34	127.0.0.1	notice	2013-03-22 18:35:34	127.0.0.1	[8]	Undefined property: myHtmlResponse::$tpl	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	21
+	/site_internet/www/index.php
+array ( )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+

@@ -5,39 +5,39 @@
         <nav>
             <ul id="menuDeroulant">
                 <li>
-                    <a href="index.html">Accueil</a>
+                    <a href="">Accueil</a>
                 </li>
                 <li>
-                    <a href="index.html">Raid HEI 2013</a>
+                    <a href="accueil">Raid HEI 2013</a>
                         <ul class="sousMenu">
                             <li>
-                                <a href="main.tpl">Evènement</a>
+                                <a href="accueil">Evènement</a>
                             </li>
                             <li>
-                                <a href="raidLieu.html">Lieu</a>
+                                <a href="raidLieu">Lieu</a>
                             </li>
                             <li>
-                                <a href="raidInfos.html">Infos pratiques</a>
+                                <a href="raidInfos">Infos pratiques</a>
                             </li>
                             <li>
-                                <a href="raidMateriel.html">Matériel</a>
+                                <a href="raidMateriel">Matériel</a>
                             </li>
                             <li>
-                                <a href="raidEpreuves.html">Epreuves</a>
+                                <a href="raidEpreuves">Epreuves</a>
                             </li>
                         </ul>
                 </li>
                 <li>
-                    <a href="RELInfos.html">REL</a>
+                    <a href="RELInfos">REL</a>
                         <ul class="sousMenu">
                             <li>
-                                <a href="RELLieu.html">Lieu</a>
+                                <a href="RELLieu">Lieu</a>
                             </li>
                             <li>
-                                <a href="RELEcoles.html">Ecoles</a>
+                                <a href="RELEcoles">Ecoles</a>
                             </li>
                             <li>
-                                <a href="RELInfos.html">Infos</a>
+                                <a href="RELInfos">Infos</a>
                             </li>
                         </ul>
                 </li>
@@ -45,35 +45,35 @@
                     <a href="equipe.html">L'Association</a>
                         <ul class="sousMenu">
                             <li>
-                                <a href="equipe.html">L'équipe</a>
+                                <a href="equipe">L'équipe</a>
                             </li>
                             <li>
-                                <a href="raidsprecedents.html">Raids précédents</a>
+                                <a href="raidsprecedents">Raids précédents</a>
                             </li>
                             <li>
-                                <a href="environnement.html">Environnement</a>
+                                <a href="environnement">Environnement</a>
                             </li>
                         </ul>
                 </li>
                 <li>
-                    <a href="partenaire.html">Partenaire</a>
+                    <a href="partenaire">Partenaire</a>
                         <ul class="sousMenu">
                             <li>
-                                <a href="partenaire.html">Nos partenaires</a>
+                                <a href="partenaire">Nos partenaires</a>
                             </li>
                             <li>
-                                <a href="devenirpartenaire.html">Devenir partenaire</a>
+                                <a href="devenirpartenaire">Devenir partenaire</a>
                             </li>
                         </ul>
                             </li>
                             <li>
-                                <a href="photo.html">Multimédias</a>
+                                <a href="photo">Multimédias</a>
                         <ul class="sousMenu">
                             <li>
-                                <a href="photo.html">Photos</a>
+                                <a href="photo">Photos</a>
                             </li>
                             <li>
-                                <a href="video.html">Vidéos</a>
+                                <a href="video">Vidéos</a>
                             </li>
                         </ul>
                 </li>
