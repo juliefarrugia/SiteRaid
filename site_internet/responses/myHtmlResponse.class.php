@@ -19,6 +19,13 @@ class myHtmlResponse extends jResponseHtml {
         parent::__construct();
 
         // Include your common CSS and JS files here
+        $this->addCSSLink(jApp::config()->urlengine['basePath'].'css/menu.css');
+        $this->addCSSLink(jApp::config()->urlengine['basePath'].'css/reste.css');
+        $this->addCssLink(jApp::config()->urlengine['basePath'].'css/jquery-ui.css');
+        $this->addJSLink(jApp::config()->urlengine['basePath'].'js/jquery.min.js'); 
+        $this->addJSLink(jApp::config()->urlengine['basePath'].'js/jquery-ui.min.js');
+        $this->addJSLink(jApp::config()->urlengine['basePath'].'js/connexion.js');
+        $this->addJSLink(jApp::config()->urlengine['basePath'].'js/rejoindre.js');
     }
 
     protected function doAfterActions() {

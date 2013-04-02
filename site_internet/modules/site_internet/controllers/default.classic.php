@@ -5,24 +5,9 @@ class defaultCtrl extends jController {
     function index() {
         
         $rep = $this->getResponse('html');
-        $rep->addCSSLink(jApp::config()->urlengine['basePath'].'css/menu.css');
-        $rep->addCSSLink(jApp::config()->urlengine['basePath'].'css/reste.css');
-        $rep->addCssLink(jApp::config()->urlengine['basePath'].'css/jquery-ui.css');
-        $rep->addJSLink(jApp::config()->urlengine['basePath'].'js/jquery.min.js'); 
-        $rep->addJSLink(jApp::config()->urlengine['basePath'].'js/jquery-ui.min.js');
-        $rep->addJSLink(jApp::config()->urlengine['basePath'].'js/connexion.js');
-        $rep->addJSLink(jApp::config()->urlengine['basePath'].'js/rejoindre.js');
+        $rep->bodyTpl ="main";
+        $rep->body->assignZone('PRINCIPAL', 'accueil');
         
-        //$rep->assign('PRINCIPAL',fetch('site_internet~accueil'));
-        //$rep->bodyTpl->assign("menu");
-        //$rep->bodyTpl ="main";
-        //$monModule= new jtpl();
-        //$monModule->fetch('site_internet~accueil');
-        //$rep->addContent("PRINCIPAL",$rep->fetch('site_internet~accueil','html'));
-        //$rep->bodyTpl ="main";
-        //$monModule->assign(); 
-        
-
         $equipeFactory = jDao::get("equipe");
         $listofAllEquipe = $equipeFactory->findAll();
         $rep->body->assign('ALLEQUIPE', $listofAllEquipe);
@@ -70,13 +55,6 @@ class defaultCtrl extends jController {
     function sinscrire () {
         
         $rep = $this->getResponse('html');
-        $rep->addCSSLink(jApp::config()->urlengine['basePath'].'css/menu.css');
-        $rep->addCSSLink(jApp::config()->urlengine['basePath'].'css/reste.css');
-        $rep->addCssLink(jApp::config()->urlengine['basePath'].'css/jquery-ui.css');
-        $rep->addJSLink(jApp::config()->urlengine['basePath'].'js/jquery.min.js'); 
-        $rep->addJSLink(jApp::config()->urlengine['basePath'].'js/jquery-ui.min.js');
-        $rep->addJSLink(jApp::config()->urlengine['basePath'].'js/connexion.js');
-        $rep->addJSLink(jApp::config()->urlengine['basePath'].'js/rejoindre.js');
         $rep->bodyTpl = "inscription";
 
         $equipeFactory = jDao::get("equipe");
@@ -95,14 +73,6 @@ class defaultCtrl extends jController {
          $equipeFactory = jDao::get("equipe");
          $listofAllEquipe = $equipeFactory->findAll();
          $rep->body->assign('ALLEQUIPE', $listofAllEquipe);
-
-         $rep->addCSSLink(jApp::config()->urlengine['basePath'].'css/menu.css');
-         $rep->addCSSLink(jApp::config()->urlengine['basePath'].'css/reste.css');
-         $rep->addCssLink(jApp::config()->urlengine['basePath'].'css/jquery-ui.css');
-         $rep->addJSLink(jApp::config()->urlengine['basePath'].'js/jquery.min.js'); 
-         $rep->addJSLink(jApp::config()->urlengine['basePath'].'js/jquery-ui.min.js');
-         $rep->addJSLink(jApp::config()->urlengine['basePath'].'js/connexion.js');
-         $rep->addJSLink(jApp::config()->urlengine['basePath'].'js/rejoindre.js');
 
          $paramidParticipant = $this->param('mailParticipant',1);
          $inscriptionCreationForm = jForms::create("site_internet~inscriptionCreationForm", $paramidParticipant);
@@ -156,13 +126,6 @@ class defaultCtrl extends jController {
      function index2() {
         
         $rep = $this->getResponse('html');
-        $rep->addCSSLink(jApp::config()->urlengine['basePath'].'css/menu.css');
-        $rep->addCSSLink(jApp::config()->urlengine['basePath'].'css/reste.css');
-        $rep->addCssLink(jApp::config()->urlengine['basePath'].'css/jquery-ui.css');
-        $rep->addJSLink(jApp::config()->urlengine['basePath'].'js/jquery.min.js'); 
-        $rep->addJSLink(jApp::config()->urlengine['basePath'].'js/jquery-ui.min.js');
-        $rep->addJSLink(jApp::config()->urlengine['basePath'].'js/connexion.js');
-        $rep->addJSLink(jApp::config()->urlengine['basePath'].'js/rejoindre.js');
         $rep->bodyTpl = "joindreEquipe";
 
         $equipeFactory = jDao::get("equipe");
@@ -205,14 +168,6 @@ class defaultCtrl extends jController {
         $equipeFactory = jDao::get("equipe");
         $listofAllEquipe = $equipeFactory->findAll();
         $rep->body->assign('ALLEQUIPE', $listofAllEquipe);
-
-        $rep->addCSSLink(jApp::config()->urlengine['basePath'].'css/menu.css');
-        $rep->addCSSLink(jApp::config()->urlengine['basePath'].'css/reste.css');
-        $rep->addCssLink(jApp::config()->urlengine['basePath'].'css/jquery-ui.css');
-        $rep->addJSLink(jApp::config()->urlengine['basePath'].'js/jquery.min.js'); 
-        $rep->addJSLink(jApp::config()->urlengine['basePath'].'js/jquery-ui.min.js');
-        $rep->addJSLink(jApp::config()->urlengine['basePath'].'js/connexion.js');
-        $rep->addJSLink(jApp::config()->urlengine['basePath'].'js/rejoindre.js');
 
         $paramidParticipant = $this->param('mailParticipant',1);
         $inscriptionParticipantForm = jForms::create("site_internet~inscriptionParticipantForm", $paramidParticipant);
