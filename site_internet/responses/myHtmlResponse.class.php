@@ -31,7 +31,8 @@ class myHtmlResponse extends jResponseHtml {
     protected function doAfterActions() {
         // Include all process in common for all actions, like the settings of the
         // main template, the settings of the response etc..
-
+        
+        
         $this->body->assignIfNone('MAIN','<p>no content</p>');
     }
 }

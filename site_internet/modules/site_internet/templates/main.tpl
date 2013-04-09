@@ -1,9 +1,9 @@
  
-    {include 'site_internet~Amenu'}
+    {zone 'site_internet~amenu'}
 
 <div class="corps">
     
-     {include 'site_internet~AbarreLateral'}
+     {zone 'site_internet~abarreLateral'}
      
 <div class="principal">
    
@@ -11,6 +11,6 @@
     
 </div>
 
-     {include 'site_internet~Afooter'}
+     {zone 'site_internet~afooter'}
 
 </div>

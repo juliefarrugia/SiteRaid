@@ -4,13 +4,10 @@ class defaultCtrl extends jController {
 
     function index() {
         
+        session_destroy();
         $rep = $this->getResponse('html');
         $rep->bodyTpl ="main";
         $rep->body->assignZone('PRINCIPAL', 'accueil');
-        
-        $equipeFactory = jDao::get("equipe");
-        $listofAllEquipe = $equipeFactory->findAll();
-        $rep->body->assign('ALLEQUIPE', $listofAllEquipe);
         
         return $rep;
     }
@@ -43,10 +40,13 @@ class defaultCtrl extends jController {
                $administrateurList = $administrateurFactory->findBy($conditions3);
                $administrateurs = $administrateurList->FetchAll();
                
+               jSession::start();
+               
+               
                
            if (sizeof ($participants)==1 || sizeof ($organisateurs)==1 || sizeof ($administrateurs)==1){
                 $rep=$this->getResponse('json');
-                return $rep;}
+                return $rep; }
            else {return null;}} 
            
            
@@ -55,28 +55,17 @@ class defaultCtrl extends jController {
     function sinscrire () {
         
         $rep = $this->getResponse('html');
-        $rep->bodyTpl = "inscription";
-
-        $equipeFactory = jDao::get("equipe");
-        $listofAllEquipe = $equipeFactory->findAll();
-        $rep->body->assign('ALLEQUIPE', $listofAllEquipe);
-        
-
+        $rep->bodyTpl ="main";
+        $rep->body->assignZone('PRINCIPAL', 'inscription');
+   
         return $rep;
     }
     
     function addEquipe() {
         
          $rep = $this->getResponse('html');
-         $rep->bodyTpl = "creationEquipe";
-
-         $equipeFactory = jDao::get("equipe");
-         $listofAllEquipe = $equipeFactory->findAll();
-         $rep->body->assign('ALLEQUIPE', $listofAllEquipe);
-
-         $paramidParticipant = $this->param('mailParticipant',1);
-         $inscriptionCreationForm = jForms::create("site_internet~inscriptionCreationForm", $paramidParticipant);
-         $rep->body->assign("FORMULAIRE", $inscriptionCreationForm);
+         $rep->bodyTpl ="main";
+         $rep->body->assignZone('PRINCIPAL', 'creationequipe');
         
          return $rep;   
    }    
@@ -126,11 +115,8 @@ class defaultCtrl extends jController {
      function index2() {
         
         $rep = $this->getResponse('html');
-        $rep->bodyTpl = "joindreEquipe";
-
-        $equipeFactory = jDao::get("equipe");
-        $listofAllEquipe = $equipeFactory->findAll();
-        $rep->body->assign('ALLEQUIPE', $listofAllEquipe);
+        $rep->bodyTpl ="main";
+        $rep->body->assignZone('PRINCIPAL', 'joindreequipe');
         
         return $rep;
     }           
@@ -163,16 +149,9 @@ class defaultCtrl extends jController {
     function addParticipant() {
         
         $rep = $this->getResponse('html');
-        $rep->bodyTpl = "nouveauParticipant";
+        $rep->bodyTpl ="main";
+        $rep->body->assignZone('PRINCIPAL', 'nouveauparticipant');
 
-        $equipeFactory = jDao::get("equipe");
-        $listofAllEquipe = $equipeFactory->findAll();
-        $rep->body->assign('ALLEQUIPE', $listofAllEquipe);
-
-        $paramidParticipant = $this->param('mailParticipant',1);
-        $inscriptionParticipantForm = jForms::create("site_internet~inscriptionParticipantForm", $paramidParticipant);
-        $rep->body->assign("FORMULAIRE2", $inscriptionParticipantForm);
-        
          return $rep;   
    }
     

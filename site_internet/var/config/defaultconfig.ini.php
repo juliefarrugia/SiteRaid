@@ -208,10 +208,9 @@ name=
 ;files_path = "app:var/sessions/"
 ;
 ; or
-;
-;storage = "dao"
-;dao_selector = "jelix~jsession"
-;dao_db_profile = ""
+storage = "dao"
+dao_selector = "jelix~jsession"
+dao_db_profile = ""
 
 
 [forms]
