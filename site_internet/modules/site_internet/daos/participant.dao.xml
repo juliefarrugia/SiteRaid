@@ -5,14 +5,12 @@
         
     </datasources>
     <record>
-        <property name="mailParticipant" fieldname="mailParticipant" datatype="varchar" required="true" maxlength="50"/>
+        <property name="mail" fieldname="mail" datatype="varchar" required="true" maxlength="50"/>
         <property name="nomEquipe" fieldname="nomEquipe" datatype="varchar" required="true" maxlength="50"/>
-        <property name="passwordParticipant" fieldname="passwordParticipant" datatype="varchar" required="true" maxlength="10"/>
         <property name="nomParticipant" fieldname="nomParticipant" datatype="varchar" required="true" maxlength="50"/>
         <property name="prenomParticipant" fieldname="prenomParticipant" datatype="varchar" required="true" maxlength="50"/>
         <property name="sexeParticipant" fieldname="sexeParticipant" datatype="varchar" required="true" maxlength="10"/>
         <property name="telParticipant" fieldname="telParticipant" datatype="varchar" required="true" minlength="11" maxlength="11"/>
-        <property name="mailParticipant" fieldname="mailParticipant" datatype="varchar" required="true" maxlength="50"/>
         <property name="statutParticipant" fieldname="statutParticipant" datatype="varchar" required="true" maxlength="50"/>
         <property name="ecole_entreprise" fieldname="ecole_entreprise" datatype="varchar" required="true" maxlength="50"/>
         <property name="tailleMaillot" fieldname="tailleMaillot" datatype="varchar" required="true" maxlength="3"/>

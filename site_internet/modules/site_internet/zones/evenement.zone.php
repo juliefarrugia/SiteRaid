@@ -8,15 +8,10 @@
 * @license    All rights reserved
 */
 
-class AbarreLateralZone extends jZone {
-    protected $_tplname='abarrelateral';
+class evenementZone extends jZone {
+    protected $_tplname='evenement';
 
     protected function _prepareTpl(){
         //$this->_tpl->assign('foo','bar');
-        
-        $equipeFactory = jDao::get("equipe");
-        $listofAllEquipe = $equipeFactory->findAll();
-        $this->_tpl->assign('ALLEQUIPE', $listofAllEquipe);
-        
     }
 }

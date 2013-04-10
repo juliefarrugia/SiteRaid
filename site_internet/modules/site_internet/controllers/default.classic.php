@@ -5,9 +5,33 @@ class defaultCtrl extends jController {
     function index() {
         
         session_destroy();
+        $page=$this->param('page');
+
         $rep = $this->getResponse('html');
         $rep->bodyTpl ="main";
-        $rep->body->assignZone('PRINCIPAL', 'accueil');
+        
+        if ($page=='accueil'){$rep->body->assignZone('PRINCIPAL', 'accueil');}
+        else if ($page=='evenement'){$rep->body->assignZone('PRINCIPAL', 'evenement');}
+        else if ($page=='raidLieu'){$rep->body->assignZone('PRINCIPAL', 'raidlieu');}
+        else if ($page=='raidInfos'){$rep->body->assignZone('PRINCIPAL', 'raidinfos');}
+        else if ($page=='raidMateriel'){$rep->body->assignZone('PRINCIPAL', 'raidmateriel');}
+        else if ($page=='raidEpreuves'){$rep->body->assignZone('PRINCIPAL', 'raidepreuves');}
+        else if ($page=='RELLieu'){$rep->body->assignZone('PRINCIPAL', 'rellieu');}
+        else if ($page=='RELEcoles'){$rep->body->assignZone('PRINCIPAL', 'relecoles');}
+        else if ($page=='RELInfos'){$rep->body->assignZone('PRINCIPAL', 'relinfos');}
+        else if ($page=='equipe'){$rep->body->assignZone('PRINCIPAL', 'equipe');}
+        else if ($page=='raidsprecedents'){$rep->body->assignZone('PRINCIPAL', 'raidsprecedents');}
+        else if ($page=='environnement'){$rep->body->assignZone('PRINCIPAL', 'environnement');}
+        else if ($page=='partenaire'){$rep->body->assignZone('PRINCIPAL', 'partenaire');}
+        else if ($page=='devenirpartenaire'){$rep->body->assignZone('PRINCIPAL', 'devenirpartenaire');}
+        else if ($page=='photo'){$rep->body->assignZone('PRINCIPAL', 'photo');}
+        else if ($page=='video'){$rep->body->assignZone('PRINCIPAL', 'video');}
+        else if ($page=='contact'){$rep->body->assignZone('PRINCIPAL', 'contact');}
+        else if ($page=='inscription'){$rep->body->assignZone('PRINCIPAL', 'inscription');}
+        else if ($page=='creationequipe'){$rep->body->assignZone('PRINCIPAL', 'creationequipe');}
+        else if ($page=='joindreequipe'){$rep->body->assignZone('PRINCIPAL', 'joindreequipe');}
+        else if ($page=='nouveauparticipant'){$rep->body->assignZone('PRINCIPAL', 'nouveauparticipant');}
+        else {$rep->body->assignZone('PRINCIPAL', 'accueil');}
         
         return $rep;
     }
@@ -16,70 +40,37 @@ class defaultCtrl extends jController {
 
            if (jApp::coord()->request->isAjax()){
                
-               $participantFactory = jDao::get("participant");
-               $conditions1= jDao::createConditions();
-               $conditions1->addCondition('mailParticipant','=',$this->param('login'));
-               $conditions1->addCondition('passwordParticipant','=',$this->param('password'));
+               $utilisateurFactory = jDao::get("utilisateur");
+               $conditions= jDao::createConditions();
+               $conditions->addCondition('mail','=',$this->param('login'));
+               $conditions->addCondition('password','=',$this->param('password'));
                
-               $participantList = $participantFactory->findBy($conditions1);
-               $participants = $participantList->FetchAll();
-               
-               $organisateurFactory = jDao::get("organisateur");
-               $conditions2= jDao::createConditions();
-               $conditions2->addCondition('mailOrga','=',$this->param('login'));
-               $conditions2->addCondition('passwordOrga','=',$this->param('password'));
-               
-               $organisateurList = $organisateurFactory->findBy($conditions2);
-               $organisateurs = $organisateurList->FetchAll();
-               
-               $administrateurFactory = jDao::get("administrateur");
-               $conditions3= jDao::createConditions();
-               $conditions3->addCondition('mailAdmin','=',$this->param('login'));
-               $conditions3->addCondition('passwordAdmin','=',$this->param('password'));
-               
-               $administrateurList = $administrateurFactory->findBy($conditions3);
-               $administrateurs = $administrateurList->FetchAll();
+               $utilisateurList = $utilisateurFactory->findBy($conditions);
+               $utilisateurs = $utilisateurList->FetchAll();
                
                jSession::start();
-               
-               
-               
-           if (sizeof ($participants)==1 || sizeof ($organisateurs)==1 || sizeof ($administrateurs)==1){
+  
+           if (sizeof ($utilisateurs)==1){
                 $rep=$this->getResponse('json');
                 return $rep; }
-           else {return null;}} 
-           
+           else {return null;}}    
            
     }
     
-    function sinscrire () {
+    function saveEquipe() {
         
-        $rep = $this->getResponse('html');
-        $rep->bodyTpl ="main";
-        $rep->body->assignZone('PRINCIPAL', 'inscription');
-   
-        return $rep;
-    }
-    
-    function addEquipe() {
-        
-         $rep = $this->getResponse('html');
-         $rep->bodyTpl ="main";
-         $rep->body->assignZone('PRINCIPAL', 'creationequipe');
-        
-         return $rep;   
-   }    
-    
-     function saveEquipe() {
-
+        $inscriptionUtilisateur = jDao::get("site_internet~utilisateur");
         $inscriptionParticipant = jDao::get("site_internet~participant");
         $inscriptionEquipe = jDao::get("site_internet~equipe");   
         
+        $record1 = jDao::createRecord("site_internet~utilisateur");
         $record = jDao::createRecord("site_internet~participant");
         $record2 = jDao::createRecord("site_internet~equipe");
+        
+        $record1->mail = $record->mail = $this->param('mail');
+        $record1->password = $this->param('password');
+        $record1->profil = "2";
 
-        $record->mailParticipant = $this->param('mailParticipant');
-        $record->passwordParticipant = $this->param('passwordParticipant');
         $record->nomParticipant= $this->param('nomParticipant');
         $record->prenomParticipant = $this->param('prenomParticipant');
         $record->sexeParticipant = $this->param('sexeParticipant');
@@ -97,29 +88,21 @@ class defaultCtrl extends jController {
         $record2->passwordEquipe = $this->param('passwordEquipe');
         $record2->telEquipe= $this->param('telEquipe');
         $record2->typeRaid = $this->param('typeRaid');
-        $record2->mailParticipant1= $this->param('mailParticipant');
-        $record2->mailParticipant2= $this->param('mailParticipant2');
-        $record2->mailParticipant3= $this->param('mailParticipant3');
-        $record2->mailParticipant4= $this->param('mailParticipant4');
+        $record2->mail1= $this->param('mail');
+        $record2->mail2= $this->param('mail2');
+        $record2->mail3= $this->param('mail3');
+        $record2->mail4= $this->param('mail4');
         
         
         if ($record->check()&& $record2->check() ) { 
+            $inscriptionUtilisateur->insert($record1);
             $inscriptionParticipant->insert($record);
             $inscriptionEquipe->insert($record2);
             
             return $this->index();}
         else { return $this->addEquipe();}  
         
-            }              
-            
-     function index2() {
-        
-        $rep = $this->getResponse('html');
-        $rep->bodyTpl ="main";
-        $rep->body->assignZone('PRINCIPAL', 'joindreequipe');
-        
-        return $rep;
-    }           
+            }                    
             
     function rejoindreEquipe () {
 
@@ -133,8 +116,6 @@ class defaultCtrl extends jController {
                $equipeList = $equipeFactory->findBy($conditions);
                $equipes = $equipeList->FetchAll();
               
-
-               
            if (sizeof ($equipes)==1 ){
                 
                 $rep=$this->getResponse('json');
@@ -142,31 +123,25 @@ class defaultCtrl extends jController {
                 return $rep;}
             
            else {return null;}} 
-           
-           return $this->index2();
+
     } 
     
-    function addParticipant() {
-        
-        $rep = $this->getResponse('html');
-        $rep->bodyTpl ="main";
-        $rep->body->assignZone('PRINCIPAL', 'nouveauparticipant');
+    function saveParticipant() {
 
-         return $rep;   
-   }
-    
-     function saveParticipant() {
-
+        $inscriptionUtilisateur = jDao::get("site_internet~utilisateur");
         $inscriptionParticipant = jDao::get("site_internet~participant");
         $inscriptionEquipe = jDao::get("site_internet~equipe");   
         
+        $record1 = jDao::createRecord("site_internet~utilisateur");
         $record = jDao::createRecord("site_internet~participant");
         $record2 = $inscriptionEquipe->get($this->param('nomEquipe'));
         
         $record->nomEquipe = $this->param('nomEquipe');
-       
-        $record->mailParticipant = $this->param('mailParticipant');
-        $record->passwordParticipant = $this->param('passwordParticipant');
+        $record1->mail = $record->mail = $this->param('mail');
+        
+        $record1->password = $this->param('password');
+        $record1->profil = "2";
+        
         $record->nomParticipant= $this->param('nomParticipant');
         $record->prenomParticipant = $this->param('prenomParticipant');
         $record->sexeParticipant = $this->param('sexeParticipant');
@@ -179,11 +154,12 @@ class defaultCtrl extends jController {
         $record->velo= $this->param('velo');
         $record->bus = $this->param('bus');
         
-        if ($record2->mailParticipant2==NULL){ $record2->mailParticipant2= $this->param('mailParticipant');}
-        else if ($record2->mailParticipant3==NULL){ $record2->mailParticipant3= $this->param('mailParticipant');}
-        else if ($record2->mailParticipant4==NULL){ $record2->mailParticipant4= $this->param('mailParticipant');}     
+        if ($record2->mail2==NULL){ $record2->mail2= $this->param('mail');}
+        else if ($record2->mail3==NULL){ $record2->mail3= $this->param('mail');}
+        else if ($record2->mail4==NULL){ $record2->mail4= $this->param('mail');}     
         
         if ($record->check()&& $record2->check() ) { 
+            $inscriptionUtilisateur->insert($record1);
             $inscriptionParticipant->insert($record);
             $inscriptionEquipe->update($record2);
             
@@ -191,15 +167,7 @@ class defaultCtrl extends jController {
         else { return $this->addParticipant();}  
         
             }     
-   
-        
-        
-        
-    
-            
-            
-            
-            
+ 
 }
 
 

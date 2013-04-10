@@ -12,7 +12,7 @@
                         notre action dans la perspective du développement durable du sport, sur la base de l’Agenda 21 du Sport 
                         Français et de la Charte du Sport pour le développement durable.
                     </p>
-                    <img class="logoright" src="img/agenda21.JPG" alt="agenda21">
+                    <img class="logoright" alt="agenda21" {image "img/agenda21.JPG"}
                 </div>
                 <div class="bloc">
                     <p>
@@ -35,7 +35,7 @@
                     </p>
                 </div>
                 <div class="bloc">
-                    <img class="left" src="img/ecocup.JPG" alt="ecocup">
+                    <img class="left" alt="ecocup" {image "img/ecocup.JPG"}
                     <p class="right">
                         En 2012 nous avons mis en place un système d’éco-cup : les participants pouvaient acheter une écocup 
                         pour 1euro symbolique. Ils pouvaient s’en servir ensuite pour se désaltérer le soir. 

@@ -11,10 +11,10 @@
         <property name="typeRaid" fieldname="typeRaid" datatype="varchar" required="true" maxlength="15"/>
         <property name="categorieEquipe" fieldname="categorieEquipe" datatype="varchar" required="true" maxlength="15"/>
         <property name="telEquipe" fieldname="telEquipe" datatype="varchar" required="true" minlength="11" maxlength="11"/>
-        <property name="mailParticipant1" fieldname="mailParticipant1" datatype="varchar" required="true" maxlength="50"/>
-        <property name="mailParticipant2" fieldname="mailParticipant2" datatype="varchar" maxlength="50"/>
-        <property name="mailParticipant3" fieldname="mailParticipant3" datatype="varchar" maxlength="50"/>
-        <property name="mailParticipant4" fieldname="mailParticipant4" datatype="varchar" maxlength="50"/>
+        <property name="mail1" fieldname="mail1" datatype="varchar" required="true" maxlength="50"/>
+        <property name="mail2" fieldname="mail2" datatype="varchar" maxlength="50"/>
+        <property name="mail3" fieldname="mail3" datatype="varchar" maxlength="50"/>
+        <property name="mail4" fieldname="mail4" datatype="varchar" maxlength="50"/>
 
        
         

@@ -13,5 +13,7 @@ class AmenuZone extends jZone {
 
     protected function _prepareTpl(){
         //$this->_tpl->assign('foo','bar');
+  
+        
     }
 }

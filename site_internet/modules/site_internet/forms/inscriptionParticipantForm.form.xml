@@ -9,13 +9,13 @@
         <alert type="required">Le nom de l'équipe est obligatoire</alert>  
     </input>
               
-    <input ref="mailParticipant" type="email" required="true">
+    <input ref="mail" type="email" required="true">
         <label>E-mail</label>
         <alert type="required">L'adresse e-mail est obligatoire</alert> 
         <alert type="invalid">Indiquez une adresse e-mail valide</alert> 
     </input> 
     
-    <secret ref="passwordParticipant" required="true">
+    <secret ref="password" required="true">
         <label>Mot de passe</label>
         <hint>Indiquez votre mot de passe</hint>
         <confirm>Retapez ce mot de passe</confirm>

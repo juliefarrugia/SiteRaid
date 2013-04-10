@@ -9188,3 +9188,656 @@ array (   'module' => 'site_internet',   'action' => 'default:connexion',   'log
 	3	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
 
 
+2013-04-09 20:35:00	127.0.0.1	error	2013-04-09 20:35:00	127.0.0.1	[302]	Dans le template /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/templates/amenu.tpl la fonction jzone est inconnue	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php	703
+	/site_internet/www/index.php
+array ( )
+
+	0	jTplCompiler->doError1()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 505
+	1	jTplCompiler->_parseFunction()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 291
+	2	jTplCompiler->_callback()	[php] : 
+	3	preg_replace_callback()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 237
+	4	jTplCompiler->compileContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 191
+	5	jTplCompiler->compileString()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 181
+	6	jTplCompiler->compile()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jIncluder.class.php : 103
+	7	jIncluder::inc()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 250
+	8	jTpl->getTemplate()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 278
+	9	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	10	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	11	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	12	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	13	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 7
+	14	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	15	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	16	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	17	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-09 22:51:12	127.0.0.1	error	2013-04-09 22:51:12	127.0.0.1	[302]	Dans le template /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/templates/amenu.tpl la fonction jzone est inconnue	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php	703
+	/site_internet/www/index.php
+array ( )
+
+	0	jTplCompiler->doError1()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 505
+	1	jTplCompiler->_parseFunction()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 291
+	2	jTplCompiler->_callback()	[php] : 
+	3	preg_replace_callback()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 237
+	4	jTplCompiler->compileContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 191
+	5	jTplCompiler->compileString()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 181
+	6	jTplCompiler->compile()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jIncluder.class.php : 103
+	7	jIncluder::inc()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 250
+	8	jTpl->getTemplate()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 278
+	9	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	10	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	11	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	12	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	13	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 7
+	14	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	15	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	16	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	17	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-09 22:53:33	127.0.0.1	error	2013-04-09 22:53:33	127.0.0.1	[302]	Dans le template /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/templates/amenu.tpl la fonction jzone est inconnue	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php	703
+	/site_internet/www/index.php
+array ( )
+
+	0	jTplCompiler->doError1()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 505
+	1	jTplCompiler->_parseFunction()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 291
+	2	jTplCompiler->_callback()	[php] : 
+	3	preg_replace_callback()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 237
+	4	jTplCompiler->compileContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 191
+	5	jTplCompiler->compileString()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 181
+	6	jTplCompiler->compile()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jIncluder.class.php : 103
+	7	jIncluder::inc()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 250
+	8	jTpl->getTemplate()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 278
+	9	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	10	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	11	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	12	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	13	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 7
+	14	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	15	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	16	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	17	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-09 23:41:29	127.0.0.1	notice	2013-04-09 23:41:29	127.0.0.1	[8]	Use of undefined constant id - assumed 'id'	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/zones/amenu.zone.php	16
+	/site_internet/www/index.php
+array ( )
+
+	0	AmenuZone->_prepareTpl()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 223
+	1	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	2	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	3	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	4	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 7
+	5	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	6	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	7	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	8	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-09 23:58:12	127.0.0.1	notice	2013-04-09 23:58:12	127.0.0.1	[8]	Use of undefined constant id - assumed 'id'	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/zones/amenu.zone.php	16
+	/site_internet/www/index.php
+array ( )
+
+	0	AmenuZone->_prepareTpl()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 223
+	1	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	2	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	3	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	4	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 7
+	5	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	6	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	7	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	8	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-09 23:58:12	127.0.0.1	error	2013-04-09 23:58:12	127.0.0.1	[16]	Syntax du sélecteur "site_internet~main:raidLieu" invalide (type=zone)	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/selector/jSelectorModule.class.php	47
+	/site_internet/www/index.php
+array ( )
+
+	0	jSelectorModule->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 258
+	1	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	2	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/amenu_html_t.php : 23
+	3	template_d69a92ee754211368476e710a85be924()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	4	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	5	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	6	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	7	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	8	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 7
+	9	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	10	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	11	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	12	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-09 23:58:30	127.0.0.1	error	2013-04-09 23:58:30	127.0.0.1	[16]	Syntax du sélecteur "site_internet~main:raidLieu" invalide (type=zone)	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/selector/jSelectorModule.class.php	47
+	/site_internet/www/index.php
+array ( )
+
+	0	jSelectorModule->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 258
+	1	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	2	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/amenu_html_t.php : 23
+	3	template_d69a92ee754211368476e710a85be924()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	4	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	5	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	6	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	7	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	8	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 7
+	9	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	10	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	11	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	12	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 08:11:36	127.0.0.1	notice	2013-04-10 08:11:36	127.0.0.1	[8]	A session had already been started - ignoring session_start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php	81
+	/site_internet/www/index.php/site_internet/default/connexion
+array (   'module' => 'site_internet',   'action' => 'default:connexion',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei', )
+
+	0	session_start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 81
+	1	jSession::start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php : 27
+	2	defaultCtrl->connexion()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	3	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 08:31:31	127.0.0.1	error	2013-04-10 08:31:31	127.0.0.1	[403]	Erreur dans la requête (Unknown column 'mailParticipant' in 'field list'(INSERT INTO `participant` (	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	128
+	/site_internet/www/index.php/site_internet/default/saveEquipe
+array (   'module' => 'site_internet',   'action' => 'default:saveEquipe',   '__JFORMS_TOKEN__' => '60dae3908bfbfc4f4278daaef1f77a5f',   'mail' => 'test1@hei.fr',   'password' => 'internet',   'password_confirm' => 'internet',   'nomParticipant' => 'far',   'prenomParticipant' => 'Claire',   'sexeParticipant' => 'Femme',   'telParticipant' => '0614130091',   'statutParticipant' => 'Etudiant',   'ecole_entreprise' => 'HEI',   'tailleMaillot' => 'XS',   'nomUrgence' => 'Maman',   'telUrgence' => '0614130091',   'velo' => '1',   'bus' => '1',   'nomEquipe' => 'Goror',   'passwordEquipe' => 'test',   'passwordEquipe_confirm' => 'test',   'telEquipe' => '0614130091',   'typeRaid' => 'Aventure',   'mail2' => '',   'mail3' => '',   'mail4' => '',   'antispam' => '8',   'submit' => 'Confirmer l\'inscription', )
+
+	0	mysqlDbConnection->_doExec()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 147
+	1	jDbConnection->exec()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/daos/modules/site_internet~participant~mysql.php : 489
+	2	cDao_site_internet_Jx_participant_Jx_mysql->insert()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php : 94
+	3	defaultCtrl->saveEquipe()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	4	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 08:33:11	127.0.0.1	error	2013-04-10 08:33:11	127.0.0.1	[403]	Erreur dans la requête (Duplicate entry 'test1@hei.fr' for key 'PRIMARY'(INSERT INTO `utilisateur` (	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	128
+	/site_internet/www/index.php/site_internet/default/saveEquipe
+array (   'module' => 'site_internet',   'action' => 'default:saveEquipe',   '__JFORMS_TOKEN__' => '290f78523c5c13b50fd5cabb2e8cca65',   'mail' => 'test1@hei.fr',   'password' => 'test',   'password_confirm' => 'test',   'nomParticipant' => 'farrugia',   'prenomParticipant' => 'TEST',   'sexeParticipant' => 'Femme',   'telParticipant' => '0614130091',   'statutParticipant' => 'Etudiant',   'ecole_entreprise' => 'HEI',   'tailleMaillot' => 'XS',   'nomUrgence' => 'Maman',   'telUrgence' => '0614130091',   'velo' => '1',   'bus' => '1',   'nomEquipe' => 'Goror',   'passwordEquipe' => 'test',   'passwordEquipe_confirm' => 'test',   'telEquipe' => '0614130091',   'typeRaid' => 'Aventure',   'mail2' => '',   'mail3' => '',   'mail4' => '',   'antispam' => '2',   'submit' => 'Confirmer l\'inscription', )
+
+	0	mysqlDbConnection->_doExec()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 147
+	1	jDbConnection->exec()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/daos/modules/site_internet~utilisateur~mysql.php : 129
+	2	cDao_site_internet_Jx_utilisateur_Jx_mysql->insert()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php : 93
+	3	defaultCtrl->saveEquipe()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	4	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 08:38:57	127.0.0.1	notice	2013-04-10 08:38:57	127.0.0.1	[8]	Trying to get property of non-object	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	170
+	/site_internet/www/index.php/site_internet/default/saveParticipant
+array (   'module' => 'site_internet',   'action' => 'default:saveParticipant',   '__JFORMS_TOKEN__' => 'c9a9c252c4374ea30370c8da385bcc84',   'mail' => 'test2@hei.fr',   'password' => 'test',   'password_confirm' => 'test',   'nomParticipant' => 'lachere',   'prenomParticipant' => 'julie',   'sexeParticipant' => 'Homme',   'telParticipant' => '0614130091',   'statutParticipant' => 'Etudiant',   'ecole_entreprise' => 'HEI',   'tailleMaillot' => 'XS',   'nomUrgence' => 'Maman',   'telUrgence' => '0614130091',   'velo' => '1',   'bus' => '0',   'antispam' => 'paris',   'submit' => 'Confirmer l\'inscription', )
+
+	0	defaultCtrl->saveParticipant()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 08:38:57	127.0.0.1	warning	2013-04-10 08:38:57	127.0.0.1	[2]	Creating default object from empty value	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	170
+	/site_internet/www/index.php/site_internet/default/saveParticipant
+array (   'module' => 'site_internet',   'action' => 'default:saveParticipant',   '__JFORMS_TOKEN__' => 'c9a9c252c4374ea30370c8da385bcc84',   'mail' => 'test2@hei.fr',   'password' => 'test',   'password_confirm' => 'test',   'nomParticipant' => 'lachere',   'prenomParticipant' => 'julie',   'sexeParticipant' => 'Homme',   'telParticipant' => '0614130091',   'statutParticipant' => 'Etudiant',   'ecole_entreprise' => 'HEI',   'tailleMaillot' => 'XS',   'nomUrgence' => 'Maman',   'telUrgence' => '0614130091',   'velo' => '1',   'bus' => '0',   'antispam' => 'paris',   'submit' => 'Confirmer l\'inscription', )
+
+	0	defaultCtrl->saveParticipant()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 08:41:29	127.0.0.1	notice	2013-04-10 08:41:29	127.0.0.1	[8]	Trying to get property of non-object	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	152
+	/site_internet/www/index.php/site_internet/default/saveParticipant
+array (   'module' => 'site_internet',   'action' => 'default:saveParticipant',   '__JFORMS_TOKEN__' => '172368826c56aadad814292dc31bbec3',   'mail' => 'test2@hei.fr',   'password' => 'test',   'password_confirm' => 'test',   'nomParticipant' => 'far',   'prenomParticipant' => 'julie',   'sexeParticipant' => 'Homme',   'telParticipant' => '0614130091',   'statutParticipant' => 'Etudiant',   'ecole_entreprise' => 'HEI',   'tailleMaillot' => 'XS',   'nomUrgence' => 'Maman',   'telUrgence' => '0614130091',   'velo' => '1',   'bus' => '1',   'antispam' => '1914',   'submit' => 'Confirmer l\'inscription', )
+
+	0	defaultCtrl->saveParticipant()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 08:41:29	127.0.0.1	notice	2013-04-10 08:41:29	127.0.0.1	[8]	Trying to get property of non-object	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	171
+	/site_internet/www/index.php/site_internet/default/saveParticipant
+array (   'module' => 'site_internet',   'action' => 'default:saveParticipant',   '__JFORMS_TOKEN__' => '172368826c56aadad814292dc31bbec3',   'mail' => 'test2@hei.fr',   'password' => 'test',   'password_confirm' => 'test',   'nomParticipant' => 'far',   'prenomParticipant' => 'julie',   'sexeParticipant' => 'Homme',   'telParticipant' => '0614130091',   'statutParticipant' => 'Etudiant',   'ecole_entreprise' => 'HEI',   'tailleMaillot' => 'XS',   'nomUrgence' => 'Maman',   'telUrgence' => '0614130091',   'velo' => '1',   'bus' => '1',   'antispam' => '1914',   'submit' => 'Confirmer l\'inscription', )
+
+	0	defaultCtrl->saveParticipant()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 08:41:29	127.0.0.1	warning	2013-04-10 08:41:29	127.0.0.1	[2]	Creating default object from empty value	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	171
+	/site_internet/www/index.php/site_internet/default/saveParticipant
+array (   'module' => 'site_internet',   'action' => 'default:saveParticipant',   '__JFORMS_TOKEN__' => '172368826c56aadad814292dc31bbec3',   'mail' => 'test2@hei.fr',   'password' => 'test',   'password_confirm' => 'test',   'nomParticipant' => 'far',   'prenomParticipant' => 'julie',   'sexeParticipant' => 'Homme',   'telParticipant' => '0614130091',   'statutParticipant' => 'Etudiant',   'ecole_entreprise' => 'HEI',   'tailleMaillot' => 'XS',   'nomUrgence' => 'Maman',   'telUrgence' => '0614130091',   'velo' => '1',   'bus' => '1',   'antispam' => '1914',   'submit' => 'Confirmer l\'inscription', )
+
+	0	defaultCtrl->saveParticipant()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 08:43:58	127.0.0.1	notice	2013-04-10 08:43:58	127.0.0.1	[8]	Trying to get property of non-object	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	152
+	/site_internet/www/index.php/site_internet/default/saveParticipant
+array (   'module' => 'site_internet',   'action' => 'default:saveParticipant',   '__JFORMS_TOKEN__' => '1d935c498e30b6f9709e7c2b11229ce2',   'mail' => 'test2@hei.fr',   'password' => 'test',   'password_confirm' => 'test',   'nomParticipant' => 'far',   'prenomParticipant' => 'julie',   'sexeParticipant' => 'Femme',   'telParticipant' => '0614130091',   'statutParticipant' => 'Etudiant',   'ecole_entreprise' => 'HEI',   'tailleMaillot' => 'XS',   'nomUrgence' => 'Maman',   'telUrgence' => '0614130091',   'velo' => '1',   'bus' => '1',   'antispam' => 'trente',   'submit' => 'Confirmer l\'inscription', )
+
+	0	defaultCtrl->saveParticipant()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 08:43:58	127.0.0.1	notice	2013-04-10 08:43:58	127.0.0.1	[8]	Trying to get property of non-object	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	171
+	/site_internet/www/index.php/site_internet/default/saveParticipant
+array (   'module' => 'site_internet',   'action' => 'default:saveParticipant',   '__JFORMS_TOKEN__' => '1d935c498e30b6f9709e7c2b11229ce2',   'mail' => 'test2@hei.fr',   'password' => 'test',   'password_confirm' => 'test',   'nomParticipant' => 'far',   'prenomParticipant' => 'julie',   'sexeParticipant' => 'Femme',   'telParticipant' => '0614130091',   'statutParticipant' => 'Etudiant',   'ecole_entreprise' => 'HEI',   'tailleMaillot' => 'XS',   'nomUrgence' => 'Maman',   'telUrgence' => '0614130091',   'velo' => '1',   'bus' => '1',   'antispam' => 'trente',   'submit' => 'Confirmer l\'inscription', )
+
+	0	defaultCtrl->saveParticipant()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 08:43:58	127.0.0.1	warning	2013-04-10 08:43:58	127.0.0.1	[2]	Creating default object from empty value	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	171
+	/site_internet/www/index.php/site_internet/default/saveParticipant
+array (   'module' => 'site_internet',   'action' => 'default:saveParticipant',   '__JFORMS_TOKEN__' => '1d935c498e30b6f9709e7c2b11229ce2',   'mail' => 'test2@hei.fr',   'password' => 'test',   'password_confirm' => 'test',   'nomParticipant' => 'far',   'prenomParticipant' => 'julie',   'sexeParticipant' => 'Femme',   'telParticipant' => '0614130091',   'statutParticipant' => 'Etudiant',   'ecole_entreprise' => 'HEI',   'tailleMaillot' => 'XS',   'nomUrgence' => 'Maman',   'telUrgence' => '0614130091',   'velo' => '1',   'bus' => '1',   'antispam' => 'trente',   'submit' => 'Confirmer l\'inscription', )
+
+	0	defaultCtrl->saveParticipant()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 08:49:09	127.0.0.1	notice	2013-04-10 08:49:09	127.0.0.1	[8]	Trying to get property of non-object	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	152
+	/site_internet/www/index.php/site_internet/default/saveParticipant
+array (   'module' => 'site_internet',   'action' => 'default:saveParticipant',   '__JFORMS_TOKEN__' => 'a3121c55ace08201621598002768e10c',   'mail' => 'test2@hei.fr',   'password' => 'hello',   'password_confirm' => 'hello',   'nomParticipant' => 'TEST',   'prenomParticipant' => 'julie',   'sexeParticipant' => 'Femme',   'telParticipant' => '0614130091',   'statutParticipant' => 'Etudiant',   'ecole_entreprise' => 'HEI',   'tailleMaillot' => 'XS',   'nomUrgence' => 'Maman',   'telUrgence' => '0614130091',   'velo' => '1',   'bus' => '1',   'antispam' => '1914',   'submit' => 'Confirmer l\'inscription', )
+
+	0	defaultCtrl->saveParticipant()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 08:49:09	127.0.0.1	notice	2013-04-10 08:49:09	127.0.0.1	[8]	Trying to get property of non-object	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	171
+	/site_internet/www/index.php/site_internet/default/saveParticipant
+array (   'module' => 'site_internet',   'action' => 'default:saveParticipant',   '__JFORMS_TOKEN__' => 'a3121c55ace08201621598002768e10c',   'mail' => 'test2@hei.fr',   'password' => 'hello',   'password_confirm' => 'hello',   'nomParticipant' => 'TEST',   'prenomParticipant' => 'julie',   'sexeParticipant' => 'Femme',   'telParticipant' => '0614130091',   'statutParticipant' => 'Etudiant',   'ecole_entreprise' => 'HEI',   'tailleMaillot' => 'XS',   'nomUrgence' => 'Maman',   'telUrgence' => '0614130091',   'velo' => '1',   'bus' => '1',   'antispam' => '1914',   'submit' => 'Confirmer l\'inscription', )
+
+	0	defaultCtrl->saveParticipant()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 08:49:09	127.0.0.1	warning	2013-04-10 08:49:09	127.0.0.1	[2]	Creating default object from empty value	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	171
+	/site_internet/www/index.php/site_internet/default/saveParticipant
+array (   'module' => 'site_internet',   'action' => 'default:saveParticipant',   '__JFORMS_TOKEN__' => 'a3121c55ace08201621598002768e10c',   'mail' => 'test2@hei.fr',   'password' => 'hello',   'password_confirm' => 'hello',   'nomParticipant' => 'TEST',   'prenomParticipant' => 'julie',   'sexeParticipant' => 'Femme',   'telParticipant' => '0614130091',   'statutParticipant' => 'Etudiant',   'ecole_entreprise' => 'HEI',   'tailleMaillot' => 'XS',   'nomUrgence' => 'Maman',   'telUrgence' => '0614130091',   'velo' => '1',   'bus' => '1',   'antispam' => '1914',   'submit' => 'Confirmer l\'inscription', )
+
+	0	defaultCtrl->saveParticipant()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 08:50:39	127.0.0.1	notice	2013-04-10 08:50:39	127.0.0.1	[8]	Trying to get property of non-object	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	171
+	/site_internet/www/index.php/site_internet/default/saveParticipant
+array (   'module' => 'site_internet',   'action' => 'default:saveParticipant',   '__JFORMS_TOKEN__' => '8928d37ede94f3f61903b79ed97f39e4',   'mail' => 'test2@hei.fr',   'password' => 'test',   'password_confirm' => 'test',   'nomParticipant' => 'far',   'prenomParticipant' => 'julie',   'sexeParticipant' => 'Femme',   'telParticipant' => '0614130091',   'statutParticipant' => 'Etudiant',   'ecole_entreprise' => 'HEI',   'tailleMaillot' => 'XS',   'nomUrgence' => 'Maman',   'telUrgence' => '0614130091',   'velo' => '1',   'bus' => '1',   'antispam' => 'vingt',   'submit' => 'Confirmer l\'inscription', )
+
+	0	defaultCtrl->saveParticipant()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 08:50:39	127.0.0.1	warning	2013-04-10 08:50:39	127.0.0.1	[2]	Creating default object from empty value	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	171
+	/site_internet/www/index.php/site_internet/default/saveParticipant
+array (   'module' => 'site_internet',   'action' => 'default:saveParticipant',   '__JFORMS_TOKEN__' => '8928d37ede94f3f61903b79ed97f39e4',   'mail' => 'test2@hei.fr',   'password' => 'test',   'password_confirm' => 'test',   'nomParticipant' => 'far',   'prenomParticipant' => 'julie',   'sexeParticipant' => 'Femme',   'telParticipant' => '0614130091',   'statutParticipant' => 'Etudiant',   'ecole_entreprise' => 'HEI',   'tailleMaillot' => 'XS',   'nomUrgence' => 'Maman',   'telUrgence' => '0614130091',   'velo' => '1',   'bus' => '1',   'antispam' => 'vingt',   'submit' => 'Confirmer l\'inscription', )
+
+	0	defaultCtrl->saveParticipant()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 10:37:39	127.0.0.1	warning	2013-04-10 10:37:39	127.0.0.1	[2]	mysql_real_escape_string(): 9 is not a valid MySQL-Link resource	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	157
+	/site_internet/www/index.php
+array ( )
+
+	0	mysql_real_escape_string()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php : 157
+	1	mysqlDbConnection->_quote()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 163
+	2	jDbConnection->quote()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/daos/modules/jelix~jsession~mysql.php : 140
+	3	cDao_jelix_Jx_jsession_Jx_mysql->_getPkWhereClauseForSelect()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 212
+	4	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	5	jSession::daoWrite()	[php] : 
+
+
+2013-04-10 10:37:39	127.0.0.1	warning	2013-04-10 10:37:39	127.0.0.1	[2]	mysql_select_db(): 9 is not a valid MySQL-Link resource	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	107
+	/site_internet/www/index.php
+array ( )
+
+	0	mysql_select_db()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php : 107
+	1	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	2	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 214
+	3	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	4	jSession::daoWrite()	[php] : 
+
+
+2013-04-10 10:37:39	127.0.0.1	warning	2013-04-10 10:37:39	127.0.0.1	[2]	mysql_errno(): 9 is not a valid MySQL-Link resource	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	108
+	/site_internet/www/index.php
+array ( )
+
+	0	mysql_errno()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php : 108
+	1	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	2	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 214
+	3	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	4	jSession::daoWrite()	[php] : 
+
+
+2013-04-10 10:37:39	127.0.0.1	notice	2013-04-10 10:37:39	127.0.0.1	[8]	Undefined index: name	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	111
+	/site_internet/www/index.php
+array ( )
+
+	0	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	1	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 214
+	2	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	3	jSession::daoWrite()	[php] : 
+
+
+2013-04-10 10:39:33	127.0.0.1	warning	2013-04-10 10:39:33	127.0.0.1	[2]	mysql_real_escape_string(): 9 is not a valid MySQL-Link resource	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	157
+	/site_internet/www/index.php
+array ( )
+
+	0	mysql_real_escape_string()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php : 157
+	1	mysqlDbConnection->_quote()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 163
+	2	jDbConnection->quote()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/daos/modules/jelix~jsession~mysql.php : 140
+	3	cDao_jelix_Jx_jsession_Jx_mysql->_getPkWhereClauseForSelect()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 212
+	4	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	5	jSession::daoWrite()	[php] : 
+
+
+2013-04-10 10:39:33	127.0.0.1	warning	2013-04-10 10:39:33	127.0.0.1	[2]	mysql_select_db(): 9 is not a valid MySQL-Link resource	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	107
+	/site_internet/www/index.php
+array ( )
+
+	0	mysql_select_db()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php : 107
+	1	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	2	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 214
+	3	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	4	jSession::daoWrite()	[php] : 
+
+
+2013-04-10 10:39:33	127.0.0.1	warning	2013-04-10 10:39:33	127.0.0.1	[2]	mysql_errno(): 9 is not a valid MySQL-Link resource	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	108
+	/site_internet/www/index.php
+array ( )
+
+	0	mysql_errno()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php : 108
+	1	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	2	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 214
+	3	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	4	jSession::daoWrite()	[php] : 
+
+
+2013-04-10 10:39:33	127.0.0.1	notice	2013-04-10 10:39:33	127.0.0.1	[8]	Undefined index: name	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	111
+	/site_internet/www/index.php
+array ( )
+
+	0	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	1	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 214
+	2	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	3	jSession::daoWrite()	[php] : 
+
+
+2013-04-10 10:41:19	127.0.0.1	notice	2013-04-10 10:41:19	127.0.0.1	[8]	Use of undefined constant page - assumed 'page'	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	11
+	/site_internet/www/index.php
+array ( )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 10:41:19	127.0.0.1	notice	2013-04-10 10:41:19	127.0.0.1	[8]	Use of undefined constant page - assumed 'page'	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	12
+	/site_internet/www/index.php
+array ( )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 10:41:19	127.0.0.1	notice	2013-04-10 10:41:19	127.0.0.1	[8]	Undefined index: PRINCIPAL	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php	15
+	/site_internet/www/index.php
+array ( )
+
+	0	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	1	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	2	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	3	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 10:41:33	127.0.0.1	notice	2013-04-10 10:41:33	127.0.0.1	[8]	Use of undefined constant page - assumed 'page'	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	12
+	/site_internet/www/index.php
+array ( )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 10:41:33	127.0.0.1	notice	2013-04-10 10:41:33	127.0.0.1	[8]	Use of undefined constant page - assumed 'page'	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	13
+	/site_internet/www/index.php
+array ( )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 10:41:35	127.0.0.1	notice	2013-04-10 10:41:35	127.0.0.1	[8]	Use of undefined constant page - assumed 'page'	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	12
+	/site_internet/www/index.php/site_internet/?page=2
+array (   'page' => '2',   'module' => 'site_internet',   'action' => 'default:index', )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 10:41:35	127.0.0.1	notice	2013-04-10 10:41:35	127.0.0.1	[8]	Use of undefined constant page - assumed 'page'	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	13
+	/site_internet/www/index.php/site_internet/?page=2
+array (   'page' => '2',   'module' => 'site_internet',   'action' => 'default:index', )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 10:41:38	127.0.0.1	notice	2013-04-10 10:41:38	127.0.0.1	[8]	Use of undefined constant page - assumed 'page'	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	12
+	/site_internet/www/index.php/site_internet/?page=2
+array (   'page' => '2',   'module' => 'site_internet',   'action' => 'default:index', )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 10:41:38	127.0.0.1	notice	2013-04-10 10:41:38	127.0.0.1	[8]	Use of undefined constant page - assumed 'page'	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	13
+	/site_internet/www/index.php/site_internet/?page=2
+array (   'page' => '2',   'module' => 'site_internet',   'action' => 'default:index', )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 10:41:54	127.0.0.1	notice	2013-04-10 10:41:54	127.0.0.1	[8]	Use of undefined constant page - assumed 'page'	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	12
+	/site_internet/www/index.php
+array ( )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 10:41:54	127.0.0.1	notice	2013-04-10 10:41:54	127.0.0.1	[8]	Use of undefined constant page - assumed 'page'	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	13
+	/site_internet/www/index.php
+array ( )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 10:41:56	127.0.0.1	notice	2013-04-10 10:41:56	127.0.0.1	[8]	Use of undefined constant page - assumed 'page'	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	12
+	/site_internet/www/index.php/site_internet/?page=2
+array (   'page' => '2',   'module' => 'site_internet',   'action' => 'default:index', )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 10:41:56	127.0.0.1	notice	2013-04-10 10:41:56	127.0.0.1	[8]	Use of undefined constant page - assumed 'page'	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	13
+	/site_internet/www/index.php/site_internet/?page=2
+array (   'page' => '2',   'module' => 'site_internet',   'action' => 'default:index', )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 10:42:18	127.0.0.1	notice	2013-04-10 10:42:18	127.0.0.1	[8]	Use of undefined constant page - assumed 'page'	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	12
+	/site_internet/www/index.php
+array ( )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 10:42:18	127.0.0.1	notice	2013-04-10 10:42:18	127.0.0.1	[8]	Use of undefined constant page - assumed 'page'	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	13
+	/site_internet/www/index.php
+array ( )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 10:42:20	127.0.0.1	notice	2013-04-10 10:42:20	127.0.0.1	[8]	Use of undefined constant page - assumed 'page'	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	12
+	/site_internet/www/index.php/site_internet/?page=2
+array (   'page' => '2',   'module' => 'site_internet',   'action' => 'default:index', )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 10:42:20	127.0.0.1	notice	2013-04-10 10:42:20	127.0.0.1	[8]	Use of undefined constant page - assumed 'page'	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	13
+	/site_internet/www/index.php/site_internet/?page=2
+array (   'page' => '2',   'module' => 'site_internet',   'action' => 'default:index', )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 10:45:29	127.0.0.1	notice	2013-04-10 10:45:29	127.0.0.1	[8]	Use of undefined constant page - assumed 'page'	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	12
+	/site_internet/www/index.php
+array ( )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 10:45:29	127.0.0.1	notice	2013-04-10 10:45:29	127.0.0.1	[8]	Use of undefined constant page - assumed 'page'	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	13
+	/site_internet/www/index.php
+array ( )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 10:45:31	127.0.0.1	notice	2013-04-10 10:45:31	127.0.0.1	[8]	Use of undefined constant page - assumed 'page'	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	12
+	/site_internet/www/index.php/site_internet/?page=raidInfos
+array (   'page' => 'raidInfos',   'module' => 'site_internet',   'action' => 'default:index', )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 10:45:31	127.0.0.1	notice	2013-04-10 10:45:31	127.0.0.1	[8]	Use of undefined constant page - assumed 'page'	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	13
+	/site_internet/www/index.php/site_internet/?page=raidInfos
+array (   'page' => 'raidInfos',   'module' => 'site_internet',   'action' => 'default:index', )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 10:46:58	127.0.0.1	warning	2013-04-10 10:46:58	127.0.0.1	[2]	Missing argument 1 for defaultCtrl::index(), called in /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php on line 195 and defined	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	5
+	/site_internet/www/index.php
+array ( )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 10:46:58	127.0.0.1	notice	2013-04-10 10:46:58	127.0.0.1	[8]	Undefined variable: page	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	12
+	/site_internet/www/index.php
+array ( )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 10:46:58	127.0.0.1	notice	2013-04-10 10:46:58	127.0.0.1	[8]	Undefined variable: page	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	13
+	/site_internet/www/index.php
+array ( )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 10:47:02	127.0.0.1	warning	2013-04-10 10:47:02	127.0.0.1	[2]	Missing argument 1 for defaultCtrl::index(), called in /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php on line 195 and defined	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	5
+	/site_internet/www/index.php/site_internet/?page=2
+array (   'page' => '2',   'module' => 'site_internet',   'action' => 'default:index', )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 10:47:02	127.0.0.1	notice	2013-04-10 10:47:02	127.0.0.1	[8]	Undefined variable: page	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	12
+	/site_internet/www/index.php/site_internet/?page=2
+array (   'page' => '2',   'module' => 'site_internet',   'action' => 'default:index', )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 10:47:02	127.0.0.1	notice	2013-04-10 10:47:02	127.0.0.1	[8]	Undefined variable: page	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	13
+	/site_internet/www/index.php/site_internet/?page=2
+array (   'page' => '2',   'module' => 'site_internet',   'action' => 'default:index', )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 10:47:27	127.0.0.1	warning	2013-04-10 10:47:27	127.0.0.1	[2]	Missing argument 1 for defaultCtrl::index(), called in /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php on line 195 and defined	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	5
+	/site_internet/www/index.php
+array ( )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 10:47:27	127.0.0.1	notice	2013-04-10 10:47:27	127.0.0.1	[8]	Undefined variable: page	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	12
+	/site_internet/www/index.php
+array ( )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 10:47:27	127.0.0.1	notice	2013-04-10 10:47:27	127.0.0.1	[8]	Undefined variable: page	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	13
+	/site_internet/www/index.php
+array ( )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 10:47:29	127.0.0.1	warning	2013-04-10 10:47:29	127.0.0.1	[2]	Missing argument 1 for defaultCtrl::index(), called in /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php on line 195 and defined	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	5
+	/site_internet/www/index.php/site_internet/?page=2
+array (   'page' => '2',   'module' => 'site_internet',   'action' => 'default:index', )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 10:47:29	127.0.0.1	notice	2013-04-10 10:47:29	127.0.0.1	[8]	Undefined variable: page	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	12
+	/site_internet/www/index.php/site_internet/?page=2
+array (   'page' => '2',   'module' => 'site_internet',   'action' => 'default:index', )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 10:47:29	127.0.0.1	notice	2013-04-10 10:47:29	127.0.0.1	[8]	Undefined variable: page	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	13
+	/site_internet/www/index.php/site_internet/?page=2
+array (   'page' => '2',   'module' => 'site_internet',   'action' => 'default:index', )
+
+	0	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 11:22:06	127.0.0.1	error	2013-04-10 11:22:06	127.0.0.1	[17]	Le sélecteur "site_internet~raidprecedents"  ne désigne pas une ressource de type zone	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/selector/jSelectorModule.class.php	90
+	/site_internet/www/index.php/site_internet/?page=raidsprecedents
+array (   'page' => 'raidsprecedents',   'module' => 'site_internet',   'action' => 'default:index', )
+
+	0	jSelectorModule->_createPath()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/selector/jSelectorModule.class.php : 44
+	1	jSelectorModule->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 258
+	2	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	3	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 125
+	4	jTpl->assignZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php : 24
+	5	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	6	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 13:50:59	127.0.0.1	notice	2013-04-10 13:50:59	127.0.0.1	[8]	A session had already been started - ignoring session_start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php	81
+	/site_internet/www/index.php/site_internet/default/connexion
+array (   'module' => 'site_internet',   'action' => 'default:connexion',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei', )
+
+	0	session_start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 81
+	1	jSession::start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php : 47
+	2	defaultCtrl->connexion()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	3	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+

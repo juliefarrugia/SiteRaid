@@ -7,7 +7,7 @@
                     </p>
                 </div>
                 <div class="bloc">
-                <img class="center" src="img/equipe.JPG" alt="equipe2013">
+                <img class="center" alt="equipe2013" {image "img/equipe.JPG"}
                 </div>
                 <div class="bloc">
                     <p>
