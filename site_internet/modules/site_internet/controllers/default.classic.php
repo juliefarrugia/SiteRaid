@@ -31,6 +31,9 @@ class defaultCtrl extends jController {
         else if ($page=='creationequipe'){$rep->body->assignZone('PRINCIPAL', 'creationequipe');}
         else if ($page=='joindreequipe'){$rep->body->assignZone('PRINCIPAL', 'joindreequipe');}
         else if ($page=='nouveauparticipant'){$rep->body->assignZone('PRINCIPAL', 'nouveauparticipant');}
+        else if ($page=='profilAdmnistrateur'){$rep->body->assignZone('PRINCIPAL', 'profiladmnistrateur');}
+        else if ($page=='profilOrganisateur'){$rep->body->assignZone('PRINCIPAL', 'profilorganisateur');}
+        else if ($page=='profilParticipant'){$rep->body->assignZone('PRINCIPAL', 'profilparticipant');}
         else {$rep->body->assignZone('PRINCIPAL', 'accueil');}
         
         return $rep;
@@ -49,11 +52,11 @@ class defaultCtrl extends jController {
                $utilisateurs = $utilisateurList->FetchAll();
                
                jSession::start();
-  
+               
            if (sizeof ($utilisateurs)==1){
                 $rep=$this->getResponse('json');
                 return $rep; }
-           else {return null;}}    
+           else {return null;}}   
            
     }
     

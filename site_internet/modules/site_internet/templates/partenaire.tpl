@@ -2,33 +2,33 @@
                 <p><strong>Voici les différents sponsors qui nous soutiennent ppour cette 20ème édition du Raid HEI :</strong></p><br/><br/>
                 <div class="bloc">
                     <h3>HEI</h3>
-                    <img alt="HEI" {image "img/hei.JPG"}
+                    {image "img/hei.JPG",array('alt'=>'HEI')}
                 </div>
                 <div class="bloc">
                     <h3>AEU</h3>
-                    <img alt="AEU" {image "img/aeu.JPG"}
+                    {image "img/aeu.JPG",array('alt'=>'AEU')}
                 </div>
                 <div class="bloc">
                     <h3>Le Point étudiant</h3>
-                    <img alt="le point étudiant" {image "img/le-point.JPG"}
+                    {image "img/le-point.JPG",array('alt'=>'le point étudiant')}
                 </div>
                 <div class="bloc">
                     <h3>Rabot Dutilleul</h3>
-                    <img alt="Rabot" {image "img/rabot.JPG"}
+                    {image "img/rabot.JPG",array('alt'=>'Rabot')}
                 </div>
                 <div class="bloc">
                     <h3>Salti</h3>
-                    <img alt="Salti" {image "img/Salti.png"}
+                    {image "img/Salti.png",array('alt'=>'Salti')}
                 </div>
                 <div class="bloc">
                     <h3>Sergic</h3>
-                    <img alt="Sergic" {image "img/sergic.JPG"}
+                    {image "img/sergic.JPG",array('alt'=>'Sergic')}
                 </div>
                 <div class="bloc">
                     <h3>Société Générale</h3>
-                    <img alt="Société Générale" {image "img/societe-generale.JPG"}
+                    {image "img/societe-generale.JPG",array('alt'=>'Société Générale')}
                 </div>
                 <div class="bloc">
                     <h3>Les Ardennes</h3>
-                    <img alt="Ardennes" {image "img/ardennes.JPG"}
+                    {image "img/ardennes.JPG",array('alt'=>'Ardennes')}
                 </div>

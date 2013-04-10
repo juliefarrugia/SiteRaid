@@ -5,7 +5,7 @@
                         débutants qu’aux sportifs expérimentés. Nous cherchons à transmettre aux salariés comme aux étudiants les valeurs 
                         d’esprit d’équipe, de motivation et de dépassement de soi.
                     </p>
-                    <img class="right" alt=":)" {image "img/eve1.JPG"}
+                    {image "img/eve1.JPG",array('alt'=>':)','class'=>'right')}
                 </div>
                 <div class="bloc">
                     <p>
@@ -14,7 +14,7 @@
                     </p>
                 </div>
                 <div class="bloc">
-                    <img class="left" alt="equipe" {image "img/eve2.JPG"}
+                    {image "img/eve2.JPG",array('alt'=>'equipe','class'=>'left')}
                     <p class="right">
                         Le Raid HEI se fait par équipes de 4. Que vous soyez étudiants ou salariés, composez votre équipe en fonction 
                         de votre parcours : parcours EXPERT ou parcours AVENTURE, chacun trouvera chaussure à son pied. Cette année le 
@@ -28,7 +28,7 @@
                     </p>
                 </div>
                 <div class="bloc">
-                    <img class="center" alt="Revin" {image "img/eve3.JPG"}
+                    {image "img/eve3.JPG",array('alt'=>'Revin','class'=>'center')}
                 </div>
                 <div class="bloc">
                     <p>

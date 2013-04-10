@@ -13,7 +13,7 @@
                     </p>
                 </div>
                 <div class="bloc">
-                    <img class="center"alt="Raid2010" {image "img/raid2010.JPG"}<br/><br/>
+                    {image "img/raid2010.JPG",array('alt'=>'Raid2010','class'=>'center')}<br/><br/>
                 </div>
                 <h2>Raid HEI 2011</h2><br/>
                 <div class="bloc">
@@ -29,7 +29,7 @@
                     </p>
                 </div>
                 <div class="bloc">
-                    <img class="center" alt="Raid2011" {image "img/raid2011.JPG"}<br/><br/>
+                    {image "img/raid2011.JPG",array('alt'=>'Raid2011','class'=>'center')}<br/><br/>
                 </div>
                 <h2>Raid HEI 2012</h2><br/>
                 <div class="bloc">
@@ -42,5 +42,5 @@
                     </p>
                 </div>
                 <div class="bloc">
-                    <img class="center" alt="Raid2012" {image "img/raid2012.JPG"}
+                    {image "img/raid2012.JPG",array('alt'=>'Raid2012,'class'=>'center')}
                 </div>

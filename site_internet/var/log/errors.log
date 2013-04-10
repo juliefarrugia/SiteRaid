@@ -9841,3 +9841,268 @@ array (   'module' => 'site_internet',   'action' => 'default:connexion',   'log
 	3	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
 
 
+2013-04-10 19:32:12	127.0.0.1	warning	2013-04-10 19:32:12	127.0.0.1	[2]	mysql_real_escape_string(): 57 is not a valid MySQL-Link resource	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	157
+	/site_internet/www/index.php
+array ( )
+
+	0	mysql_real_escape_string()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php : 157
+	1	mysqlDbConnection->_quote()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 163
+	2	jDbConnection->quote()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/daos/modules/jelix~jsession~mysql.php : 140
+	3	cDao_jelix_Jx_jsession_Jx_mysql->_getPkWhereClauseForSelect()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 212
+	4	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	5	jSession::daoWrite()	[php] : 
+
+
+2013-04-10 19:32:12	127.0.0.1	warning	2013-04-10 19:32:12	127.0.0.1	[2]	mysql_select_db(): 57 is not a valid MySQL-Link resource	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	107
+	/site_internet/www/index.php
+array ( )
+
+	0	mysql_select_db()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php : 107
+	1	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	2	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 214
+	3	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	4	jSession::daoWrite()	[php] : 
+
+
+2013-04-10 19:32:12	127.0.0.1	warning	2013-04-10 19:32:12	127.0.0.1	[2]	mysql_errno(): 57 is not a valid MySQL-Link resource	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	108
+	/site_internet/www/index.php
+array ( )
+
+	0	mysql_errno()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php : 108
+	1	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	2	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 214
+	3	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	4	jSession::daoWrite()	[php] : 
+
+
+2013-04-10 19:32:12	127.0.0.1	notice	2013-04-10 19:32:12	127.0.0.1	[8]	Undefined index: name	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	111
+	/site_internet/www/index.php
+array ( )
+
+	0	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	1	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 214
+	2	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	3	jSession::daoWrite()	[php] : 
+
+
+2013-04-10 19:32:25	127.0.0.1	warning	2013-04-10 19:32:25	127.0.0.1	[2]	mysql_real_escape_string(): 9 is not a valid MySQL-Link resource	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	157
+	/site_internet/www/index.php
+array ( )
+
+	0	mysql_real_escape_string()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php : 157
+	1	mysqlDbConnection->_quote()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 163
+	2	jDbConnection->quote()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/daos/modules/jelix~jsession~mysql.php : 140
+	3	cDao_jelix_Jx_jsession_Jx_mysql->_getPkWhereClauseForSelect()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 212
+	4	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	5	jSession::daoWrite()	[php] : 
+
+
+2013-04-10 19:32:25	127.0.0.1	warning	2013-04-10 19:32:25	127.0.0.1	[2]	mysql_select_db(): 9 is not a valid MySQL-Link resource	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	107
+	/site_internet/www/index.php
+array ( )
+
+	0	mysql_select_db()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php : 107
+	1	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	2	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 214
+	3	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	4	jSession::daoWrite()	[php] : 
+
+
+2013-04-10 19:32:25	127.0.0.1	warning	2013-04-10 19:32:25	127.0.0.1	[2]	mysql_errno(): 9 is not a valid MySQL-Link resource	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	108
+	/site_internet/www/index.php
+array ( )
+
+	0	mysql_errno()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php : 108
+	1	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	2	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 214
+	3	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	4	jSession::daoWrite()	[php] : 
+
+
+2013-04-10 19:32:25	127.0.0.1	notice	2013-04-10 19:32:25	127.0.0.1	[8]	Undefined index: name	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	111
+	/site_internet/www/index.php
+array ( )
+
+	0	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	1	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 214
+	2	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	3	jSession::daoWrite()	[php] : 
+
+
+2013-04-10 19:33:29	127.0.0.1	notice	2013-04-10 19:33:29	127.0.0.1	[8]	A session had already been started - ignoring session_start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php	81
+	/site_internet/www/index.php/site_internet/default/connexion
+array (   'module' => 'site_internet',   'action' => 'default:connexion',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei', )
+
+	0	session_start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 81
+	1	jSession::start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php : 51
+	2	defaultCtrl->connexion()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	3	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 19:33:29	127.0.0.1	notice	2013-04-10 19:33:29	127.0.0.1	[8]	Undefined property: cDao_site_internet_Jx_utilisateur_Jx_mysql::$profil	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	52
+	/site_internet/www/index.php/site_internet/default/connexion
+array (   'module' => 'site_internet',   'action' => 'default:connexion',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei', )
+
+	0	defaultCtrl->connexion()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 19:33:29	127.0.0.1	error	2013-04-10 19:33:29	127.0.0.1	[132]	Réponse non spécifiée (action site_internet~default:connexion@classic)	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	197
+	/site_internet/www/index.php/site_internet/default/connexion
+array (   'module' => 'site_internet',   'action' => 'default:connexion',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei', )
+
+	0	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 19:33:47	127.0.0.1	notice	2013-04-10 19:33:47	127.0.0.1	[8]	A session had already been started - ignoring session_start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php	81
+	/site_internet/www/index.php/site_internet/default/connexion
+array (   'module' => 'site_internet',   'action' => 'default:connexion',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei', )
+
+	0	session_start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 81
+	1	jSession::start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php : 51
+	2	defaultCtrl->connexion()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	3	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 19:33:47	127.0.0.1	notice	2013-04-10 19:33:47	127.0.0.1	[8]	Undefined property: cDao_site_internet_Jx_utilisateur_Jx_mysql::$profil	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	52
+	/site_internet/www/index.php/site_internet/default/connexion
+array (   'module' => 'site_internet',   'action' => 'default:connexion',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei', )
+
+	0	defaultCtrl->connexion()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 19:39:12	127.0.0.1	notice	2013-04-10 19:39:12	127.0.0.1	[8]	A session had already been started - ignoring session_start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php	81
+	/site_internet/www/index.php/site_internet/default/connexion
+array (   'module' => 'site_internet',   'action' => 'default:connexion',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei', )
+
+	0	session_start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 81
+	1	jSession::start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php : 51
+	2	defaultCtrl->connexion()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	3	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 19:39:12	127.0.0.1	notice	2013-04-10 19:39:12	127.0.0.1	[8]	Undefined property: cDao_site_internet_Jx_utilisateur_Jx_mysql::$profil	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	52
+	/site_internet/www/index.php/site_internet/default/connexion
+array (   'module' => 'site_internet',   'action' => 'default:connexion',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei', )
+
+	0	defaultCtrl->connexion()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 19:47:47	127.0.0.1	notice	2013-04-10 19:47:47	127.0.0.1	[8]	A session had already been started - ignoring session_start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php	81
+	/site_internet/www/index.php/site_internet/default/connexion
+array (   'module' => 'site_internet',   'action' => 'default:connexion',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei', )
+
+	0	session_start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 81
+	1	jSession::start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php : 54
+	2	defaultCtrl->connexion()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	3	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 19:47:47	127.0.0.1	notice	2013-04-10 19:47:47	127.0.0.1	[8]	Undefined property: cDao_site_internet_Jx_utilisateur_Jx_mysql::$profil	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	55
+	/site_internet/www/index.php/site_internet/default/connexion
+array (   'module' => 'site_internet',   'action' => 'default:connexion',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei', )
+
+	0	defaultCtrl->connexion()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 21:20:37	127.0.0.1	notice	2013-04-10 21:20:37	127.0.0.1	[8]	A session had already been started - ignoring session_start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php	81
+	/site_internet/www/index.php/site_internet/default/connexion
+array (   'module' => 'site_internet',   'action' => 'default:connexion',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei', )
+
+	0	session_start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 81
+	1	jSession::start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php : 54
+	2	defaultCtrl->connexion()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	3	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 21:20:37	127.0.0.1	notice	2013-04-10 21:20:37	127.0.0.1	[8]	Undefined property: cDao_site_internet_Jx_utilisateur_Jx_mysql::$profil	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	55
+	/site_internet/www/index.php/site_internet/default/connexion
+array (   'module' => 'site_internet',   'action' => 'default:connexion',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei', )
+
+	0	defaultCtrl->connexion()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 21:21:38	127.0.0.1	notice	2013-04-10 21:21:38	127.0.0.1	[8]	A session had already been started - ignoring session_start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php	81
+	/site_internet/www/index.php/site_internet/default/connexion
+array (   'module' => 'site_internet',   'action' => 'default:connexion',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei', )
+
+	0	session_start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 81
+	1	jSession::start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php : 54
+	2	defaultCtrl->connexion()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	3	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 21:21:38	127.0.0.1	notice	2013-04-10 21:21:38	127.0.0.1	[8]	Undefined property: cDao_site_internet_Jx_utilisateur_Jx_mysql::$profil	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	55
+	/site_internet/www/index.php/site_internet/default/connexion
+array (   'module' => 'site_internet',   'action' => 'default:connexion',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei', )
+
+	0	defaultCtrl->connexion()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 21:32:33	127.0.0.1	notice	2013-04-10 21:32:33	127.0.0.1	[8]	A session had already been started - ignoring session_start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php	81
+	/site_internet/www/index.php/site_internet/default/connexion
+array (   'module' => 'site_internet',   'action' => 'default:connexion',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei', )
+
+	0	session_start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 81
+	1	jSession::start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php : 54
+	2	defaultCtrl->connexion()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	3	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 21:34:16	127.0.0.1	notice	2013-04-10 21:34:16	127.0.0.1	[8]	A session had already been started - ignoring session_start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php	81
+	/site_internet/www/index.php/site_internet/default/connexion
+array (   'module' => 'site_internet',   'action' => 'default:connexion',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei', )
+
+	0	session_start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 81
+	1	jSession::start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php : 54
+	2	defaultCtrl->connexion()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	3	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 21:34:16	127.0.0.1	notice	2013-04-10 21:34:16	127.0.0.1	[8]	Undefined property: cDao_site_internet_Jx_utilisateur_Jx_mysql::$profil	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	55
+	/site_internet/www/index.php/site_internet/default/connexion
+array (   'module' => 'site_internet',   'action' => 'default:connexion',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei', )
+
+	0	defaultCtrl->connexion()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 21:34:16	127.0.0.1	notice	2013-04-10 21:34:16	127.0.0.1	[8]	Undefined variable: url	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	60
+	/site_internet/www/index.php/site_internet/default/connexion
+array (   'module' => 'site_internet',   'action' => 'default:connexion',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei', )
+
+	0	defaultCtrl->connexion()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 21:38:35	127.0.0.1	notice	2013-04-10 21:38:35	127.0.0.1	[8]	A session had already been started - ignoring session_start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php	81
+	/site_internet/www/index.php/site_internet/default/connexion
+array (   'module' => 'site_internet',   'action' => 'default:connexion',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei', )
+
+	0	session_start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 81
+	1	jSession::start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php : 54
+	2	defaultCtrl->connexion()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	3	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 21:38:35	127.0.0.1	notice	2013-04-10 21:38:35	127.0.0.1	[8]	Undefined property: cDao_site_internet_Jx_utilisateur_Jx_mysql::$profil	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	55
+	/site_internet/www/index.php/site_internet/default/connexion
+array (   'module' => 'site_internet',   'action' => 'default:connexion',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei', )
+
+	0	defaultCtrl->connexion()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-10 21:38:35	127.0.0.1	notice	2013-04-10 21:38:35	127.0.0.1	[8]	Undefined variable: url	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php	60
+	/site_internet/www/index.php/site_internet/default/connexion
+array (   'module' => 'site_internet',   'action' => 'default:connexion',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei', )
+
+	0	defaultCtrl->connexion()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
