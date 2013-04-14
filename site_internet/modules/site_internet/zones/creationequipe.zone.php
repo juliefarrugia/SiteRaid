@@ -14,7 +14,7 @@ class creationEquipeZone extends jZone {
     protected function _prepareTpl(){
         //$this->_tpl->assign('foo','bar');
 
-         $paramidParticipant = $this->param('mailParticipant',1);
+         $paramidParticipant = $this->param('login',1);
          $inscriptionCreationForm = jForms::create("site_internet~inscriptionCreationForm", $paramidParticipant);
          $this->_tpl->assign("FORMULAIRE", $inscriptionCreationForm);
         

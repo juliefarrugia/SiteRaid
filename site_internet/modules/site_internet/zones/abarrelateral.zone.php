@@ -22,5 +22,16 @@ class AbarreLateralZone extends jZone {
         $listofAllEquipe = $equipeFactory->findAll();
         $this->_tpl->assign('ALLEQUIPE', $listofAllEquipe);
         
+        $ok=jAuth::isConnected();
+        $utilisateur = jAuth::getUserSession();
+        $profil = $utilisateur->profil; 
+        $this->_tpl->assign('PROFIL', $profil);
+        $this->_tpl->assign('OK', $ok);
+        if ($profil=='0'){$this->_tpl->assign('BIENVENUE', 'Vous êtes connecté en tant qu administrateur');
+          }
+        if ($profil=='1'){$this->_tpl->assign('BIENVENUE', 'Vous êtes connecté en tant qu organisateur');}
+        if ($profil=='2'){$this->_tpl->assign('BIENVENUE', 'Bienvenue à toi Valeureux raideur');}
+          ;
+        
     }
 }

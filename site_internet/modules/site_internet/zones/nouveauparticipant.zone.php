@@ -13,7 +13,7 @@ class nouveauParticipantZone extends jZone {
 
     protected function _prepareTpl(){
         //$this->_tpl->assign('foo','bar');
-        $paramidParticipant = $this->param('mailParticipant',1);
+        $paramidParticipant = $this->param('login',1);
         $inscriptionParticipantForm = jForms::create("site_internet~inscriptionParticipantForm", $paramidParticipant);
         $this->_tpl->assign("FORMULAIRE2", $inscriptionParticipantForm);
     }

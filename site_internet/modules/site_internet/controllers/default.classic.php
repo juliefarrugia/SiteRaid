@@ -4,7 +4,7 @@ class defaultCtrl extends jController {
 
     function index() {
         
-        jAuth::logout();
+        //jAuth::logout();
         $page=$this->param('page');
 
         $rep = $this->getResponse('html');
@@ -31,7 +31,9 @@ class defaultCtrl extends jController {
         else if ($page=='creationequipe'){$rep->body->assignZone('PRINCIPAL', 'creationequipe');}
         else if ($page=='joindreequipe'){$rep->body->assignZone('PRINCIPAL', 'joindreequipe');}
         else if ($page=='nouveauparticipant'){$rep->body->assignZone('PRINCIPAL', 'nouveauparticipant');}
-        
+        else if ($page=='participantEtat'){$rep->body->assignZone('PRINCIPAL', 'participantetat');}
+        else if ($page=='participantInformations'){$rep->body->assignZone('PRINCIPAL', 'participantinformations');}
+        else if ($page=='participantEquipe'){$rep->body->assignZone('PRINCIPAL', 'participantequipe');}
         else {$rep->body->assignZone('PRINCIPAL', 'accueil');}    
             
         return $rep;
@@ -41,15 +43,29 @@ class defaultCtrl extends jController {
         
         $login=$this->param('login');
         $password=$this->param('password');
-        jAuth::login($login, $password);
+        jAuth::login($login, $password,true);
         
         if (jAuth::isConnected()) {
-            echo "Connexion réussie";
+            //echo "Connexion réussie";
             return $this->accueil();}
-            else{echo "Echec de Connexion";
+            else{
+                //echo "Echec de Connexion";
                 return $this ->erreurConnexion();}
 
-    }/*
+    }
+    
+        function deconnexion (){
+        
+            jAuth::logout();
+ 
+            return $this->index();
+
+
+    }
+    
+    
+    
+    /*
 
     function erreurConnexion(){
         $rep = $this->getResponse('html');
@@ -60,15 +76,16 @@ class defaultCtrl extends jController {
          $rep = $this->getResponse('html');
          $rep->bodyTpl ="main";
          $utilisateur = jAuth::getUserSession();
-         $profil = $utilisateur->profil;
-          if ($profil=='0'){$rep->body->assignZone('PRINCIPAL', 'profiladministrateur');}
+         $profil = $utilisateur->profil; 
+          if ($profil=='0'){$rep->body->assignZone('PRINCIPAL', 'profiladministrateur');
+          }
           else if ($profil=='1'){$rep->body->assignZone('PRINCIPAL', 'profilorganisateur');}
           else if ($profil=='2'){$rep->body->assignZone('PRINCIPAL', 'profilparticipant');}
          return $rep ;
      }
     
     
-    function saveEquipe() {
+    /*function saveEquipe() {
         
         $inscriptionUtilisateur = jDao::get("site_internet~utilisateur");
         $inscriptionParticipant = jDao::get("site_internet~participant");
@@ -183,7 +200,7 @@ class defaultCtrl extends jController {
             
             }  
         
-            }     
+            }   */  
  
 }
 
