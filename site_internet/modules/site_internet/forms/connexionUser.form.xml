@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<form xmlns="http://jelix.org/ns/forms/1.1">
+   
+    <input ref="login" type="email" required="true">
+        <label>E-mail</label>
+        <alert type="required">L'adresse e-mail est obligatoire</alert> 
+    </input> 
+    
+    <secret ref="password" required="true">
+        <label>Mot de passe</label>
+        <hint>Indiquez votre mot de passe</hint>
+        <alert type="required">Le mot de passe est obligatoire</alert>
+    </secret>
+
+<submit ref="submit">
+    <label>Connexion</label>
+</submit>
+
+</form>

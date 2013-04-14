@@ -42,5 +42,5 @@
                     </p>
                 </div>
                 <div class="bloc">
-                    {image "img/raid2012.JPG",array('alt'=>'Raid2012,'class'=>'center')}
+                    {image "img/raid2012.JPG",array('alt'=>'Raid2012','class'=>'center')}
                 </div>

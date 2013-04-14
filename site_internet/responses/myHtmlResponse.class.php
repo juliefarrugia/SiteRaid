@@ -24,7 +24,6 @@ class myHtmlResponse extends jResponseHtml {
         $this->addCssLink(jApp::config()->urlengine['basePath'].'css/jquery-ui.css');
         $this->addJSLink(jApp::config()->urlengine['basePath'].'js/jquery.min.js'); 
         $this->addJSLink(jApp::config()->urlengine['basePath'].'js/jquery-ui.min.js');
-        $this->addJSLink(jApp::config()->urlengine['basePath'].'js/connexion.js');
         $this->addJSLink(jApp::config()->urlengine['basePath'].'js/rejoindre.js');
     }
 

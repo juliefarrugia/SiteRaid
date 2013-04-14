@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dao xmlns="http://jelix.org/ns/dao/1.0">
     <datasources>
-        <primarytable name="participant" realname="participant" primarykey="mailParticipant" />    
+        <primarytable name="participant" realname="participant" primarykey="login" />    
         
     </datasources>
     <record>
-        <property name="mail" fieldname="mail" datatype="varchar" required="true" maxlength="50"/>
+        <property name="login" fieldname="login" datatype="varchar" required="true" maxlength="50"/>
         <property name="nomEquipe" fieldname="nomEquipe" datatype="varchar" required="true" maxlength="50"/>
         <property name="nomParticipant" fieldname="nomParticipant" datatype="varchar" required="true" maxlength="50"/>
         <property name="prenomParticipant" fieldname="prenomParticipant" datatype="varchar" required="true" maxlength="50"/>

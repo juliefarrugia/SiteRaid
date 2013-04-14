@@ -10106,3 +10106,1168 @@ array (   'module' => 'site_internet',   'action' => 'default:connexion',   'log
 	1	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
 
 
+2013-04-11 00:57:01	127.0.0.1	error	2013-04-11 00:57:01	127.0.0.1	[402]	Impossible de se connecter sur localhost (mauvais host, login ou mot de passe ?)	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	96
+	/site_internet/www/index.php
+array ( )
+
+	0	mysqlDbConnection->_connect()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 93
+	1	jDbConnection->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php : 35
+	2	mysqlDbConnection->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jApp.class.php : 240
+	3	jApp::loadPlugin()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDb.class.php : 190
+	4	jDb::_createConnector()	[php] : 
+	5	call_user_func()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jProfiles.class.php : 153
+	6	jProfiles::getOrStoreInPool()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDb.class.php : 120
+	7	jDb::getConnection()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDao.class.php : 41
+	8	jDao::create()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDao.class.php : 62
+	9	jDao::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 99
+	10	jSession::_getDao()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 122
+	11	jSession::daoRead()	[php] : 
+	12	session_start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 81
+	13	jSession::start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 135
+	14	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 00:57:13	127.0.0.1	error	2013-04-11 00:57:13	127.0.0.1	[402]	Impossible de se connecter sur localhost (mauvais host, login ou mot de passe ?)	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	96
+	/site_internet/www/index.php
+array ( )
+
+	0	mysqlDbConnection->_connect()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 93
+	1	jDbConnection->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php : 35
+	2	mysqlDbConnection->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jApp.class.php : 240
+	3	jApp::loadPlugin()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDb.class.php : 190
+	4	jDb::_createConnector()	[php] : 
+	5	call_user_func()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jProfiles.class.php : 153
+	6	jProfiles::getOrStoreInPool()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDb.class.php : 120
+	7	jDb::getConnection()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDao.class.php : 41
+	8	jDao::create()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDao.class.php : 62
+	9	jDao::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 99
+	10	jSession::_getDao()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 122
+	11	jSession::daoRead()	[php] : 
+	12	session_start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 81
+	13	jSession::start()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 135
+	14	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 01:14:40	127.0.0.1	notice	2013-04-11 01:14:40	127.0.0.1	[8]	Undefined index: failed	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/abarrelateral_html_t.php	14
+	/site_internet/www/index.php
+array ( )
+
+	0	template_e116d7c475ded9f24513b1cd2c2174ba()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	1	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	2	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	3	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	4	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	5	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	6	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	7	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	8	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	9	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 01:14:40	127.0.0.1	notice	2013-04-11 01:14:40	127.0.0.1	[8]	Undefined index: isLogged	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/abarrelateral_html_t.php	19
+	/site_internet/www/index.php
+array ( )
+
+	0	template_e116d7c475ded9f24513b1cd2c2174ba()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	1	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	2	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	3	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	4	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	5	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	6	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	7	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	8	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	9	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 01:14:40	127.0.0.1	notice	2013-04-11 01:14:40	127.0.0.1	[8]	Undefined index: login	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/abarrelateral_html_t.php	26
+	/site_internet/www/index.php
+array ( )
+
+	0	template_e116d7c475ded9f24513b1cd2c2174ba()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	1	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	2	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	3	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	4	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	5	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	6	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	7	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	8	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	9	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 01:14:40	127.0.0.1	notice	2013-04-11 01:14:40	127.0.0.1	[8]	Undefined index: showRememberMe	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/abarrelateral_html_t.php	32
+	/site_internet/www/index.php
+array ( )
+
+	0	template_e116d7c475ded9f24513b1cd2c2174ba()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	1	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	2	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	3	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	4	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	5	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	6	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	7	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	8	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	9	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 01:14:46	127.0.0.1	error	2013-04-11 01:14:46	127.0.0.1	[135]	Le plugin de coordination auth est nécessaire, activez le dans la configuration de votre application	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	367
+	/site_internet/www/index.php/jauth/login/in
+array (   'module' => 'jauth',   'action' => 'login:in',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei', )
+
+	0	jCoordinator->getPlugin()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix-modules/jauth/controllers/login.classic.php : 24
+	1	loginCtrl->in()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	2	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 01:15:55	127.0.0.1	notice	2013-04-11 01:15:55	127.0.0.1	[8]	Undefined index: failed	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/abarrelateral_html_t.php	14
+	/site_internet/www/index.php
+array ( )
+
+	0	template_e116d7c475ded9f24513b1cd2c2174ba()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	1	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	2	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	3	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	4	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	5	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	6	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	7	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	8	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	9	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 01:15:55	127.0.0.1	notice	2013-04-11 01:15:55	127.0.0.1	[8]	Undefined index: isLogged	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/abarrelateral_html_t.php	19
+	/site_internet/www/index.php
+array ( )
+
+	0	template_e116d7c475ded9f24513b1cd2c2174ba()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	1	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	2	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	3	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	4	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	5	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	6	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	7	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	8	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	9	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 01:15:55	127.0.0.1	notice	2013-04-11 01:15:55	127.0.0.1	[8]	Undefined index: login	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/abarrelateral_html_t.php	26
+	/site_internet/www/index.php
+array ( )
+
+	0	template_e116d7c475ded9f24513b1cd2c2174ba()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	1	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	2	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	3	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	4	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	5	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	6	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	7	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	8	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	9	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 01:15:55	127.0.0.1	notice	2013-04-11 01:15:55	127.0.0.1	[8]	Undefined index: showRememberMe	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/abarrelateral_html_t.php	32
+	/site_internet/www/index.php
+array ( )
+
+	0	template_e116d7c475ded9f24513b1cd2c2174ba()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	1	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	2	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	3	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	4	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	5	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	6	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	7	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	8	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	9	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 01:19:49	127.0.0.1	warning	2013-04-11 01:19:49	127.0.0.1	[2]	mysql_real_escape_string(): 11 is not a valid MySQL-Link resource	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	157
+	/site_internet/www/index.php
+array ( )
+
+	0	mysql_real_escape_string()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php : 157
+	1	mysqlDbConnection->_quote()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 163
+	2	jDbConnection->quote()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/daos/modules/jelix~jsession~mysql.php : 140
+	3	cDao_jelix_Jx_jsession_Jx_mysql->_getPkWhereClauseForSelect()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 212
+	4	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	5	jSession::daoWrite()	[php] : 
+
+
+2013-04-11 01:19:49	127.0.0.1	warning	2013-04-11 01:19:49	127.0.0.1	[2]	mysql_select_db(): 11 is not a valid MySQL-Link resource	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	107
+	/site_internet/www/index.php
+array ( )
+
+	0	mysql_select_db()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php : 107
+	1	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	2	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 214
+	3	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	4	jSession::daoWrite()	[php] : 
+
+
+2013-04-11 01:19:49	127.0.0.1	warning	2013-04-11 01:19:49	127.0.0.1	[2]	mysql_errno(): 11 is not a valid MySQL-Link resource	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	108
+	/site_internet/www/index.php
+array ( )
+
+	0	mysql_errno()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php : 108
+	1	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	2	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 214
+	3	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	4	jSession::daoWrite()	[php] : 
+
+
+2013-04-11 01:19:49	127.0.0.1	notice	2013-04-11 01:19:49	127.0.0.1	[8]	Undefined index: name	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	111
+	/site_internet/www/index.php
+array ( )
+
+	0	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	1	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 214
+	2	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	3	jSession::daoWrite()	[php] : 
+
+
+2013-04-11 01:20:16	127.0.0.1	warning	2013-04-11 01:20:16	127.0.0.1	[2]	mysql_real_escape_string(): 52 is not a valid MySQL-Link resource	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	157
+	/site_internet/www/index.php
+array ( )
+
+	0	mysql_real_escape_string()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php : 157
+	1	mysqlDbConnection->_quote()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 163
+	2	jDbConnection->quote()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/daos/modules/jelix~jsession~mysql.php : 140
+	3	cDao_jelix_Jx_jsession_Jx_mysql->_getPkWhereClauseForSelect()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 212
+	4	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	5	jSession::daoWrite()	[php] : 
+
+
+2013-04-11 01:20:16	127.0.0.1	warning	2013-04-11 01:20:16	127.0.0.1	[2]	mysql_select_db(): 52 is not a valid MySQL-Link resource	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	107
+	/site_internet/www/index.php
+array ( )
+
+	0	mysql_select_db()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php : 107
+	1	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	2	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 214
+	3	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	4	jSession::daoWrite()	[php] : 
+
+
+2013-04-11 01:20:16	127.0.0.1	warning	2013-04-11 01:20:16	127.0.0.1	[2]	mysql_errno(): 52 is not a valid MySQL-Link resource	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	108
+	/site_internet/www/index.php
+array ( )
+
+	0	mysql_errno()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php : 108
+	1	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	2	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 214
+	3	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	4	jSession::daoWrite()	[php] : 
+
+
+2013-04-11 01:20:16	127.0.0.1	notice	2013-04-11 01:20:16	127.0.0.1	[8]	Undefined index: name	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	111
+	/site_internet/www/index.php
+array ( )
+
+	0	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	1	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 214
+	2	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	3	jSession::daoWrite()	[php] : 
+
+
+2013-04-11 01:20:58	127.0.0.1	notice	2013-04-11 01:20:58	127.0.0.1	[8]	Undefined index: failed	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/abarrelateral_html_t.php	14
+	/site_internet/www/index.php
+array ( )
+
+	0	template_e116d7c475ded9f24513b1cd2c2174ba()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	1	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	2	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	3	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	4	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	5	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	6	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	7	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	8	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	9	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 01:20:58	127.0.0.1	notice	2013-04-11 01:20:58	127.0.0.1	[8]	Undefined index: isLogged	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/abarrelateral_html_t.php	19
+	/site_internet/www/index.php
+array ( )
+
+	0	template_e116d7c475ded9f24513b1cd2c2174ba()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	1	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	2	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	3	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	4	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	5	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	6	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	7	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	8	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	9	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 01:20:58	127.0.0.1	notice	2013-04-11 01:20:58	127.0.0.1	[8]	Undefined index: login	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/abarrelateral_html_t.php	26
+	/site_internet/www/index.php
+array ( )
+
+	0	template_e116d7c475ded9f24513b1cd2c2174ba()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	1	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	2	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	3	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	4	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	5	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	6	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	7	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	8	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	9	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 01:20:58	127.0.0.1	notice	2013-04-11 01:20:58	127.0.0.1	[8]	Undefined index: showRememberMe	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/abarrelateral_html_t.php	32
+	/site_internet/www/index.php
+array ( )
+
+	0	template_e116d7c475ded9f24513b1cd2c2174ba()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	1	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	2	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	3	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	4	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	5	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	6	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	7	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	8	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	9	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 01:22:20	127.0.0.1	notice	2013-04-11 01:22:20	127.0.0.1	[8]	Undefined index: failed	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/abarrelateral_html_t.php	14
+	/site_internet/www/index.php
+array ( )
+
+	0	template_e116d7c475ded9f24513b1cd2c2174ba()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	1	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	2	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	3	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	4	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	5	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	6	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	7	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	8	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	9	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 01:22:20	127.0.0.1	notice	2013-04-11 01:22:20	127.0.0.1	[8]	Undefined index: isLogged	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/abarrelateral_html_t.php	19
+	/site_internet/www/index.php
+array ( )
+
+	0	template_e116d7c475ded9f24513b1cd2c2174ba()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	1	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	2	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	3	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	4	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	5	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	6	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	7	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	8	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	9	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 01:22:20	127.0.0.1	notice	2013-04-11 01:22:20	127.0.0.1	[8]	Undefined index: login	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/abarrelateral_html_t.php	26
+	/site_internet/www/index.php
+array ( )
+
+	0	template_e116d7c475ded9f24513b1cd2c2174ba()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	1	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	2	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	3	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	4	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	5	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	6	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	7	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	8	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	9	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 01:22:20	127.0.0.1	notice	2013-04-11 01:22:20	127.0.0.1	[8]	Undefined index: showRememberMe	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/abarrelateral_html_t.php	32
+	/site_internet/www/index.php
+array ( )
+
+	0	template_e116d7c475ded9f24513b1cd2c2174ba()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	1	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	2	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	3	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	4	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	5	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	6	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	7	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	8	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	9	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 01:22:59	127.0.0.1	notice	2013-04-11 01:22:59	127.0.0.1	[8]	Undefined index: failed	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/abarrelateral_html_t.php	14
+	/site_internet/www/index.php
+array ( )
+
+	0	template_e116d7c475ded9f24513b1cd2c2174ba()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	1	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	2	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	3	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	4	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	5	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	6	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	7	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	8	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	9	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 01:22:59	127.0.0.1	notice	2013-04-11 01:22:59	127.0.0.1	[8]	Undefined index: isLogged	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/abarrelateral_html_t.php	19
+	/site_internet/www/index.php
+array ( )
+
+	0	template_e116d7c475ded9f24513b1cd2c2174ba()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	1	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	2	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	3	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	4	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	5	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	6	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	7	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	8	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	9	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 01:22:59	127.0.0.1	notice	2013-04-11 01:22:59	127.0.0.1	[8]	Undefined index: login	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/abarrelateral_html_t.php	26
+	/site_internet/www/index.php
+array ( )
+
+	0	template_e116d7c475ded9f24513b1cd2c2174ba()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	1	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	2	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	3	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	4	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	5	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	6	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	7	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	8	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	9	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 01:22:59	127.0.0.1	notice	2013-04-11 01:22:59	127.0.0.1	[8]	Undefined index: showRememberMe	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/abarrelateral_html_t.php	32
+	/site_internet/www/index.php
+array ( )
+
+	0	template_e116d7c475ded9f24513b1cd2c2174ba()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	1	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	2	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	3	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	4	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	5	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	6	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	7	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	8	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	9	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 01:25:32	127.0.0.1	notice	2013-04-11 01:25:32	127.0.0.1	[8]	Undefined index: failed	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/abarrelateral_html_t.php	14
+	/site_internet/www/index.php
+array ( )
+
+	0	template_e116d7c475ded9f24513b1cd2c2174ba()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	1	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	2	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	3	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	4	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	5	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	6	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	7	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	8	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	9	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 01:25:32	127.0.0.1	notice	2013-04-11 01:25:32	127.0.0.1	[8]	Undefined index: isLogged	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/abarrelateral_html_t.php	19
+	/site_internet/www/index.php
+array ( )
+
+	0	template_e116d7c475ded9f24513b1cd2c2174ba()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	1	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	2	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	3	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	4	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	5	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	6	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	7	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	8	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	9	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 01:25:32	127.0.0.1	notice	2013-04-11 01:25:32	127.0.0.1	[8]	Undefined index: login	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/abarrelateral_html_t.php	26
+	/site_internet/www/index.php
+array ( )
+
+	0	template_e116d7c475ded9f24513b1cd2c2174ba()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	1	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	2	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	3	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	4	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	5	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	6	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	7	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	8	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	9	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 01:25:32	127.0.0.1	notice	2013-04-11 01:25:32	127.0.0.1	[8]	Undefined index: showRememberMe	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/abarrelateral_html_t.php	32
+	/site_internet/www/index.php
+array ( )
+
+	0	template_e116d7c475ded9f24513b1cd2c2174ba()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	1	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	2	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	3	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	4	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	5	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	6	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	7	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	8	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	9	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 01:25:41	127.0.0.1	notice	2013-04-11 01:25:41	127.0.0.1	[8]	Undefined index: failed	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/abarrelateral_html_t.php	14
+	/site_internet/www/index.php
+array ( )
+
+	0	template_e116d7c475ded9f24513b1cd2c2174ba()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	1	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	2	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	3	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	4	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	5	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	6	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	7	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	8	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	9	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 01:25:41	127.0.0.1	notice	2013-04-11 01:25:41	127.0.0.1	[8]	Undefined index: isLogged	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/abarrelateral_html_t.php	19
+	/site_internet/www/index.php
+array ( )
+
+	0	template_e116d7c475ded9f24513b1cd2c2174ba()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	1	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	2	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	3	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	4	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	5	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	6	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	7	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	8	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	9	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 01:25:41	127.0.0.1	notice	2013-04-11 01:25:41	127.0.0.1	[8]	Undefined index: login	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/abarrelateral_html_t.php	26
+	/site_internet/www/index.php
+array ( )
+
+	0	template_e116d7c475ded9f24513b1cd2c2174ba()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	1	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	2	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	3	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	4	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	5	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	6	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	7	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	8	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	9	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 01:25:41	127.0.0.1	notice	2013-04-11 01:25:41	127.0.0.1	[8]	Undefined index: showRememberMe	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/abarrelateral_html_t.php	32
+	/site_internet/www/index.php
+array ( )
+
+	0	template_e116d7c475ded9f24513b1cd2c2174ba()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	1	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	2	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	3	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	4	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	5	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	6	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	7	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	8	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	9	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 01:57:26	127.0.0.1	error	2013-04-11 01:57:26	127.0.0.1	[307]	Dans le tag image "img/raid2012.JPG",array('alt'=>'Raid2012,'class'=>'center') du template /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/templates/raidsprecedents.tpl, le code php class n'est pas autorisé	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php	707
+	/site_internet/www/index.php/site_internet/?page=raidsprecedents
+array (   'page' => 'raidsprecedents',   'module' => 'site_internet',   'action' => 'default:index', )
+
+	0	jTplCompiler->doError2()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 582
+	1	jTplCompiler->_parseFinal()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 496
+	2	jTplCompiler->_parseFunction()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 291
+	3	jTplCompiler->_callback()	[php] : 
+	4	preg_replace_callback()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 237
+	5	jTplCompiler->compileContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 191
+	6	jTplCompiler->compileString()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 181
+	7	jTplCompiler->compile()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jIncluder.class.php : 103
+	8	jIncluder::inc()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 250
+	9	jTpl->getTemplate()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 278
+	10	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	11	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	12	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	13	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	14	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 125
+	15	jTpl->assignZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php : 24
+	16	defaultCtrl->index()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	17	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 02:31:32	127.0.0.1	error	2013-04-11 02:31:32	127.0.0.1	[305]	Dans le template /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/templates/abarrelateral.tpl, la fin d'un bloc if est manquant	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php	703
+	/site_internet/www/index.php
+array ( )
+
+	0	jTplCompiler->doError1()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 243
+	1	jTplCompiler->compileContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 191
+	2	jTplCompiler->compileString()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 181
+	3	jTplCompiler->compile()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jIncluder.class.php : 103
+	4	jIncluder::inc()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 250
+	5	jTpl->getTemplate()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 278
+	6	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	7	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	8	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	9	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	10	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	11	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	12	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	13	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	14	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 02:46:45	127.0.0.1	warning	2013-04-11 02:46:45	127.0.0.1	[2]	mysql_real_escape_string(): 11 is not a valid MySQL-Link resource	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	157
+	/site_internet/www/index.php
+array ( )
+
+	0	mysql_real_escape_string()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php : 157
+	1	mysqlDbConnection->_quote()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 163
+	2	jDbConnection->quote()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/daos/modules/jelix~jsession~mysql.php : 140
+	3	cDao_jelix_Jx_jsession_Jx_mysql->_getPkWhereClauseForSelect()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 212
+	4	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	5	jSession::daoWrite()	[php] : 
+
+
+2013-04-11 02:46:45	127.0.0.1	warning	2013-04-11 02:46:45	127.0.0.1	[2]	mysql_select_db(): 11 is not a valid MySQL-Link resource	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	107
+	/site_internet/www/index.php
+array ( )
+
+	0	mysql_select_db()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php : 107
+	1	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	2	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 214
+	3	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	4	jSession::daoWrite()	[php] : 
+
+
+2013-04-11 02:46:45	127.0.0.1	warning	2013-04-11 02:46:45	127.0.0.1	[2]	mysql_errno(): 11 is not a valid MySQL-Link resource	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	108
+	/site_internet/www/index.php
+array ( )
+
+	0	mysql_errno()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php : 108
+	1	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	2	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 214
+	3	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	4	jSession::daoWrite()	[php] : 
+
+
+2013-04-11 02:46:45	127.0.0.1	notice	2013-04-11 02:46:45	127.0.0.1	[8]	Undefined index: name	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	111
+	/site_internet/www/index.php
+array ( )
+
+	0	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	1	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 214
+	2	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	3	jSession::daoWrite()	[php] : 
+
+
+2013-04-11 02:47:13	127.0.0.1	warning	2013-04-11 02:47:13	127.0.0.1	[2]	mysql_real_escape_string(): 51 is not a valid MySQL-Link resource	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	157
+	/site_internet/www/index.php
+array ( )
+
+	0	mysql_real_escape_string()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php : 157
+	1	mysqlDbConnection->_quote()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 163
+	2	jDbConnection->quote()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/daos/modules/jelix~jsession~mysql.php : 140
+	3	cDao_jelix_Jx_jsession_Jx_mysql->_getPkWhereClauseForSelect()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 212
+	4	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	5	jSession::daoWrite()	[php] : 
+
+
+2013-04-11 02:47:13	127.0.0.1	warning	2013-04-11 02:47:13	127.0.0.1	[2]	mysql_select_db(): 51 is not a valid MySQL-Link resource	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	107
+	/site_internet/www/index.php
+array ( )
+
+	0	mysql_select_db()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php : 107
+	1	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	2	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 214
+	3	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	4	jSession::daoWrite()	[php] : 
+
+
+2013-04-11 02:47:13	127.0.0.1	warning	2013-04-11 02:47:13	127.0.0.1	[2]	mysql_errno(): 51 is not a valid MySQL-Link resource	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	108
+	/site_internet/www/index.php
+array ( )
+
+	0	mysql_errno()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php : 108
+	1	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	2	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 214
+	3	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	4	jSession::daoWrite()	[php] : 
+
+
+2013-04-11 02:47:13	127.0.0.1	notice	2013-04-11 02:47:13	127.0.0.1	[8]	Undefined index: name	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	111
+	/site_internet/www/index.php
+array ( )
+
+	0	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	1	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 214
+	2	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	3	jSession::daoWrite()	[php] : 
+
+
+2013-04-11 02:48:09	127.0.0.1	error	2013-04-11 02:48:09	127.0.0.1	[132]	Réponse non spécifiée (action site_internet~default:in@classic)	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	197
+	/site_internet/www/index.php/site_internet/default/in
+array (   'module' => 'site_internet',   'action' => 'default:in',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei', )
+
+	0	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 02:49:43	127.0.0.1	error	2013-04-11 02:49:43	127.0.0.1	[132]	Réponse non spécifiée (action site_internet~default:in@classic)	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	197
+	/site_internet/www/index.php/site_internet/default/in
+array (   'module' => 'site_internet',   'action' => 'default:in',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei', )
+
+	0	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 02:53:01	127.0.0.1	error	2013-04-11 02:53:01	127.0.0.1	[132]	Réponse non spécifiée (action site_internet~default:in@classic)	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	197
+	/site_internet/www/index.php/site_internet/default/in
+array (   'module' => 'site_internet',   'action' => 'default:in',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei', )
+
+	0	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 02:54:02	127.0.0.1	error	2013-04-11 02:54:02	127.0.0.1	[132]	Réponse non spécifiée (action site_internet~default:in@classic)	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	197
+	/site_internet/www/index.php/site_internet/default/in
+array (   'module' => 'site_internet',   'action' => 'default:in',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei', )
+
+	0	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 02:54:46	127.0.0.1	error	2013-04-11 02:54:46	127.0.0.1	[132]	Réponse non spécifiée (action site_internet~default:in@classic)	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	197
+	/site_internet/www/index.php/site_internet/default/in
+array (   'module' => 'site_internet',   'action' => 'default:in',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei', )
+
+	0	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 10:18:41	127.0.0.1	error	2013-04-11 10:18:41	127.0.0.1	[132]	Réponse non spécifiée (action site_internet~default:in@classic)	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php	197
+	/site_internet/www/index.php/site_internet/default/in
+array (   'module' => 'site_internet',   'action' => 'default:in',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei', )
+
+	0	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 10:34:25	127.0.0.1	error	2013-04-11 10:34:25	127.0.0.1	[17]	Le sélecteur "site_internet~connexionUser"  ne désigne pas une ressource de type form	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/selector/jSelectorForm.class.php	55
+	/site_internet/www/index.php
+array ( )
+
+	0	jSelectorForm->_createPath()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/selector/jSelectorModule.class.php : 44
+	1	jSelectorModule->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/selector/jSelectorForm.class.php : 32
+	2	jSelectorForm->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/forms/jForms.class.php : 53
+	3	jForms::create()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/zones/abarreLateral.zone.php : 21
+	4	AbarreLateralZone->_prepareTpl()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 223
+	5	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	6	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	7	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	8	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	9	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	10	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	11	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	12	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 10:36:42	127.0.0.1	error	2013-04-11 10:36:42	127.0.0.1	[300]	Dans le template /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/templates/abarrelateral.tpl la syntaxe de balise formfull $CONNEXIONUSER, 'site_internet~connexion@classic est invalide	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php	703
+	/site_internet/www/index.php
+array ( )
+
+	0	jTplCompiler->doError1()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 636
+	1	jTplCompiler->_parseFinal()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 491
+	2	jTplCompiler->_parseFunction()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 291
+	3	jTplCompiler->_callback()	[php] : 
+	4	preg_replace_callback()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 237
+	5	jTplCompiler->compileContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 191
+	6	jTplCompiler->compileString()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 181
+	7	jTplCompiler->compile()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jIncluder.class.php : 103
+	8	jIncluder::inc()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 250
+	9	jTpl->getTemplate()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 278
+	10	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	11	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	12	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	13	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	14	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	15	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	16	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	17	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	18	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 10:38:37	127.0.0.1	error	2013-04-11 10:38:37	127.0.0.1	[300]	Dans le template /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/templates/abarrelateral.tpl la syntaxe de balise formfull $CONNEXIONUSER, 'site_internet~connexion@classic est invalide	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php	703
+	/site_internet/www/index.php
+array ( )
+
+	0	jTplCompiler->doError1()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 636
+	1	jTplCompiler->_parseFinal()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 491
+	2	jTplCompiler->_parseFunction()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 291
+	3	jTplCompiler->_callback()	[php] : 
+	4	preg_replace_callback()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 237
+	5	jTplCompiler->compileContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 191
+	6	jTplCompiler->compileString()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTplCompiler.class.php : 181
+	7	jTplCompiler->compile()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jIncluder.class.php : 103
+	8	jIncluder::inc()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 250
+	9	jTpl->getTemplate()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 278
+	10	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	11	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	12	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	13	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	14	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	15	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	16	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	17	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	18	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 10:39:07	127.0.0.1	notice	2013-04-11 10:39:07	127.0.0.1	[8]	Undefined index: CONNEXIONUSER	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/abarrelateral_html_t.php	14
+	/site_internet/www/index.php
+array ( )
+
+	0	template_e116d7c475ded9f24513b1cd2c2174ba()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	1	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	2	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	3	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	4	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	5	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	6	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	7	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	8	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	9	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 10:39:23	127.0.0.1	notice	2013-04-11 10:39:23	127.0.0.1	[8]	Undefined index: CONNEXIONUSER	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/abarrelateral_html_t.php	14
+	/site_internet/www/index.php
+array ( )
+
+	0	template_e116d7c475ded9f24513b1cd2c2174ba()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	1	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	2	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	3	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	4	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	5	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	6	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	7	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	8	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	9	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 10:40:53	127.0.0.1	notice	2013-04-11 10:40:53	127.0.0.1	[8]	Undefined index: CONNEXIONUSER	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/abarrelateral_html_t.php	14
+	/site_internet/www/index.php
+array ( )
+
+	0	template_e116d7c475ded9f24513b1cd2c2174ba()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	1	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 225
+	2	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	3	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	4	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	5	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	6	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	7	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	8	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	9	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-11 10:47:22	127.0.0.1	warning	2013-04-11 10:47:22	127.0.0.1	[2]	mysql_real_escape_string(): 11 is not a valid MySQL-Link resource	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	157
+	/site_internet/www/index.php
+array ( )
+
+	0	mysql_real_escape_string()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php : 157
+	1	mysqlDbConnection->_quote()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 163
+	2	jDbConnection->quote()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/daos/modules/jelix~jsession~mysql.php : 140
+	3	cDao_jelix_Jx_jsession_Jx_mysql->_getPkWhereClauseForSelect()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 212
+	4	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	5	jSession::daoWrite()	[php] : 
+
+
+2013-04-11 10:47:22	127.0.0.1	warning	2013-04-11 10:47:22	127.0.0.1	[2]	mysql_select_db(): 11 is not a valid MySQL-Link resource	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	107
+	/site_internet/www/index.php
+array ( )
+
+	0	mysql_select_db()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php : 107
+	1	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	2	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 214
+	3	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	4	jSession::daoWrite()	[php] : 
+
+
+2013-04-11 10:47:22	127.0.0.1	warning	2013-04-11 10:47:22	127.0.0.1	[2]	mysql_errno(): 11 is not a valid MySQL-Link resource	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	108
+	/site_internet/www/index.php
+array ( )
+
+	0	mysql_errno()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php : 108
+	1	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	2	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 214
+	3	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	4	jSession::daoWrite()	[php] : 
+
+
+2013-04-11 10:47:22	127.0.0.1	notice	2013-04-11 10:47:22	127.0.0.1	[8]	Undefined index: name	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	111
+	/site_internet/www/index.php
+array ( )
+
+	0	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	1	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 214
+	2	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	3	jSession::daoWrite()	[php] : 
+
+
+2013-04-11 10:49:30	127.0.0.1	warning	2013-04-11 10:49:30	127.0.0.1	[2]	mysql_real_escape_string(): 11 is not a valid MySQL-Link resource	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	157
+	/site_internet/www/index.php
+array ( )
+
+	0	mysql_real_escape_string()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php : 157
+	1	mysqlDbConnection->_quote()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 163
+	2	jDbConnection->quote()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/daos/modules/jelix~jsession~mysql.php : 140
+	3	cDao_jelix_Jx_jsession_Jx_mysql->_getPkWhereClauseForSelect()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 212
+	4	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	5	jSession::daoWrite()	[php] : 
+
+
+2013-04-11 10:49:30	127.0.0.1	warning	2013-04-11 10:49:30	127.0.0.1	[2]	mysql_select_db(): 11 is not a valid MySQL-Link resource	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	107
+	/site_internet/www/index.php
+array ( )
+
+	0	mysql_select_db()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php : 107
+	1	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	2	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 214
+	3	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	4	jSession::daoWrite()	[php] : 
+
+
+2013-04-11 10:49:30	127.0.0.1	warning	2013-04-11 10:49:30	127.0.0.1	[2]	mysql_errno(): 11 is not a valid MySQL-Link resource	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	108
+	/site_internet/www/index.php
+array ( )
+
+	0	mysql_errno()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php : 108
+	1	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	2	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 214
+	3	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	4	jSession::daoWrite()	[php] : 
+
+
+2013-04-11 10:49:30	127.0.0.1	notice	2013-04-11 10:49:30	127.0.0.1	[8]	Undefined index: name	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	111
+	/site_internet/www/index.php
+array ( )
+
+	0	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	1	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 214
+	2	jDaoFactoryBase->get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jSession.class.php : 137
+	3	jSession::daoWrite()	[php] : 
+
+
+2013-04-13 12:06:58	127.0.0.1	error	2013-04-13 12:06:58	127.0.0.1	[403]	Erreur dans la requête (Unknown column 'equipe.mail1' in 'field list'(SELECT `equipe`.`nomEquipe`, `equipe`.`passwordEquipe`, `equipe`.`typeRaid`, `equipe`.`categorieEquipe`, `equipe`.`telEquipe`, `equipe`.`mail1`, `equipe`.`mail2`, `equipe`.`mail3`, `equipe`.`mail4` FROM `equipe` AS `equipe`))	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	117
+	/site_internet/www/index.php
+array ( )
+
+	0	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	1	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 179
+	2	jDaoFactoryBase->findAll()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/zones/abarreLateral.zone.php : 18
+	3	AbarreLateralZone->_prepareTpl()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 223
+	4	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	5	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	6	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	7	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	8	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	9	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	10	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	11	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-13 12:08:09	127.0.0.1	error	2013-04-13 12:08:09	127.0.0.1	[403]	Erreur dans la requête (Unknown column 'equipe.mail1' in 'field list'(SELECT `equipe`.`nomEquipe`, `equipe`.`passwordEquipe`, `equipe`.`typeRaid`, `equipe`.`categorieEquipe`, `equipe`.`telEquipe`, `equipe`.`mail1`, `equipe`.`mail2`, `equipe`.`mail3`, `equipe`.`mail4` FROM `equipe` AS `equipe`))	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	117
+	/site_internet/www/index.php
+array ( )
+
+	0	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	1	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 179
+	2	jDaoFactoryBase->findAll()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/zones/abarreLateral.zone.php : 18
+	3	AbarreLateralZone->_prepareTpl()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 223
+	4	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	5	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	6	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	7	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	8	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	9	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	10	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	11	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-13 12:10:01	127.0.0.1	error	2013-04-13 12:10:01	127.0.0.1	[403]	Erreur dans la requête (Unknown column 'equipe.mail1' in 'field list'(SELECT `equipe`.`nomEquipe`, `equipe`.`passwordEquipe`, `equipe`.`typeRaid`, `equipe`.`categorieEquipe`, `equipe`.`telEquipe`, `equipe`.`mail1`, `equipe`.`mail2`, `equipe`.`mail3`, `equipe`.`mail4` FROM `equipe` AS `equipe`))	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	117
+	/site_internet/www/index.php
+array ( )
+
+	0	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	1	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 179
+	2	jDaoFactoryBase->findAll()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/zones/abarreLateral.zone.php : 18
+	3	AbarreLateralZone->_prepareTpl()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 223
+	4	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	5	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	6	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	7	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	8	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	9	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	10	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	11	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-13 12:12:31	127.0.0.1	error	2013-04-13 12:12:31	127.0.0.1	[403]	Erreur dans la requête (Unknown column 'equipe.mail1' in 'field list'(SELECT `equipe`.`nomEquipe`, `equipe`.`passwordEquipe`, `equipe`.`typeRaid`, `equipe`.`categorieEquipe`, `equipe`.`telEquipe`, `equipe`.`mail1`, `equipe`.`mail2`, `equipe`.`mail3`, `equipe`.`mail4` FROM `equipe` AS `equipe`))	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	117
+	/site_internet/www/index.php
+array ( )
+
+	0	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	1	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 179
+	2	jDaoFactoryBase->findAll()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/zones/abarreLateral.zone.php : 18
+	3	AbarreLateralZone->_prepareTpl()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 223
+	4	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	5	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	6	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	7	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	8	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	9	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	10	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	11	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-13 12:12:58	127.0.0.1	error	2013-04-13 12:12:58	127.0.0.1	[403]	Erreur dans la requête (Unknown column 'equipe.mail1' in 'field list'(SELECT `equipe`.`nomEquipe`, `equipe`.`passwordEquipe`, `equipe`.`typeRaid`, `equipe`.`categorieEquipe`, `equipe`.`telEquipe`, `equipe`.`mail1`, `equipe`.`mail2`, `equipe`.`mail3`, `equipe`.`mail4` FROM `equipe` AS `equipe`))	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/plugins/db/mysql/mysql.dbconnection.php	117
+	/site_internet/www/index.php
+array ( )
+
+	0	mysqlDbConnection->_doQuery()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/db/jDbConnection.class.php : 113
+	1	jDbConnection->query()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/dao/jDaoFactoryBase.class.php : 179
+	2	jDaoFactoryBase->findAll()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/zones/abarreLateral.zone.php : 18
+	3	AbarreLateralZone->_prepareTpl()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 223
+	4	jZone->_createContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 195
+	5	jZone->getContent()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 265
+	6	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	7	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/temp/site_internet/www/compiled/templates/modules/site_internet/main_html_t.php : 11
+	8	template_815d23aade37041c82e89e406d7d0e61()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 284
+	9	jTpl->fetch()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 191
+	10	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	11	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-14 11:36:34	127.0.0.1	error	2013-04-14 11:36:34	127.0.0.1	[17]	Le sélecteur "site_internet~profiladmnistrateur"  ne désigne pas une ressource de type zone	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/selector/jSelectorModule.class.php	90
+	/site_internet/www/index.php/site_internet/default/connexion
+array (   'module' => 'site_internet',   'action' => 'default:connexion',   '__JFORMS_TOKEN__' => '736b058c4d8bd3827e544f21c1553cfc',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei',   'submit' => 'Connexion', )
+
+	0	jSelectorModule->_createPath()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/selector/jSelectorModule.class.php : 44
+	1	jSelectorModule->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 258
+	2	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	3	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 125
+	4	jTpl->assignZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php : 64
+	5	defaultCtrl->accueil()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php : 48
+	6	defaultCtrl->connexion()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	7	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-14 11:36:34	127.0.0.1	warning	2013-04-14 11:36:34	127.0.0.1	[2]	Cannot modify header information - headers already sent by (output started at /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php:47)	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseBasicHtml.class.php	264
+	/site_internet/www/index.php/site_internet/default/connexion
+array (   'module' => 'site_internet',   'action' => 'default:connexion',   '__JFORMS_TOKEN__' => '736b058c4d8bd3827e544f21c1553cfc',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei',   'submit' => 'Connexion', )
+
+	0	header()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseBasicHtml.class.php : 264
+	1	jResponseBasicHtml->outputErrors()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 328
+	2	jCoordinator->handleError()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 299
+	3	jCoordinator->exceptionHandler()	[php] : 
+
+
+2013-04-14 11:36:34	127.0.0.1	warning	2013-04-14 11:36:34	127.0.0.1	[2]	Cannot modify header information - headers already sent by (output started at /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php:47)	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseBasicHtml.class.php	265
+	/site_internet/www/index.php/site_internet/default/connexion
+array (   'module' => 'site_internet',   'action' => 'default:connexion',   '__JFORMS_TOKEN__' => '736b058c4d8bd3827e544f21c1553cfc',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei',   'submit' => 'Connexion', )
+
+	0	header()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseBasicHtml.class.php : 265
+	1	jResponseBasicHtml->outputErrors()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 328
+	2	jCoordinator->handleError()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 299
+	3	jCoordinator->exceptionHandler()	[php] : 
+
+
+2013-04-14 11:37:10	127.0.0.1	error	2013-04-14 11:37:10	127.0.0.1	[17]	Le sélecteur "site_internet~profiladmninistrateur"  ne désigne pas une ressource de type zone	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/selector/jSelectorModule.class.php	90
+	/site_internet/www/index.php/site_internet/default/connexion
+array (   'module' => 'site_internet',   'action' => 'default:connexion',   '__JFORMS_TOKEN__' => '736b058c4d8bd3827e544f21c1553cfc',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei',   'submit' => 'Connexion', )
+
+	0	jSelectorModule->_createPath()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/selector/jSelectorModule.class.php : 44
+	1	jSelectorModule->__construct()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 258
+	2	jZone::_callZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/utils/jZone.class.php : 95
+	3	jZone::get()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/tpl/jTpl.class.php : 125
+	4	jTpl->assignZone()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php : 64
+	5	defaultCtrl->accueil()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php : 48
+	6	defaultCtrl->connexion()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 195
+	7	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-14 11:37:10	127.0.0.1	warning	2013-04-14 11:37:10	127.0.0.1	[2]	Cannot modify header information - headers already sent by (output started at /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php:47)	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseBasicHtml.class.php	264
+	/site_internet/www/index.php/site_internet/default/connexion
+array (   'module' => 'site_internet',   'action' => 'default:connexion',   '__JFORMS_TOKEN__' => '736b058c4d8bd3827e544f21c1553cfc',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei',   'submit' => 'Connexion', )
+
+	0	header()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseBasicHtml.class.php : 264
+	1	jResponseBasicHtml->outputErrors()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 328
+	2	jCoordinator->handleError()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 299
+	3	jCoordinator->exceptionHandler()	[php] : 
+
+
+2013-04-14 11:37:10	127.0.0.1	warning	2013-04-14 11:37:10	127.0.0.1	[2]	Cannot modify header information - headers already sent by (output started at /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php:47)	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseBasicHtml.class.php	265
+	/site_internet/www/index.php/site_internet/default/connexion
+array (   'module' => 'site_internet',   'action' => 'default:connexion',   '__JFORMS_TOKEN__' => '736b058c4d8bd3827e544f21c1553cfc',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei',   'submit' => 'Connexion', )
+
+	0	header()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseBasicHtml.class.php : 265
+	1	jResponseBasicHtml->outputErrors()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 328
+	2	jCoordinator->handleError()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 299
+	3	jCoordinator->exceptionHandler()	[php] : 
+
+
+2013-04-14 11:37:27	127.0.0.1	warning	2013-04-14 11:37:27	127.0.0.1	[2]	Cannot modify header information - headers already sent by (output started at /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php:47)	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jResponse.class.php	144
+	/site_internet/www/index.php/site_internet/default/connexion
+array (   'module' => 'site_internet',   'action' => 'default:connexion',   '__JFORMS_TOKEN__' => '736b058c4d8bd3827e544f21c1553cfc',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei',   'submit' => 'Connexion', )
+
+	0	header()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jResponse.class.php : 144
+	1	jResponse->sendHttpHeaders()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 202
+	2	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	3	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-14 11:37:27	127.0.0.1	warning	2013-04-14 11:37:27	127.0.0.1	[2]	Cannot modify header information - headers already sent by (output started at /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php:47)	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jResponse.class.php	146
+	/site_internet/www/index.php/site_internet/default/connexion
+array (   'module' => 'site_internet',   'action' => 'default:connexion',   '__JFORMS_TOKEN__' => '736b058c4d8bd3827e544f21c1553cfc',   'login' => 'raidhei@hei.fr',   'password' => 'raidhei',   'submit' => 'Connexion', )
+
+	0	header()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jResponse.class.php : 146
+	1	jResponse->sendHttpHeaders()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 202
+	2	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	3	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-14 11:42:52	127.0.0.1	warning	2013-04-14 11:42:52	127.0.0.1	[2]	Cannot modify header information - headers already sent by (output started at /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php:47)	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jResponse.class.php	144
+	/site_internet/www/index.php/site_internet/default/connexion
+array (   'module' => 'site_internet',   'action' => 'default:connexion',   '__JFORMS_TOKEN__' => '736b058c4d8bd3827e544f21c1553cfc',   'login' => 'julie.farrugia@hei.fr',   'password' => 'julie',   'submit' => 'Connexion', )
+
+	0	header()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jResponse.class.php : 144
+	1	jResponse->sendHttpHeaders()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 202
+	2	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	3	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
+2013-04-14 11:42:52	127.0.0.1	warning	2013-04-14 11:42:52	127.0.0.1	[2]	Cannot modify header information - headers already sent by (output started at /Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/modules/site_internet/controllers/default.classic.php:47)	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jResponse.class.php	146
+	/site_internet/www/index.php/site_internet/default/connexion
+array (   'module' => 'site_internet',   'action' => 'default:connexion',   '__JFORMS_TOKEN__' => '736b058c4d8bd3827e544f21c1553cfc',   'login' => 'julie.farrugia@hei.fr',   'password' => 'julie',   'submit' => 'Connexion', )
+
+	0	header()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jResponse.class.php : 146
+	1	jResponse->sendHttpHeaders()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/response/jResponseHtml.class.php : 202
+	2	jResponseHtml->output()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/jelix/lib/jelix/core/jCoordinator.class.php : 204
+	3	jCoordinator->process()	/Users/juliefarrugia/Desktop/Site_internet_Raid_HEI/raid_hei/site_internet/www/index.php : 19
+
+
