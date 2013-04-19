@@ -5,7 +5,7 @@
     <label>Informations concernant le chef d'équipe (Vous)</label>
         
          
-    <input ref="mail" type="email" required="true">
+    <input ref="login" type="email" required="true">
         <label>E-mail</label>
         <alert type="required">L'adresse e-mail est obligatoire</alert> 
         <alert type="invalid">Indiquez une adresse e-mail valide</alert> 
@@ -122,17 +122,17 @@
       <alert type="required">Le type de Raid est obligatoire</alert>
     </menulist>
     
-    <input ref="mail2" type="email">
+    <input ref="login2" type="email">
         <label>E-mail du Participant 1</label>
         <help>Un mail sera envoyé à vos coéquipiers pour les inviter à s'inscrire</help>
     </input>
     
-    <input ref="mail3" type="email">
+    <input ref="login3" type="email">
         <label>E-mail du Participant 2</label>
         <help>Un mail sera envoyé à vos coéquipiers pour les inviter à s'inscrire</help>
     </input> 
     
-    <input ref="mail4" type="email">
+    <input ref="login4" type="email">
         <label>E-mail du Participant 3</label>
         <help>Un mail sera envoyé à vos coéquipiers pour les inviter à s'inscrire</help>
     </input> 

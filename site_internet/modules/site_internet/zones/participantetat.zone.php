@@ -13,5 +13,15 @@ class participantEtatZone extends jZone {
 
     protected function _prepareTpl(){
         //$this->_tpl->assign('foo','bar');
+        
+        $utilisateur = jAuth::getUserSession();
+        $log = $utilisateur->login; 
+
+        $form = jForms::create('site_internet~participantEtat',$log);
+        $form->initFromDao("site_internet~participant");
+        $this->_tpl->assign('ETAT', $form);
+        
+        if ($form=="1"){}
+        else if ($form=="0"){}
     }
 }

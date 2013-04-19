@@ -1,1 +1,0 @@
- <h1>Page admin</h1><br /><br/>

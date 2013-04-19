@@ -13,5 +13,17 @@ class participantEquipeZone extends jZone {
 
     protected function _prepareTpl(){
         //$this->_tpl->assign('foo','bar');
+        
+        $utilisateur = jAuth::getUserSession();
+        $log = $utilisateur->login; 
+        $participantFactory = jDao::get("site_internet~participant");
+        $participant = $participantFactory->get($log);
+        $equipe =$participant->nomEquipe;
+        
+        $form = jForms::create('site_internet~participantEquipe',$equipe);
+        $form->initFromDao("site_internet~equipe");
+        $this->_tpl->assign('EQUIPE', $form);
+
+        
     }
 }

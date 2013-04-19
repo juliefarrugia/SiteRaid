@@ -8,8 +8,8 @@
 * @license    All rights reserved
 */
 
-class profilAdministrateurZone extends jZone {
-    protected $_tplname='profiladministrateur';
+class equipeExpertZone extends jZone {
+    protected $_tplname='equipeexpert';
 
     protected function _prepareTpl(){
         //$this->_tpl->assign('foo','bar');

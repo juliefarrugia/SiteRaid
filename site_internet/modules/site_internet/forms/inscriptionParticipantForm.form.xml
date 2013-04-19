@@ -9,7 +9,7 @@
         <alert type="required">Le nom de l'équipe est obligatoire</alert>  
     </input>
               
-    <input ref="mail" type="email" required="true">
+    <input ref="login" type="email" required="true">
         <label>E-mail</label>
         <alert type="required">L'adresse e-mail est obligatoire</alert> 
         <alert type="invalid">Indiquez une adresse e-mail valide</alert> 

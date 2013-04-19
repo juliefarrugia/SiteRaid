@@ -3,12 +3,10 @@
 class defaultCtrl extends jController {
 
     function index() {
-        
-        //jAuth::logout();
-        $page=$this->param('page');
 
         $rep = $this->getResponse('html');
         $rep->bodyTpl ="main";
+        $page=$this->param('page');
         
         if ($page=='accueil'){$rep->body->assignZone('PRINCIPAL', 'accueil');}
         else if ($page=='evenement'){$rep->body->assignZone('PRINCIPAL', 'evenement');}
@@ -28,12 +26,16 @@ class defaultCtrl extends jController {
         else if ($page=='video'){$rep->body->assignZone('PRINCIPAL', 'video');}
         else if ($page=='contact'){$rep->body->assignZone('PRINCIPAL', 'contact');}
         else if ($page=='inscription'){$rep->body->assignZone('PRINCIPAL', 'inscription');}
-        else if ($page=='creationequipe'){$rep->body->assignZone('PRINCIPAL', 'creationequipe');}
-        else if ($page=='joindreequipe'){$rep->body->assignZone('PRINCIPAL', 'joindreequipe');}
-        else if ($page=='nouveauparticipant'){$rep->body->assignZone('PRINCIPAL', 'nouveauparticipant');}
+        else if ($page=='creationEquipe'){$rep->body->assignZone('PRINCIPAL', 'creationequipe');}
+        else if ($page=='joindreEquipe'){$rep->body->assignZone('PRINCIPAL', 'joindreequipe');}
+        else if ($page=='nouveauParticipant'){$rep->body->assignZone('PRINCIPAL', 'nouveauparticipant');}
         else if ($page=='participantEtat'){$rep->body->assignZone('PRINCIPAL', 'participantetat');}
         else if ($page=='participantInformations'){$rep->body->assignZone('PRINCIPAL', 'participantinformations');}
         else if ($page=='participantEquipe'){$rep->body->assignZone('PRINCIPAL', 'participantequipe');}
+        else if ($page=='profilParticipant'){$rep->body->assignZone('PRINCIPAL', 'profilparticipant');}
+        else if ($page=='recapInscriptions'){$rep->body->assignZone('PRINCIPAL', 'recapinscriptions');}
+        else if ($page=='equipeExpert'){$rep->body->assignZone('PRINCIPAL', 'equipeexpert');}
+        else if ($page=='equipeAventure'){$rep->body->assignZone('PRINCIPAL', 'equipeaventure');}
         else {$rep->body->assignZone('PRINCIPAL', 'accueil');}    
             
         return $rep;
@@ -46,21 +48,14 @@ class defaultCtrl extends jController {
         jAuth::login($login, $password,true);
         
         if (jAuth::isConnected()) {
-            //echo "Connexion réussie";
             return $this->accueil();}
-            else{
-                //echo "Echec de Connexion";
-                return $this ->erreurConnexion();}
-
-    }
+            else{return $this ->erreurConnexion();}
+        }
     
-        function deconnexion (){
+     function deconnexion (){
         
             jAuth::logout();
- 
             return $this->index();
-
-
     }
     
     
@@ -77,28 +72,25 @@ class defaultCtrl extends jController {
          $rep->bodyTpl ="main";
          $utilisateur = jAuth::getUserSession();
          $profil = $utilisateur->profil; 
-          if ($profil=='0'){$rep->body->assignZone('PRINCIPAL', 'profiladministrateur');
-          }
-          else if ($profil=='1'){$rep->body->assignZone('PRINCIPAL', 'profilorganisateur');}
+          if ($profil=='3'||$profil=='1'){$rep->body->assignZone('PRINCIPAL', 'recapinscriptions');}
           else if ($profil=='2'){$rep->body->assignZone('PRINCIPAL', 'profilparticipant');}
          return $rep ;
      }
     
     
-    /*function saveEquipe() {
+    function saveEquipe() {
         
-        $inscriptionUtilisateur = jDao::get("site_internet~utilisateur");
+        $newUser = jAuth::createUserObject ($this->param('login'), $this->param('password'));
+        $newUser->profil = "2";
+        $ok = jAuth::saveNewUser($newUser);
+        
         $inscriptionParticipant = jDao::get("site_internet~participant");
         $inscriptionEquipe = jDao::get("site_internet~equipe");   
         
-        $record1 = jDao::createRecord("site_internet~utilisateur");
         $record = jDao::createRecord("site_internet~participant");
         $record2 = jDao::createRecord("site_internet~equipe");
         
-        $record1->login = $record->login = $this->param('login');
-        $record1->password = $this->param('password');
-        $record1->profil = "2";
-
+        $record->login = $this->param('login');
         $record->nomParticipant= $this->param('nomParticipant');
         $record->prenomParticipant = $this->param('prenomParticipant');
         $record->sexeParticipant = $this->param('sexeParticipant');
@@ -122,8 +114,7 @@ class defaultCtrl extends jController {
         $record2->login4= $this->param('login4');
         
         
-        if ($record->check()&& $record2->check() ) { 
-            $inscriptionUtilisateur->insert($record1);
+        if ($ok==true&&$record->check()&& $record2->check() ) { 
             $inscriptionParticipant->insert($record);
             $inscriptionEquipe->insert($record2);
             
@@ -131,9 +122,7 @@ class defaultCtrl extends jController {
         else { 
             //return $this->addEquipe();
             
-            }  
-        
-            }                    
+            }}                    
             
     function rejoindreEquipe () {
 
@@ -196,11 +185,9 @@ class defaultCtrl extends jController {
             
             return $this->index();}
         else { 
-            //return $this->addParticipant();
+            return $this->body->assignZone('PRINCIPAL', 'creationequipe');
             
-            }  
-        
-            }   */  
+            }}    
  
 }
 

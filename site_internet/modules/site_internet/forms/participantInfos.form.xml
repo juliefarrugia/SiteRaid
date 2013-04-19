@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://jelix.org/ns/forms/1.1">
+              
+    <input ref="login" type="email" required="true">
+        <label>E-mail</label>
+    </input> 
+    
+    <input ref="nomParticipant" required="true">
+        <label>Nom</label> 
+    </input>
+    
+    <input ref="prenomParticipant" required="true">
+        <label>Prénom</label>
+    </input>
+    
+    <input ref="sexeParticipant" required="true">
+      <label>Sexe</label>
+    </input>
+    
+    <input ref="telParticipant" type="string" required="true" minlength="10" maxlength="10">
+        <label>Numéro de portable</label>
+    </input>
+
+    <input ref="statutParticipant" required="true">
+      <label>Statut</label>
+    </input>
+    
+    <input ref="ecole_entreprise" required="true">
+        <label>Nom de votre école ou entreprise</label>
+    </input>
+    
+    <input ref="tailleMaillot" required="true">
+      <label>Taille de maillot</label>
+    </input>
+   
+    <input ref="nomUrgence" required="true">
+        <label>Nom de la personne à contacter en cas d'urgence</label>
+    </input> 
+    
+    <input ref="telUrgence" type="string" required="true" minlength="10" maxlength="10">
+        <label>Numéro de la personne à contacter en cas d'urgence</label>
+    </input>  
+    
+    <menulist ref="velo" required="true">
+      <label>Amenez-vous votre propre VTT ?</label>
+      <item value="1">Oui</item>
+      <item value="0">Non</item>
+    </menulist>
+    
+    <menulist ref="bus" required="true">
+      <label>Venez-vous avec les bus mis à disposition ?</label>
+      <item value="1">Oui</item>
+      <item value="0">Non</item>
+    </menulist>
+
+</form>

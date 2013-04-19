@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://jelix.org/ns/forms/1.1">   
+
+    <input ref="nomEquipe" required="true">
+        <label>Nom de l'équipe</label> 
+    </input>
+    
+    <input ref="telEquipe" type="string" required="true" minlength="10" maxlength="10">
+        <label>Numéro de portable</label>
+    </input>
+    
+    <input ref="typeRaid" required="true">
+      <label>Type de Raid</label>
+    </input>
+    
+    <input ref="login1" type="email">
+        <label>Chef d'Equipe</label>
+    </input>
+    
+    <input ref="login2" type="email">
+        <label>Equipier 1</label>
+    </input>
+    
+    <input ref="login3" type="email">
+        <label>Equipier 2</label>
+    </input> 
+    
+    <input ref="login4" type="email">
+        <label>Equipier 3</label>
+    </input> 
+    
+</form>
