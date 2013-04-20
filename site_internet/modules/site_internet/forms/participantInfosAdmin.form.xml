@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://jelix.org/ns/forms/1.1">
+              
+    <input ref="login" type="email" required="true">
+        <label>E-mail</label>
+    </input> 
+    
+    <input ref="nomParticipant" required="true">
+        <label>Nom</label> 
+    </input>
+    
+    <input ref="prenomParticipant" required="true">
+        <label>Prénom</label>
+    </input>
+    
+    <menulist ref="sexeParticipant" required="true">
+      <label>Sexe</label>
+      <item value="Femme">Feminin</item>
+      <item value="Homme">Masculin</item>
+    </menulist>
+    
+    <input ref="telParticipant" type="string" required="true" minlength="10" maxlength="10">
+        <label>Numéro de portable</label>
+    </input>
+
+    <menulist ref="statutParticipant" required="true">
+      <label>Statut</label>
+      <item value="Etudiant">Etudiant</item>
+      <item value="Salarie">Salarié</item>
+    </menulist>
+    
+    <input ref="ecole_entreprise" required="true">
+        <label>Nom de votre école ou entreprise</label>
+    </input>
+    
+    <menulist ref="tailleMaillot" required="true">
+      <label>Taille de maillot</label>
+      <item value="XS">XS</item>
+      <item value="S">S</item>
+      <item value="M">M</item>
+      <item value="L">L</item>
+      <item value="XL">XL</item>
+    </menulist>
+   
+    <input ref="nomUrgence" required="true">
+        <label>Nom de la personne à contacter en cas d'urgence</label>
+    </input> 
+    
+    <input ref="telUrgence" type="string" required="true" minlength="10" maxlength="10">
+        <label>Numéro de la personne à contacter en cas d'urgence</label>
+    </input>  
+    
+    <menulist ref="velo" required="true">
+      <label>Amenez-vous votre propre VTT ?</label>
+      <item value="1">Oui</item>
+      <item value="0">Non</item>
+    </menulist>
+    
+    <menulist ref="bus" required="true">
+      <label>Venez-vous avec les bus mis à disposition ?</label>
+      <item value="1">Oui</item>
+      <item value="0">Non</item>
+    </menulist>
+    
+    <menulist ref="cheque" required="true">
+      <label>Chèque participation financière</label>
+      <item value="1">Oui</item>
+      <item value="0">Non</item>
+    </menulist>
+    
+    <menulist ref="caution" required="true">
+      <label>Chèque de caution</label>
+      <item value="1">Oui</item>
+      <item value="0">Non</item>
+    </menulist>
+    
+    <menulist ref="certifMedical" required="true">
+      <label>Certificat Médical</label>
+      <item value="1">Oui</item>
+      <item value="0">Non</item>
+    </menulist>
+    
+    <menulist ref="reglement" required="true">
+      <label>Attestation de lecture du réglement</label>
+      <item value="1">Oui</item>
+      <item value="0">Non</item>
+    </menulist>
+
+    <menulist ref="validation" required="true">
+      <label>Validation de l'inscription</label>
+      <item value="1">Oui</item>
+      <item value="0">Non</item>
+    </menulist>
+    
+    <submit ref="submit">
+    <label>Enregistrer les modifications</label>
+    </submit>
+
+</form>

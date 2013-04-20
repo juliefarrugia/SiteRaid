@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<form xmlns="http://jelix.org/ns/forms/1.1">
+    
+  <menulist ref="nomEquipe">
+      <label>Sélectionnez l'équipe à supprimer</label>
+      <datasource dao="site_internet~participant" method="findAll"
+                  labelproperty="nomEquipe" valueproperty="nomEquipe"/>
+  </menulist>
+
+<submit ref="submit">
+    <label>Ok</label>
+</submit>
+
+</form>

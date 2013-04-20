@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<form xmlns="http://jelix.org/ns/forms/1.1">
+    
+  <menulist ref="login">
+      <label>Sélectionnez le participant à modifier</label>
+      <datasource dao="site_internet~participant" method="findAll"
+                  labelproperty="nomParticipant,prenomParticipant" labelseparator=" " valueproperty="login"/>
+  </menulist>
+  
+
+<submit ref="submit">
+    <label>Ok</label>
+</submit>
+
+</form>

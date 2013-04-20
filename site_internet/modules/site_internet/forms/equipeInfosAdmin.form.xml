@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://jelix.org/ns/forms/1.1">   
+
+    <input ref="nomEquipe" required="true">
+        <label>Nom de l'équipe</label> 
+    </input>
+    
+    <input ref="telEquipe" type="string" required="true" minlength="10" maxlength="10">
+        <label>Numéro de portable</label>
+    </input>
+    
+    <menulist ref="typeRaid" required="true">
+      <label>Type de Raid</label>
+      <item value="Aventure">Aventure</item>
+      <item value="Expert">Expert</item>
+    </menulist>
+    
+    <menulist ref="categorieEquipe" required="true">
+      <label>Catégorie</label>
+      <item value="Mixte">Mixte</item>
+      <item value="Feminine">Feminine</item>
+      <item value="Masculine">Masculine</item>
+      <item value="Autre">Hors Catégorie</item>
+    </menulist>
+    
+    <input ref="login1" type="email">
+        <label>Chef d'Equipe</label>
+    </input>
+    
+    <input ref="login2" type="email">
+        <label>Equipier 1</label>
+    </input>
+    
+    <input ref="login3" type="email">
+        <label>Equipier 2</label>
+    </input> 
+    
+    <input ref="login4" type="email">
+        <label>Equipier 3</label>
+    </input> 
+    
+    <submit ref="submit">
+    <label>Enregistrer les modifications</label>
+    </submit>
+</form>

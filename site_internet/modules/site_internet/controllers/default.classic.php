@@ -36,6 +36,9 @@ class defaultCtrl extends jController {
         else if ($page=='recapInscriptions'){$rep->body->assignZone('PRINCIPAL', 'recapinscriptions');}
         else if ($page=='equipeExpert'){$rep->body->assignZone('PRINCIPAL', 'equipeexpert');}
         else if ($page=='equipeAventure'){$rep->body->assignZone('PRINCIPAL', 'equipeaventure');}
+        else if ($page=='modifierParticipant'){$rep->body->assignZone('PRINCIPAL', 'modifierparticipant');}
+        else if ($page=='modifierEquipe'){$rep->body->assignZone('PRINCIPAL', 'modifierequipe');}
+        else if ($page=='ajouterOrganisateur'){$rep->body->assignZone('PRINCIPAL', 'ajouterorganisateur');}
         else {$rep->body->assignZone('PRINCIPAL', 'accueil');}    
             
         return $rep;
@@ -49,7 +52,7 @@ class defaultCtrl extends jController {
         
         if (jAuth::isConnected()) {
             return $this->accueil();}
-            else{return $this ->erreurConnexion();}
+            else{return $this ->erreur();}
         }
     
      function deconnexion (){
@@ -58,11 +61,10 @@ class defaultCtrl extends jController {
             return $this->index();
     }
     
-    
-    
-    /*
+ 
+    /* A CREER !!!!
 
-    function erreurConnexion(){
+    function erreur(){
         $rep = $this->getResponse('html');
         $rep->bodyTpl ="main";
     }*/
@@ -76,9 +78,44 @@ class defaultCtrl extends jController {
           else if ($profil=='2'){$rep->body->assignZone('PRINCIPAL', 'profilparticipant');}
          return $rep ;
      }
-    
-    
-    function saveEquipe() {
+     
+     function chargerParticipant(){
+         
+         $rep = $this->getResponse('html');
+         $rep->bodyTpl ="main";
+         $login=  $this->param('login');
+         $rep->body->assignZone('PRINCIPAL', 'modifierparticipantbis',array('login'=>$login));
+         return $rep ;
+     }
+
+     function chargerEquipe(){
+         
+         $rep = $this->getResponse('html');
+         $rep->bodyTpl ="main";
+         $nomEquipe=  $this->param('nomEquipe');
+         $rep->body->assignZone('PRINCIPAL', 'modifierequipebis',array('nomEquipe'=>$nomEquipe));
+         return $rep ;
+     }
+     
+     function supprimerParticipant(){
+
+        $participantFactory = jDao::get("site_internet~participant");
+        $participantFactory->delete($this->param('login'));
+        
+        return $this->index();
+     }
+     
+     function supprimerEquipe(){
+
+        $equipeFactory = jDao::get("site_internet~equipe");
+        $equipeFactory->delete($this->param('nomEquipe'));
+        
+        return $this->index();
+     }
+
+
+
+     function saveEquipe() {
         
         $newUser = jAuth::createUserObject ($this->param('login'), $this->param('password'));
         $newUser->profil = "2";
@@ -102,6 +139,11 @@ class defaultCtrl extends jController {
         $record->telUrgence = $this->param('telUrgence');
         $record->velo= $this->param('velo');
         $record->bus = $this->param('bus');
+        $record->certifMedical = "0";
+        $record->reglement = "0";
+        $record->cheque = "0";
+        $record->caution = "0";
+        $record->validation = "0";
         $record->nomEquipe = $this->param('nomEquipe');
         
         $record2->nomEquipe = $this->param('nomEquipe');
@@ -120,7 +162,7 @@ class defaultCtrl extends jController {
             
             return $this->index();}
         else { 
-            //return $this->addEquipe();
+            return $this->erreur();
             
             }}                    
             
@@ -140,6 +182,7 @@ class defaultCtrl extends jController {
                 
                 $rep=$this->getResponse('json');
                 $rep->data=array('nomEquipe'=>$equipes[0]->nomEquipe);
+                
                 return $rep;}
             
            else {return null;}} 
@@ -147,20 +190,19 @@ class defaultCtrl extends jController {
     } 
     
     function saveParticipant() {
+        
+        $newUser = jAuth::createUserObject ($this->param('login'), $this->param('password'));
+        $newUser->profil = "2";
+        $ok = jAuth::saveNewUser($newUser);
 
-        $inscriptionUtilisateur = jDao::get("site_internet~utilisateur");
         $inscriptionParticipant = jDao::get("site_internet~participant");
         $inscriptionEquipe = jDao::get("site_internet~equipe");   
-        
-        $record1 = jDao::createRecord("site_internet~utilisateur");
+
         $record = jDao::createRecord("site_internet~participant");
         $record2 = $inscriptionEquipe->get($this->param('nomEquipe'));
         
         $record->nomEquipe = $this->param('nomEquipe');
-        $record1->login = $record->login = $this->param('login');
-        
-        $record1->password = $this->param('password');
-        $record1->profil = "2";
+        $record->login = $this->param('login');
         
         $record->nomParticipant= $this->param('nomParticipant');
         $record->prenomParticipant = $this->param('prenomParticipant');
@@ -173,48 +215,67 @@ class defaultCtrl extends jController {
         $record->telUrgence = $this->param('telUrgence');
         $record->velo= $this->param('velo');
         $record->bus = $this->param('bus');
+        $record->certifMedical = "0";
+        $record->reglement = "0";
+        $record->cheque = "0";
+        $record->caution = "0";
+        $record->validation = "0";
         
         if ($record2->login2==NULL){ $record2->login2= $this->param('login');}
         else if ($record2->login3==NULL){ $record2->login3= $this->param('login');}
         else if ($record2->login4==NULL){ $record2->login4= $this->param('login');}     
         
-        if ($record->check()&& $record2->check() ) { 
-            $inscriptionUtilisateur->insert($record1);
+        if ($ok==true&&$record->check()&& $record2->check() ) { 
             $inscriptionParticipant->insert($record);
             $inscriptionEquipe->update($record2);
             
             return $this->index();}
         else { 
-            return $this->body->assignZone('PRINCIPAL', 'creationequipe');
+            return $this->erreur();
             
             }}    
  
-}
+      function saveParticipantAdmin() {
+          
+         $form=  jForms::fill('site_internet~participantInfosAdmin', $this->param('login'));
+ 
+        if ($form->check()) {
+            $result = $form->prepareDaoFromControls('site_internet~participant');
+            $participantFactory=$result['dao'];
+            $courantparticipant=$result['daorec'];
+            $participantFactory->update($courantparticipant);}
 
+        return $this->index();
+            
+            }     
+            
+       function saveEquipeAdmin() {
+          
+         $form=  jForms::fill('site_internet~equipeInfosAdmin', $this->param('nomEquipe'));
+ 
+        if ($form->check()) {
+            $result = $form->prepareDaoFromControls('site_internet~equipe');
+            $equipeFactory=$result['dao'];
+            $courantequipe=$result['daorec'];
+            $equipeFactory->update($courantequipe);}
 
-        /*<property name="nomEquipe" fieldname="nomEquipe" datatype="varchar" required="true" maxlength="50"/>
-        <property name="passwordEquipe" fieldname="passwordEquipe" datatype="varchar" required="true" maxlength="10"/>
-        <property name="typeRaid" fieldname="typeRaid" datatype="varchar" required="true" maxlength="15"/>
-        <property name="categorieEquipe" fieldname="categorieEquipe" datatype="varchar" required="true" maxlength="15"/>
-        <property name="telEquipe" fieldname="telEquipe" datatype="varchar" required="true" minlength="11" maxlength="11"/>
-        <property name="mailParticipant1" fieldname="mailParticipant1" datatype="varchar" required="true" maxlength="50"/>
-        <property name="mailParticipant2" fieldname="mailParticipant2" datatype="varchar" maxlength="50"/>
-        <property name="mailParticipant3" fieldname="mailParticipant3" datatype="varchar" maxlength="50"/>
-        <property name="mailParticipant4" fieldname="mailParticipant4" datatype="varchar" maxlength="50"/>
-        <property name="nomParticipant1" fieldname="nomParticipant" datatype="varchar"  table="Participant1"/>
-        <property name="prenomParticipant1" fieldname="prenomParticipant" datatype="varchar" required="true" table="Participant1"/>
-        <property name="nomParticipant2" fieldname="nomParticipant" datatype="varchar" table="Participant2"/>
-        <property name="prenomParticipant2" fieldname="prenomParticipant" datatype="varchar" table="Participant2"/>
-        <property name="nomParticipant3" fieldname="nomParticipant" datatype="varchar" table="Participant3"/>
-        <property name="prenomParticipant3" fieldname="prenomParticipant" datatype="varchar" table="Participant3"/>
-        <property name="nomParticipant4" fieldname="nomParticipant" datatype="varchar" table="Participant4"/>
-        <property name="prenomParticipant4" fieldname="prenomParticipant" datatype="varchar" table="Participant4"/>
-         * 
-         * 
-         * 
-         * <primarytable name="equipe" realname="equipe" primarykey="nomEquipe" />
-        <foreigntable name="Participant1" realname="participant" primarykey="mailParticipant" onforeignkey="mailParticipant1"/>
-        <foreigntable name="Participant2" realname="participant" primarykey="mailParticipant" onforeignkey="mailParticipant2"/>
-        <foreigntable name="Participant3" realname="participant" primarykey="mailParticipant" onforeignkey="mailParticipant3"/>
-        <foreigntable name="Participant4" realname="participant" primarykey="mailParticipant" onforeignkey="mailParticipant4"/>
-         */ 
+        return $this->index();
+            
+            }            
+            
+        function saveOrga() {
+        
+        $newUser = jAuth::createUserObject ($this->param('login'), $this->param('password'));
+        $newUser->profil = "1";
+        $ok = jAuth::saveNewUser($newUser);     
+        
+        if ($ok==true) {        
+            return $this->index();}
+        else { 
+            return $this->erreur();}
+            
+            } 
+            
+ }    
+            
+

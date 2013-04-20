@@ -45,7 +45,7 @@
     <menulist ref="statutParticipant" required="true">
       <label>Statut</label>
       <item value="Etudiant">Etudiant</item>
-      <item value="Salarié">Salarié</item>
+      <item value="Salarie">Salarié</item>
       <alert type="required">Le statut est obligatoire</alert>
     </menulist>
     
