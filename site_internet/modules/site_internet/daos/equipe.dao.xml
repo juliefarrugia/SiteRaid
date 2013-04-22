@@ -2,8 +2,6 @@
 <dao xmlns="http://jelix.org/ns/dao/1.0">
     <datasources>
          <primarytable name="equipe" realname="equipe" primarykey="nomEquipe" />
-         
-         
     </datasources>
     <record>
         <property name="nomEquipe" fieldname="nomEquipe" datatype="varchar" required="true" maxlength="50"/>
@@ -24,6 +22,27 @@
         updatepattern="" insertpattern="" selectpattern=""/>-->
     </record>
     <factory>
+        
+     <method name="findAll" type="select">
+         <order>
+             <orderitem property="nomEquipe" way="asc" />
+         </order>
+     </method>
+     
+     <method name="findPlace" type="select">
+         <order>
+             <orderitem property="nomEquipe" way="asc" />
+         </order>
+         <condition logic="OR">
+             <isnull     property="login2"/>
+             <isnull     property="login3"/>
+             <isnull     property="login4"/>
+         </condition>
+     </method>
+     
+      <method name="findSome" type="select">
+         <limit offset="1" count="5"/>
+     </method>
         <!--<method name="findByStage" type="select/selectfirst/delete/update/php">
             <parameter name="" />
             <values>

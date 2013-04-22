@@ -5,6 +5,20 @@
         <label>E-mail</label>
     </input> 
     
+    <secret ref="password" required="true">
+        <label>Mot de passe</label>
+        <hint>Indiquez votre mot de passe</hint>
+        <confirm>Retapez ce mot de passe</confirm>
+        <help>Votre mot de passe doit contenir 10 caractères maximum</help>
+        <alert type="required">Le mot de passe est obligatoire</alert>
+    </secret>
+    
+  <menulist ref="nomEquipe">
+      <label>Equipe</label>
+      <datasource dao="site_internet~equipe" method="findPlace"
+                  labelproperty="nomEquipe" valueproperty="nomEquipe"/>
+  </menulist>
+    
     <input ref="nomParticipant" required="true">
         <label>Nom</label> 
     </input>
@@ -60,16 +74,6 @@
       <label>Venez-vous avec les bus mis à disposition ?</label>
       <item value="1">Oui</item>
       <item value="0">Non</item>
-    </menulist>
-    
-    <menulist ref="prixapayer" required="true">
-      <label>Prix à payer</label>
-      <item value="55">55 euros (sans vélo, avec réduction)</item>
-      <item value="65">65 euros (sans vélo, sans réduction ou avec vélo, avec réduction)</item>
-      <item value="75">75 euros (avec vélo, sans réduction)</item>
-      <item value="100">100 euros (sans vélo, avec réduction)</item>
-      <item value="110">110 euros (sans vélo, sans réduction ou avec vélo, avec réduction)</item>
-      <item value="120">120 euros (avec vélo, sans réduction)</item>
     </menulist>
     
     <menulist ref="cheque" required="true">

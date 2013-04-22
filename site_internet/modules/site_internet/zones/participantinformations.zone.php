@@ -21,8 +21,6 @@ class participantInformationsZone extends jZone {
         $form = jForms::create('site_internet~participantInfos',$log);
         $form->initFromDao("site_internet~participant");
         $this->_tpl->assign('INFOS', $form);
-
-        
         
     }
 }

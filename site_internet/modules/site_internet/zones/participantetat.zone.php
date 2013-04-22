@@ -21,7 +21,6 @@ class participantEtatZone extends jZone {
         $form->initFromDao("site_internet~participant");
         $this->_tpl->assign('ETAT', $form);
         
-        if ($form=="1"){}
-        else if ($form=="0"){}
+        
     }
 }

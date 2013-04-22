@@ -19,7 +19,7 @@ class AbarreLateralZone extends jZone {
         $this->_tpl->assign('CONNEXION', $connexionUser);
         
         $equipeFactory = jDao::get("equipe");
-        $listofAllEquipe = $equipeFactory->findAll();
+        $listofAllEquipe = $equipeFactory->findSome();
         $this->_tpl->assign('ALLEQUIPE', $listofAllEquipe);
         
         $ok=jAuth::isConnected();
@@ -28,7 +28,7 @@ class AbarreLateralZone extends jZone {
         $log = $utilisateur->login;
         $this->_tpl->assign('PROFIL', $profil);
         $this->_tpl->assign('OK', $ok);
-        if ($profil=='3'){$this->_tpl->assign('BIENVENUE', 'Bienvenue administrateur');}
+        if ($profil=='3'){$this->_tpl->assign('BIENVENUE', 'Bienvenue admin');}
         if ($profil=='1'){$this->_tpl->assign('BIENVENUE', 'Bienvenue organisateur');}
         if ($profil=='2'){
          

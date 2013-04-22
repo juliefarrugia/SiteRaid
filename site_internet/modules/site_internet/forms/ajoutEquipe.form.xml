@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://jelix.org/ns/forms/1.1">
-              
+   
+    <group ref="participant" >
+    <label>Informations concernant le chef d'équipe (Vous)</label>
+        
+         
     <input ref="login" type="email" required="true">
         <label>E-mail</label>
     </input> 
+    
+    <secret ref="password" required="true">
+        <label>Mot de passe</label>
+        <hint>Indiquez votre mot de passe</hint>
+        <confirm>Retapez ce mot de passe</confirm>
+        <help>Votre mot de passe doit contenir 10 caractères maximum</help>
+        <alert type="required">Le mot de passe est obligatoire</alert>
+    </secret>
+    
+  <menulist ref="nomEquipe">
+      <label>Equipe</label>
+      <datasource dao="site_internet~equipe" method="findPlace"
+                  labelproperty="nomEquipe" valueproperty="nomEquipe"/>
+  </menulist>
     
     <input ref="nomParticipant" required="true">
         <label>Nom</label> 
@@ -62,16 +80,6 @@
       <item value="0">Non</item>
     </menulist>
     
-    <menulist ref="prixapayer" required="true">
-      <label>Prix à payer</label>
-      <item value="55">55 euros (sans vélo, avec réduction)</item>
-      <item value="65">65 euros (sans vélo, sans réduction ou avec vélo, avec réduction)</item>
-      <item value="75">75 euros (avec vélo, sans réduction)</item>
-      <item value="100">100 euros (sans vélo, avec réduction)</item>
-      <item value="110">110 euros (sans vélo, sans réduction ou avec vélo, avec réduction)</item>
-      <item value="120">120 euros (avec vélo, sans réduction)</item>
-    </menulist>
-    
     <menulist ref="cheque" required="true">
       <label>Chèque participation financière</label>
       <item value="1">Oui</item>
@@ -102,8 +110,58 @@
       <item value="0">Non</item>
     </menulist>
     
-    <submit ref="submit">
-    <label>Enregistrer les modifications</label>
-    </submit>
+    </group>
+    
+    <group ref="equipe">
+    <label>Informations concernant l'équipe</label>    
+    
+    
+    <input ref="nomEquipe" required="true">
+        <label>Nom de l'équipe</label>
+        <alert type="required">Le nom de l'équipe est obligatoire</alert>  
+    </input>
+    
+    <secret ref="passwordEquipe" required="true">
+        <label>Mot de passe de l'équipe</label>
+        <hint>Indiquez le mot de passe de l'équipe</hint>
+        <confirm>Retapez ce mot de passe</confirm>
+        <help>Le mot de passe de l'équipe doit contenir 10 caractères maximum</help>
+        <alert type="required">Le mot de passe de l'équipe est obligatoire</alert>
+    </secret>
+    
+    <input ref="telEquipe" type="string" required="true" minlength="10" maxlength="10">
+        <label>Numéro de portable</label>
+        <help>Ce téléphone est à avoir durant toute la durée de l'épreuve</help>
+        <alert type="required">Le numéro de portable de l'équipe est obligatoire</alert>
+        <alert type="invalid">Indiquez un numéro de téléphone valide</alert> 
+    </input>
+    
+    <menulist ref="typeRaid" required="true">
+      <label>Type de Raid</label>
+      <item value="Aventure">Aventure</item>
+      <item value="Expert">Expert</item>
+      <alert type="required">Le type de Raid est obligatoire</alert>
+    </menulist>
+    
+    <input ref="login2" type="email">
+        <label>E-mail du Participant 1</label>
+        <help>Un mail sera envoyé à vos coéquipiers pour les inviter à s'inscrire</help>
+    </input>
+    
+    <input ref="login3" type="email">
+        <label>E-mail du Participant 2</label>
+        <help>Un mail sera envoyé à vos coéquipiers pour les inviter à s'inscrire</help>
+    </input> 
+    
+    <input ref="login4" type="email">
+        <label>E-mail du Participant 3</label>
+        <help>Un mail sera envoyé à vos coéquipiers pour les inviter à s'inscrire</help>
+    </input> 
+    
+    </group>
+
+<submit ref="submit">
+    <label>Confirmer l'inscription</label>
+</submit>
 
 </form>
