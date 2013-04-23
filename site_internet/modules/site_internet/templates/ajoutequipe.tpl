@@ -2,8 +2,7 @@
 
  <br>
         <br>
-        <fieldset>
+
             <div class="bloc">
                 {formfull $EQUIPE, 'site_internet~saveEquipeBIS@classic'}
             </div>
-        </fieldset>

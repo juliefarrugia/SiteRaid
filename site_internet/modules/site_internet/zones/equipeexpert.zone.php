@@ -13,5 +13,11 @@ class equipeExpertZone extends jZone {
 
     protected function _prepareTpl(){
         //$this->_tpl->assign('foo','bar');
+        
+        $equipeFactory = jDao::get("equipe");
+        $conditions = jDao::createConditions();
+        $conditions->addCondition('typeRaid','=','Expert');
+        $equipesE = $equipeFactory->findBy($conditions);
+        $this->_tpl->assign('ALLEQUIPE', $equipesE);
     }
 }

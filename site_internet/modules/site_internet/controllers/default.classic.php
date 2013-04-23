@@ -46,6 +46,7 @@ class defaultCtrl extends jController {
         else if ($page=='creationEquipe'){$rep->body->assignZone('PRINCIPAL', 'creationequipe');}
         else if ($page=='joindreEquipe'){$rep->body->assignZone('PRINCIPAL', 'joindreequipe');}
         else if ($page=='nouveauParticipant'){$rep->body->assignZone('PRINCIPAL', 'nouveauparticipant');}
+        else if ($page=='mdpOublie'){$rep->body->assignZone('PRINCIPAL', 'mdpoublie');}
 
         else {$rep->body->assignZone('PRINCIPAL', 'accueil');}    
             
@@ -95,12 +96,14 @@ class defaultCtrl extends jController {
          if($profil=='1'){if ($page=='equipeExpert'){$rep->body->assignZone('PRINCIPAL', 'equipeexpert');}
             else if ($page=='equipeAventure'){$rep->body->assignZone('PRINCIPAL', 'equipeaventure');}
             else if ($page=='listingMail'){$rep->body->assignZone('PRINCIPAL', 'listingmail');}
+            else if ($page=='changerMDP'){$rep->body->assignZone('PRINCIPAL', 'changermdp');}
             else {$rep->body->assignZone('PRINCIPAL', 'recapinscriptions');};}
 
          if ($profil=='2'){if ($page=='participantEtat'){$rep->body->assignZone('PRINCIPAL', 'participantetat');}
             else if ($page=='participantInformations'){$rep->body->assignZone('PRINCIPAL', 'participantinformations');}
             else if ($page=='participantEquipe'){$rep->body->assignZone('PRINCIPAL', 'participantequipe');}
             else if ($page=='changerMDP'){$rep->body->assignZone('PRINCIPAL', 'changermdp');}
+            else if ($page=='formContact'){$rep->body->assignZone('PRINCIPAL', 'formcontact');}
             else{$rep->body->assignZone('PRINCIPAL', 'profilparticipant');};}
 
         return $rep ;
@@ -416,6 +419,12 @@ class defaultCtrl extends jController {
          else return $this->erreur(); 
           
       }      
-            
+         
+    function envoyerMailContact(){  }
+    function envoyerMailConfirmerInscription(){  }
+    function envoyerMailEquipeInscription(){  }
+    function envoyerMailMotdepasseOublie(){  }
+    
+      
  }    
             

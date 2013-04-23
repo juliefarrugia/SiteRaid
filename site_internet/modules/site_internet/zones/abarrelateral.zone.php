@@ -19,7 +19,8 @@ class AbarreLateralZone extends jZone {
         $this->_tpl->assign('CONNEXION', $connexionUser);
         
         $equipeFactory = jDao::get("equipe");
-        $listofAllEquipe = $equipeFactory->findSome();
+        //$listofAllEquipe = $equipeFactory->findSome();
+        $listofAllEquipe = $equipeFactory->findAll();
         $this->_tpl->assign('ALLEQUIPE', $listofAllEquipe);
         
         $ok=jAuth::isConnected();

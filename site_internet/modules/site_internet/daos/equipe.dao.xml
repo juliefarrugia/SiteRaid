@@ -41,7 +41,7 @@
      </method>
      
       <method name="findSome" type="select">
-         <limit offset="1" count="5"/>
+         <limit offset="3" count="6"/>
      </method>
         <!--<method name="findByStage" type="select/selectfirst/delete/update/php">
             <parameter name="" />

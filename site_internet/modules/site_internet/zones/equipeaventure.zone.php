@@ -20,6 +20,10 @@ class equipeAventureZone extends jZone {
         $equipesA = $equipeFactory->findBy($conditions);
         $this->_tpl->assign('ALLEQUIPE', $equipesA);
         
+        $participantsFactory = jDao::get("equipe");
+        $participantsA = $participantsFactory->findAll;
+        $this->_tpl->assign('ALLPARTICIPANT', $participantsA);
+        
         
         
     }
