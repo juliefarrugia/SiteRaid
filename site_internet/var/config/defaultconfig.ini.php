@@ -154,16 +154,16 @@ default=messages.log
 ;emailHeaders = "Content-Type: text/plain; charset=UTF-8\nFrom: webmaster@yoursite.com\nX-Mailer: Jelix\nX-Priority: 1 (Highest)\n"
 
 [mailer]
-webmasterEmail="root@localhost"
+webmasterEmail="raid@hei.fr"
 webmasterName=
 
 ; How to send mail : "mail" (mail()), "sendmail" (call sendmail), "smtp" (send directly to a smtp)
 ;                   or "file" (store the mail into a file, in filesDir directory)
-mailerType=mail
+mailerType=smtp
 ; Sets the hostname to use in Message-Id and Received headers
 ; and as default HELO string. If empty, the value returned
 ; by SERVER_NAME is used or 'localhost.localdomain'.
-hostname=
+hostname=raidhei.com
 sendmailPath="/usr/sbin/sendmail"
 
 ; if mailer = file, fill the following parameters
@@ -173,17 +173,17 @@ filesDir="mails/"
 ; if mailer = smtp , fill the following parameters
 
 ; SMTP hosts.  All hosts must be separated by a semicolon : "smtp1.example.com:25;smtp2.example.com"
-smtpHost=localhost
+smtpHost=pod51002.outlook.com
 ; default SMTP server port
-smtpPort=25
+smtpPort=587
 ; secured connection or not. possible values: "", "ssl", "tls"
-smtpSecure=
+smtpSecure=tls
 ; SMTP HELO of the message (Default is hostname)
 smtpHelo=
 ; SMTP authentication
-smtpAuth=off
-smtpUsername=
-smtpPassword=
+smtpAuth=on
+smtpUsername=raid@hei.fr
+smtpPassword=2013ardennes
 ; SMTP server timeout in seconds
 smtpTimeout=10
 

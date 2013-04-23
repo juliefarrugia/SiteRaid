@@ -190,6 +190,34 @@ class defaultCtrl extends jController {
             $inscriptionParticipant->insert($record);
             $inscriptionEquipe->insert($record2);
             
+            if ($record2->login2!=""){
+                $mail = new jMailer();
+                $tpl = $mail->Tpl('site_internet~mailRejoindreEquipe');
+                $tpl->assign('email', $this->param('login2'));
+                $tpl->assign('PRENOM', $this->param('prenomParticipant')); 
+                $tpl->assign('NOM', $this->param('nomParticipant')); 
+                $tpl->assign('EQUIPE', $this->param('nomEquipe')); 
+                $mail->Send();
+            }
+            if ($record2->login3!=""){
+                $mail = new jMailer();
+                $tpl = $mail->Tpl('site_internet~mailRejoindreEquipe');
+                $tpl->assign('email', $this->param('login3'));
+                $tpl->assign('PRENOM', $this->param('prenomParticipant')); 
+                $tpl->assign('NOM', $this->param('nomParticipant')); 
+                $tpl->assign('EQUIPE', $this->param('nomEquipe')); 
+                $mail->Send();  
+            }
+            if ($record2->login4!=""){
+                $mail = new jMailer();
+                $tpl = $mail->Tpl('site_internet~mailRejoindreEquipe');
+                $tpl->assign('email', $this->param('login4'));
+                $tpl->assign('PRENOM', $this->param('prenomParticipant')); 
+                $tpl->assign('NOM', $this->param('nomParticipant')); 
+                $tpl->assign('EQUIPE', $this->param('nomEquipe')); 
+                $mail->Send();
+            }
+            
             return $this->connexion();}
         else { 
             return $this->erreur();
@@ -264,6 +292,11 @@ class defaultCtrl extends jController {
             jAuth::saveNewUser($newUser);
             $inscriptionParticipant->insert($record);
             $inscriptionEquipe->update($record2);
+            
+            $mail = new jMailer();
+            $tpl = $mail->Tpl('site_internet~mailConfirmationInscription');
+            $tpl->assign('email', $record->login);   
+            $mail->Send();
             
             return $this->connexion();}
         else { 
@@ -420,11 +453,37 @@ class defaultCtrl extends jController {
           
       }      
          
-    function envoyerMailContact(){  }
-    function envoyerMailConfirmerInscription(){  }
-    function envoyerMailEquipeInscription(){  }
-    function envoyerMailMotdepasseOublie(){  }
+    function envoyerMailContact(){ 
     
-      
+        $utilisateur = jAuth::getUserSession();
+        $adresse = $utilisateur->login;
+        $name = $utilisateur->nomParticipant;
+        $message=$this->param('message');
+        $object=$this->param('sujet');
+        $mail = new jMailer();
+        $tpl = $mail->Tpl('site_internet~mailcontact');
+        $tpl->assign('adresse', $adresse);
+        $tpl->assign('name', $name);
+        $tpl->assign('message', $message);
+        $tpl->assign('object', $object);
+        $mail->Send();
+        return $this->accueil();
+        
+        }
+    
+    function envoyerMailMotdepasseOublie(){ 
+        
+        $pass=jAuth::getRandomPassword();
+        $adresse=$this->param('login');
+        jAuth::changePassword($adresse,$pass);
+        $mail = new jMailer();
+        $tpl = $mail->Tpl('site_internet~mailMDPoublie');
+        $tpl->assign('email', $adresse);
+        $tpl->assign('MDP', $pass);
+        $mail->Send();
+        return $this->index();
+        
+        }
+    
  }    
             
