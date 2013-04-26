@@ -25,6 +25,8 @@ class myHtmlResponse extends jResponseHtml {
         $this->addJSLink(jApp::config()->urlengine['basePath'].'js/jquery.min.js'); 
         $this->addJSLink(jApp::config()->urlengine['basePath'].'js/jquery-ui.min.js');
         $this->addJSLink(jApp::config()->urlengine['basePath'].'js/rejoindre.js');
+        $this->addJSLink(jApp::config()->urlengine['basePath'].'js/confirmDeleteE.js');
+        $this->addJSLink(jApp::config()->urlengine['basePath'].'js/confirmDeleteP.js');
     }
 
     protected function doAfterActions() {

@@ -9,7 +9,8 @@
         </fieldset>
         <br>
         <fieldset>
-            <div class="bloc">
-                {formfull $EQUIPESUP, 'site_internet~supprimerEquipe@classic'}
-            </div>
+            <div class="bloc"  >
+                
+                    {formfull $EQUIPESUP, 'site_internet~supprimerEquipe@classic'}</div>
+           
         </fieldset>
