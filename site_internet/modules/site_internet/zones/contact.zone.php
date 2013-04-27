@@ -13,5 +13,9 @@ class contactZone extends jZone {
 
     protected function _prepareTpl(){
         //$this->_tpl->assign('foo','bar');
+        
+        $mail = jForms::create("site_internet~contact");
+        $this->_tpl->assign("MAIL", $mail);
+        
     }
 }

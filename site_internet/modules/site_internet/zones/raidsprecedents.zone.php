@@ -11,6 +11,8 @@
 class raidsprecedentsZone extends jZone {
     protected $_tplname='raidsprecedents';
 
+    protected $_useCache = true;
+    
     protected function _prepareTpl(){
         //$this->_tpl->assign('foo','bar');
     }

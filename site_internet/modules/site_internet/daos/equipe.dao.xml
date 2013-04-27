@@ -30,14 +30,15 @@
      </method>
      
      <method name="findPlace" type="select">
+
+         <condition logic="or">
+             <eq     property="login2" value=""/>
+             <eq     property="login3" value=""/>
+             <eq     property="login4" value=""/>
+         </condition>
          <order>
              <orderitem property="nomEquipe" way="asc" />
          </order>
-         <condition logic="OR">
-             <isnull     property="login2"/>
-             <isnull     property="login3"/>
-             <isnull     property="login4"/>
-         </condition>
      </method>
      
       <method name="findSome" type="select">

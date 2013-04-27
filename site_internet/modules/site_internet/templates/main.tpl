@@ -1,6 +1,6 @@
  
     {zone 'site_internet~amenu'}
-
+    
 <div class="corps">
     
      {zone 'site_internet~abarreLateral'}

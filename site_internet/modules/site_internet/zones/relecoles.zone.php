@@ -11,6 +11,8 @@
 class RELEcolesZone extends jZone {
     protected $_tplname='relecoles';
 
+    protected $_useCache = true;
+    
     protected function _prepareTpl(){
         //$this->_tpl->assign('foo','bar');
     }

@@ -11,6 +11,8 @@
 class RELLieuZone extends jZone {
     protected $_tplname='rellieu';
 
+    protected $_useCache = true;
+    
     protected function _prepareTpl(){
         //$this->_tpl->assign('foo','bar');
     }

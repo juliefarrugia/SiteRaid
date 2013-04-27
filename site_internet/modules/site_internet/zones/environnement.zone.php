@@ -11,6 +11,8 @@
 class environnementZone extends jZone {
     protected $_tplname='environnement';
 
+    protected $_useCache = true;
+    
     protected function _prepareTpl(){
         //$this->_tpl->assign('foo','bar');
     }

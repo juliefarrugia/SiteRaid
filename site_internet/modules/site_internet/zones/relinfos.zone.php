@@ -11,6 +11,8 @@
 class RELInfosZone extends jZone {
     protected $_tplname='relinfos';
 
+    protected $_useCache = true;
+    
     protected function _prepareTpl(){
         //$this->_tpl->assign('foo','bar');
     }

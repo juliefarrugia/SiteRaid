@@ -11,6 +11,8 @@
 class equipeZone extends jZone {
     protected $_tplname='equipe';
 
+    protected $_useCache = true;
+    
     protected function _prepareTpl(){
         //$this->_tpl->assign('foo','bar');
     }

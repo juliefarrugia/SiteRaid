@@ -11,6 +11,8 @@
 class photoZone extends jZone {
     protected $_tplname='photo';
 
+    protected $_useCache = true;
+    
     protected function _prepareTpl(){
         //$this->_tpl->assign('foo','bar');
     }

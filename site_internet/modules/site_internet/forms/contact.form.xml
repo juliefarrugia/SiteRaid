@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://jelix.org/ns/forms/1.1">
+   
+    <input ref="nom" required="true">
+        <label>Prénom Nom</label>
+        <alert type="required">Le nom est obligatoire</alert>  
+    </input>
+    
+    <input ref="mail" type="email" required="true">
+        <label>E-mail</label>
+        <alert type="required">L'adresse e-mail est obligatoire</alert> 
+        <alert type="invalid">Indiquez une adresse e-mail valide</alert> 
+    </input> 
+
+    <input ref="sujet" required="true" maxlength="50" minlength="5">
+        <label>Objet</label>
+    </input>
+              
+     <textarea ref="message" required="true" maxlength="500" minlength="20">
+        <label>Message</label>
+     </textarea>
+
+<submit ref="submit">
+    <label>Envoyer le message</label>
+</submit>
+
+</form>

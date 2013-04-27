@@ -11,6 +11,8 @@
 class raidInfosZone extends jZone {
     protected $_tplname='raidinfos';
 
+    protected $_useCache = true;
+    
     protected function _prepareTpl(){
         //$this->_tpl->assign('foo','bar');
     }

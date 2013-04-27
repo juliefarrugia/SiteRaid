@@ -6,7 +6,13 @@
 
 Merci pour votre inscription au Raid HEI 2013, 
 
-Vous pouvez dès à présent vous connecter à votre espace personnel sur notre site internet : www.raidhei.com 
+Vos identifiants personnels de connexion sont : 
+
+            - email : {$email}
+            
+            - mot de passe : {$MDP}
+            
+Vous pouvez dès à présent vous connecter à votre espace personnel sur notre site internet : www.raidhei.com
 
 Vous y trouverez la démarche à suivre pour valider définitivement votre inscription.
 

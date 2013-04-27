@@ -231,3 +231,9 @@ p{
 .noid{
     text-indent: 0;
 }
+
+.face{
+    margin-left: 715px;
+    top: 125px;
+    position: absolute;
+}

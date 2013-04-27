@@ -11,6 +11,8 @@
 class raidEpreuvesZone extends jZone {
     protected $_tplname='raidepreuves';
 
+    protected $_useCache = true;
+    
     protected function _prepareTpl(){
         //$this->_tpl->assign('foo','bar');
     }

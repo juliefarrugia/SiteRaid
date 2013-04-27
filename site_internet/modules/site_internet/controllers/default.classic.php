@@ -26,7 +26,6 @@ class defaultCtrl extends jController {
         $page=$this->param('page');
         
         if ($page=='accueil'){$rep->body->assignZone('PRINCIPAL', 'accueil');}
-        else if ($page=='evenement'){$rep->body->assignZone('PRINCIPAL', 'evenement');}
         else if ($page=='raidLieu'){$rep->body->assignZone('PRINCIPAL', 'raidlieu');}
         else if ($page=='raidInfos'){$rep->body->assignZone('PRINCIPAL', 'raidinfos');}
         else if ($page=='raidMateriel'){$rep->body->assignZone('PRINCIPAL', 'raidmateriel');}
@@ -220,7 +219,8 @@ class defaultCtrl extends jController {
             
             $mail = new jMailer();
             $tpl = $mail->Tpl('site_internet~mailConfirmationInscription');
-            $tpl->assign('email', $record->login);   
+            $tpl->assign('email', $record->login);  
+            $tpl->assign('MDP', $this->param('password'));
             $mail->Send();
             
             if ($record2->login2!=""){
@@ -230,6 +230,7 @@ class defaultCtrl extends jController {
                 $tpl->assign('PRENOM', $this->param('prenomParticipant')); 
                 $tpl->assign('NOM', $this->param('nomParticipant')); 
                 $tpl->assign('EQUIPE', $this->param('nomEquipe')); 
+                $tpl->assign('MDPE', $this->param('passwordEquipe'));
                 $mail->Send();
             }
             if ($record2->login3!=""){
@@ -238,7 +239,8 @@ class defaultCtrl extends jController {
                 $tpl->assign('email', $this->param('login3'));
                 $tpl->assign('PRENOM', $this->param('prenomParticipant')); 
                 $tpl->assign('NOM', $this->param('nomParticipant')); 
-                $tpl->assign('EQUIPE', $this->param('nomEquipe')); 
+                $tpl->assign('EQUIPE', $this->param('nomEquipe'));
+                $tpl->assign('MDPE', $this->param('passwordEquipe'));
                 $mail->Send();  
             }
             if ($record2->login4!=""){
@@ -248,6 +250,7 @@ class defaultCtrl extends jController {
                 $tpl->assign('PRENOM', $this->param('prenomParticipant')); 
                 $tpl->assign('NOM', $this->param('nomParticipant')); 
                 $tpl->assign('EQUIPE', $this->param('nomEquipe')); 
+                $tpl->assign('MDPE', $this->param('passwordEquipe'));
                 $mail->Send();
             }
             
@@ -322,6 +325,7 @@ class defaultCtrl extends jController {
             $mail = new jMailer();
             $tpl = $mail->Tpl('site_internet~mailConfirmationInscription');
             $tpl->assign('email', $record->login);   
+            $tpl->assign('MDP', $this->param('password'));   
             $mail->Send();
             
             return $this->connexion();}
@@ -413,6 +417,7 @@ class defaultCtrl extends jController {
             $mail = new jMailer();
             $tpl = $mail->Tpl('site_internet~mailConfirmationInscription');
             $tpl->assign('email', $record->login);   
+            $tpl->assign('MDP', $this->param('password'));   
             $mail->Send();
             
             return $this->accueil();}
@@ -463,7 +468,8 @@ class defaultCtrl extends jController {
             
             $mail = new jMailer();
             $tpl = $mail->Tpl('site_internet~mailConfirmationInscription');
-            $tpl->assign('email', $record->login);   
+            $tpl->assign('email', $record->login); 
+            $tpl->assign('MDP', $this->param('password'));  
             $mail->Send();
             
             if ($record2->login2!=""){
@@ -473,6 +479,7 @@ class defaultCtrl extends jController {
                 $tpl->assign('PRENOM', $this->param('prenomParticipant')); 
                 $tpl->assign('NOM', $this->param('nomParticipant')); 
                 $tpl->assign('EQUIPE', $this->param('nomEquipe')); 
+                $tpl->assign('MDPE', $this->param('passwordEquipe'));
                 $mail->Send();
             }
             if ($record2->login3!=""){
@@ -482,6 +489,7 @@ class defaultCtrl extends jController {
                 $tpl->assign('PRENOM', $this->param('prenomParticipant')); 
                 $tpl->assign('NOM', $this->param('nomParticipant')); 
                 $tpl->assign('EQUIPE', $this->param('nomEquipe')); 
+                $tpl->assign('MDPE', $this->param('passwordEquipe'));
                 $mail->Send();  
             }
             if ($record2->login4!=""){
@@ -491,6 +499,7 @@ class defaultCtrl extends jController {
                 $tpl->assign('PRENOM', $this->param('prenomParticipant')); 
                 $tpl->assign('NOM', $this->param('nomParticipant')); 
                 $tpl->assign('EQUIPE', $this->param('nomEquipe')); 
+                $tpl->assign('MDPE', $this->param('passwordEquipe'));
                 $mail->Send();
             }
             
@@ -540,8 +549,24 @@ class defaultCtrl extends jController {
         $tpl->assign('MDP', $pass);
         $mail->Send();
         return $this->index();
-        
-        }
+     }
     
+    function envoyerMailContact2(){ 
+    
+        $adresse = $this->param('mail');
+        $name = $this->param('nom');
+        $message=$this->param('message');
+        $object=$this->param('sujet');
+        $mail = new jMailer();
+        $tpl = $mail->Tpl('site_internet~mailcontact');
+        $tpl->assign('adresse', $adresse);
+        $tpl->assign('name', $name);
+        $tpl->assign('message', $message);
+        $tpl->assign('object', $object);
+        $mail->Send();
+        return $this->accueil();
+     }
+            
+        
  }    
             
