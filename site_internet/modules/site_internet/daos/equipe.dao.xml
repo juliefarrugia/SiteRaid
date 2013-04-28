@@ -2,6 +2,11 @@
 <dao xmlns="http://jelix.org/ns/dao/1.0">
     <datasources>
          <primarytable name="equipe" realname="equipe" primarykey="nomEquipe" />
+         <optionalforeigntable name="Participant1" realname="participant" primarykey="login" onforeignkey="login1" />
+         <optionalforeigntable name="Participant2" realname="participant" primarykey="login" onforeignkey="login2" />
+         <optionalforeigntable name="Participant3" realname="participant" primarykey="login" onforeignkey="login3" />
+         <optionalforeigntable name="Participant4" realname="participant" primarykey="login" onforeignkey="login4" />
+
     </datasources>
     <record>
         <property name="nomEquipe" fieldname="nomEquipe" datatype="varchar" required="true" maxlength="50"/>
@@ -13,8 +18,15 @@
         <property name="login2" fieldname="login2" datatype="varchar" maxlength="50"/>
         <property name="login3" fieldname="login3" datatype="varchar" maxlength="50"/>
         <property name="login4" fieldname="login4" datatype="varchar" maxlength="50"/>
+        <property name="nomParticipant1" fieldname="nomParticipant" datatype="varchar" table="Participant1"/>
+        <property name="prenomParticipant1" fieldname="prenomParticipant" datatype="varchar" table="Participant1"/>
+        <property name="nomParticipant2" fieldname="nomParticipant" datatype="varchar" table="Participant2"/>
+        <property name="prenomParticipant2" fieldname="prenomParticipant" datatype="varchar" table="Participant2"/>
+        <property name="nomParticipant3" fieldname="nomParticipant" datatype="varchar" table="Participant3"/>
+        <property name="prenomParticipant3" fieldname="prenomParticipant" datatype="varchar" table="Participant3"/>
+        <property name="nomParticipant4" fieldname="nomParticipant" datatype="varchar" table="Participant4"/>
+        <property name="prenomParticipant4" fieldname="prenomParticipant" datatype="varchar" table="Participant4"/>
 
-       
         
         
         <!--<property name="" fieldname="" datatype="string/int/float/date"

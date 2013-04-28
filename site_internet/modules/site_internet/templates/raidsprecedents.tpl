@@ -25,7 +25,7 @@
                         -  création de deux parcours différents : le parcours aventure et le parcours expert<br/>
                         - nouvelle épreuve : le parcours du combattant<br/>
                         - les kinés font leur apparition<br/><br/>
-                        Pour lire le journal de bord d’un rescapé du Raid, suivez <a href="pdf/carnet_de_bord.pdf" target=_blank>ce lien</a
+                        Pour lire le journal de bord d’un rescapé du Raid, suivez <a href="pdf/carnet_de_bord.pdf" target="_blank">ce lien</a
                     </p>
                 </div>
                 <div class="bloc">

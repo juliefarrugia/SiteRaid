@@ -23,6 +23,8 @@
         <property name="cheque" fieldname="cheque" datatype="tinyint" required="true"/>
         <property name="caution" fieldname="caution" datatype="tinyint" required="true"/>
         <property name="validation" fieldname="validation" datatype="tinyint" required="true"/>
+
+        
         <!--<property name="" fieldname="" datatype="string/int/float/date"
         required="yes" maxlength="" minlength="" regexp="" sequence=""
         updatepattern="" insertpattern="" selectpattern=""/>-->

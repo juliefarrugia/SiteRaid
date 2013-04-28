@@ -13,19 +13,19 @@
       <label>Type de Raid</label>
     </input>
     
-    <input ref="login1" type="email">
+    <input ref="prenomParticipant1">
         <label>Chef d'Equipe</label>
     </input>
     
-    <input ref="login2" type="email">
+    <input ref="prenomParticipant2">
         <label>Equipier 1</label>
     </input>
     
-    <input ref="login3" type="email">
+    <input ref="prenomParticipant3">
         <label>Equipier 2</label>
     </input> 
     
-    <input ref="login4" type="email">
+    <input ref="prenomParticipant4">
         <label>Equipier 3</label>
     </input> 
     

@@ -17,6 +17,8 @@ class defaultCtrl extends jController {
         'saveParticipantBIS'=>array('auth.required'=>true),
         'saveEquipeBIS'=>array('auth.required'=>true),
         'changeMDP'=>array('auth.required'=>true),
+        'envoyerInvit'=>array('auth.required'=>true),
+        'envoyerMailContact'=>array('auth.required'=>true),
      );
 
     function index() {
@@ -566,7 +568,43 @@ class defaultCtrl extends jController {
         $mail->Send();
         return $this->accueil();
      }
+     
+     function envoyerInvit(){
+                
+        $utilisateur = jAuth::getUserSession();
+        $log = $utilisateur->login; 
+        $participantFactory = jDao::get("site_internet~participant");
+        $participant = $participantFactory->get($log);
+        $equipeFactory = jDao::get("site_internet~equipe");
+        $equipe= $equipeFactory->get($participant->nomEquipe);
+        $mail = new jMailer();
+        $tpl = $mail->Tpl('site_internet~mailRejoindreEquipe');
+        $tpl->assign('email', $this->param('mail'));
+        $tpl->assign('PRENOM', $participant->nomParticipant); 
+        $tpl->assign('NOM', $participant->nomParticipant); 
+        $tpl->assign('EQUIPE', $participant->nomEquipe); 
+        $tpl->assign('MDPE', $equipe->passwordEquipe);
+        $mail->Send();
+        return $this->accueil();
+         
+     }
             
         
- }    
+ }    /*
             
+         <property name="nomParticipant1" fieldname="nomParticipant" datatype="varchar" table="Participant1"/>
+        <property name="prenomParticipant1" fieldname="prenomParticipant" datatype="varchar" table="Participant1"/>
+        <property name="nomParticipant2" fieldname="nomParticipant" datatype="varchar" table="Participant2"/>
+        <property name="prenomParticipant2" fieldname="prenomParticipant" datatype="varchar" table="Participant2"/>
+        <property name="nomParticipant3" fieldname="nomParticipant" datatype="varchar" table="Participant3"/>
+        <property name="prenomParticipant3" fieldname="prenomParticipant" datatype="varchar" table="Participant3"/>
+        <property name="nomParticipant4" fieldname="nomParticipant" datatype="varchar" table="Participant4"/>
+        <property name="prenomParticipant4" fieldname="prenomParticipant" datatype="varchar" table="Participant4"/>
+
+
+         <foreigntable name="Participant1" realname="participant" primarykey="login" onforeignkey="login1" />
+         <foreigntable name="Participant2" realname="participant" primarykey="login" onforeignkey="login2" />
+         <foreigntable name="Participant3" realname="participant" primarykey="login" onforeignkey="login3" />
+         <foreigntable name="Participant4" realname="participant" primarykey="login" onforeignkey="login4" />
+
+  */

@@ -23,7 +23,8 @@ Si votre médecin vous autorise à participer au Raid HEI  mais que vous avez de
 
  
 
-- <b>L'attestation de lecture du réglement</b> signée par les 4 membres de l'équipe (disponible dans la rubrique Infos Pratiques)<br><br>
+- <b>L'attestation de lecture du réglement</b> signée par les 4 membres de l'équipe disponible 
+<a href="pdf/attestationlecture.pdf" target="_blank">ici</a> et le règlement (à lire au préablable) disponible <a href="pdf/reglement.pdf" target="_blank">ici</a><br/><br><br>
 
  
 
