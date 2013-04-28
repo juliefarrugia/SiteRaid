@@ -4,7 +4,7 @@
     
   <menulist ref="nomEquipe">
       <label>Sélectionnez l'équipe à modifier</label>
-      <datasource dao="site_internet~participant" method="findAll"
+      <datasource dao="site_internet~equipe" method="findAll"
                   labelproperty="nomEquipe" valueproperty="nomEquipe"/>
   </menulist>
 
