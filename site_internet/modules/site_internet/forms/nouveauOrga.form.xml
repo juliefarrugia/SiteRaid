@@ -2,19 +2,8 @@
 <form xmlns="http://jelix.org/ns/forms/1.1">
               
     <input ref="login" type="email" required="true">
-        <label>E-mail</label>
-        <alert type="required">L'adresse e-mail est obligatoire</alert> 
-        <alert type="invalid">Indiquez une adresse e-mail valide</alert> 
+        <label>E-mail du nouvel organisateur</label>
     </input> 
-    
-    <secret ref="password" required="true">
-        <label>Mot de passe</label>
-        <hint>Indiquez votre mot de passe</hint>
-        <confirm>Retapez ce mot de passe</confirm>
-        <help>Votre mot de passe doit contenir 10 caractères maximum</help>
-        <alert type="required">Le mot de passe est obligatoire</alert>
-    </secret>
-
 
 <submit ref="submit">
     <label>Confirmer l'inscription</label>

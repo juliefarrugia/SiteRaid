@@ -17,6 +17,9 @@ class ajouterOrganisateurZone extends jZone {
          $paramidOrga = $this->param('login',1);
          $orgaCreationForm = jForms::create("site_internet~nouveauOrga", $paramidOrga);
          $this->_tpl->assign("ORGA", $orgaCreationForm);
+         
+        $delOrgaForm = jForms::create("site_internet~delOrga");
+        $this->_tpl->assign("ORGADEL", $delOrgaForm);
         
     }
 }

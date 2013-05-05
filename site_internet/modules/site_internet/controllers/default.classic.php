@@ -19,6 +19,9 @@ class defaultCtrl extends jController {
         'changeMDP'=>array('auth.required'=>true),
         'envoyerInvit'=>array('auth.required'=>true),
         'envoyerMailContact'=>array('auth.required'=>true),
+        'suprimerOrga'=>array('auth.required'=>true),
+        'saveAnnonce'=>array('auth.required'=>true),
+        'supprimerAnnonce'=>array('auth.required'=>true),
      );
 
     function index() {
@@ -90,6 +93,7 @@ class defaultCtrl extends jController {
          $participantFactory = jDao::get("site_internet~participant");
          $participant = $participantFactory->get($log);
          $equipe =$participant->nomEquipe;
+         $annonce=$participant->annonce;
          $equipeFactory = jDao::get("site_internet~equipe");
          $eq= $equipeFactory->get($equipe);
          if($log==($eq->login1)){ $chef="1";};
@@ -116,6 +120,7 @@ class defaultCtrl extends jController {
             else if ($page=='changerMDP'){$rep->body->assignZone('PRINCIPAL', 'changermdp');}
             else if ($page=='formContact'){$rep->body->assignZone('PRINCIPAL', 'formcontact');}
             else if ($chef==1 && $page=='ajouterAnnonce'){$rep->body->assignZone('PRINCIPAL', 'ajouterannonce');}
+            else if ($chef==1 && $annonce=1 && $page=='classerAnnonce'){$rep->body->assignZone('PRINCIPAL', 'classerannonce');}
             else{$rep->body->assignZone('PRINCIPAL', 'profilparticipant');};
             }
 
@@ -140,6 +145,12 @@ class defaultCtrl extends jController {
          $rep->body->assignZone('PRINCIPAL', 'modifierequipebis',array('nomEquipe'=>$nomEquipe));
          return $rep ;
      }
+     
+    function supprimerOrga(){
+        $utilisateurFactory = jDao::get("site_internet~utilisateur");
+        $utilisateurFactory->delete($this->param('login'));
+        return $this->index();
+    }
      
     function supprimerParticipant(){
 
@@ -385,12 +396,18 @@ class defaultCtrl extends jController {
             }            
             
     function saveOrga() {
-        
-        $newUser = jAuth::createUserObject ($this->param('login'), $this->param('password'));
+        $pass=jAuth::getRandomPassword();
+        $adresse=$this->param('login');
+        $newUser = jAuth::createUserObject ($adresse, $pass);
         $newUser->profil = "1";
         $ok = jAuth::saveNewUser($newUser);     
         
-        if ($ok==true) {        
+        if ($ok==true) {  
+            $mail = new jMailer();
+            $tpl = $mail->Tpl('site_internet~mailOrga');
+            $tpl->assign('email', $adresse);
+            $tpl->assign('MDP', $pass);
+            $mail->Send();
             return $this->accueil();}
         else { 
             return $this->erreur();}
@@ -589,7 +606,7 @@ class defaultCtrl extends jController {
         return $this->accueil();
      }
      
-     function envoyerInvit(){
+    function envoyerInvit(){
                 
         $utilisateur = jAuth::getUserSession();
         $log = $utilisateur->login; 
@@ -609,26 +626,51 @@ class defaultCtrl extends jController {
          
      }
      
-     function saveAnnonce(){
+    function saveAnnonce(){
         
         $utilisateur = jAuth::getUserSession();
         $log = $utilisateur->login; 
+        $inscriptionParticipant = jDao::get("site_internet~participant");
         $inscriptionAnnonce = jDao::get("site_internet~annonce");
         $record = jDao::createRecord("site_internet~annonce");
+        $record2 = $inscriptionParticipant->get($log);
         
-        $record->id = $log;
+        $record->login = $log;
         $record->recherche = $this->param('recherche');
         $record->typeRaid = $this->param('typeRaid');
         $record->contact= $this->param('contact');
-        $record->statut = "0";
-        
-        
-        if ($record->check()) { 
-            $inscriptionAnnonce->insert($record);
-            return $this->accueil();}
-        else { 
-            return $this->erreur();}
+        $record->statut = "En cours";
+        $record2->annonce="1";
+
+        $inscriptionAnnonce->insert($record);
+        $inscriptionParticipant->update($record2);
+        return $this->accueil();
+
        
      }
+     
+    function supprimerAnnonce(){
+        
+        $utilisateur = jAuth::getUserSession();
+        $log = $utilisateur->login; 
+        
+        $annoncesFactory = jDao::get("annonce");
+        $conditions = jDao::createConditions();
+        $conditions->addCondition('login','=',$log);
+        $conditions->addCondition('statut','=','En cours');
+        $annonces = $annoncesFactory->findByC($conditions);
+        $id=$annonces->id;
+
+        $inscriptionParticipant = jDao::get("site_internet~participant");
+        $record = $annoncesFactory->get($id);
+        $record2 = $inscriptionParticipant->get($log);
+        
+        $record->statut = "Classee";
+        $record2->annonce="0";
+        
+        $annoncesFactory->update($record);
+        $inscriptionParticipant->update($record2);
+        return $this->accueil();
+    } 
         
  }   

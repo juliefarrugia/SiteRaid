@@ -62,8 +62,8 @@
       <item value="0">Non</item>
     </menulist>
     
-    <menulist ref="prixapayer" required="true">
-      <label>Prix à payer</label>
+    <menulist ref="prixpaye" required="true">
+      <label>Prix payé</label>
       <item value="55">55 euros (sans vélo, avec réduction)</item>
       <item value="65">65 euros (sans vélo, sans réduction ou avec vélo, avec réduction)</item>
       <item value="75">75 euros (avec vélo, sans réduction)</item>

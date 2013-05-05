@@ -17,7 +17,8 @@
         <property name="telUrgence" fieldname="telUrgence" datatype="varchar" required="true" maxlength="11"/>
         <property name="velo" fieldname="velo" datatype="tinyint" required="true"/>
         <property name="bus" fieldname="bus" datatype="tinyint" required="true"/>
-        <property name="prixapayer" fieldname="prixapayer" datatype="int" default="" required="true"/>
+        <property name="prixpaye" fieldname="prixpaye" datatype="int" default=""/>
+        <property name="annonce" fieldname="annonce" datatype="tinyint" default=""/>
         <property name="certifMedical" fieldname="certifMedical" datatype="tinyint" required="true"/>
         <property name="reglement" fieldname="reglement" datatype="tinyint" required="true"/>
         <property name="cheque" fieldname="cheque" datatype="tinyint" required="true"/>

@@ -21,6 +21,12 @@
              <eq property="password" expr="$password" />
          </conditions>
      </method>
+     
+     <method name="findOrga" type="select">
+         <conditions>
+             <eq property="profil" value="1" />
+         </conditions>
+     </method>
 
      <method name="getByLogin" type="selectfirst">
          <parameter name="login" />

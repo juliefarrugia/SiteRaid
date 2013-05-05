@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<form xmlns="http://jelix.org/ns/forms/1.1">
+    
+  <menulist ref="login">
+      <label>Sélectionnez l'organisateur à supprimer</label>
+      <datasource dao="site_internet~utilisateur" method="findOrga"
+                  labelproperty="login" valueproperty="login"/>
+  </menulist>
+  
+
+<submit ref="submit">
+    <label>Confirmer la suppression</label>
+</submit>
+
+</form>
