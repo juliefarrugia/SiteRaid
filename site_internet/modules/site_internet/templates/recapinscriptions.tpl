@@ -40,7 +40,7 @@
 </table> 
 <br>
 <br>
-<br>
+
 <h2>Commande des Maillots</h2><br>
 
 <center><table border="3" frame="box" bordercolor="#000000"  >
@@ -65,3 +65,5 @@
 <td width="50" align="center" bgcolor="#D3D3D3">{$XL}</td>
 </tr>
     </table></center>
+<br>
+<br>

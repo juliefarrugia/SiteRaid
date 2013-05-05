@@ -1,8 +1,6 @@
 $(document).ready(function () {
 
         $("#rejoindreForm").submit( function() {
-       
-           
 
                 var $jUrlAjaxRejoindre =$("#jUrlAjaxRejoindre").val();
 		var $loginE=$("#loginE").val();
@@ -19,13 +17,15 @@ $(document).ready(function () {
 			$("#titleForm2").text("Vous avez rejoins l'équipe "+returnedData.nomEquipe+" !");
 			$("#titleForm2").css("color","green");
 			$("#rejoindreForm").css("display","none");
+                        $("#continuer").css("visibility","visible");
+                        
 
 		});
 	
 	$ajaxRequest.fail(function() {
 			$("#titleForm2").css("color","red");
 			$("#titleForm2").text("Vous n'avez pas rejoins cette équipe. Vérifiez les identifiants et que l'équipe n'est pas déjà complète.");
-                        
+                        $("#continuer").css("visibility","hidden");
 		});
 
 		return false;
