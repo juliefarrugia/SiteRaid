@@ -32,6 +32,7 @@ class recapInscriptionsZone extends jZone {
         $conditions9->addCondition('login','!=',null);
         $conditions11 = jDao::createConditions();
         $conditions11->addCondition('cheque','=','1');
+        
         $conditions12 = jDao::createConditions();
         $conditions12->addCondition('prixpaye','!=',null);
         
@@ -45,10 +46,6 @@ class recapInscriptionsZone extends jZone {
         $conditions16->addCondition('tailleMaillot','=','L');
         $conditions17 = jDao::createConditions();
         $conditions17->addCondition('tailleMaillot','=','XL');
-
-        
-        
-        
         
         $equipeFactory = jDao::get("equipe");
         $conditions3 = jDao::createConditions();
@@ -70,11 +67,19 @@ class recapInscriptionsZone extends jZone {
         $nbequipes = $equipeFactory->countBy($conditions10);
         $nbpayees = $participantFactory->countBy($conditions11);
         
+        $nbprix =$participantFactory->findBy($conditions12);
+        
         $xs = $participantFactory->countBy($conditions13);
         $s = $participantFactory->countBy($conditions14);
         $m = $participantFactory->countBy($conditions15);
         $l = $participantFactory->countBy($conditions16);
         $xl = $participantFactory->countBy($conditions17);
+        
+        $prix =0;
+        foreach ($nbprix as $payee) {
+            $prix=$prix+($payee->prixpaye);
+   }
+        
 
         $this->_tpl->assign('NBPARTICIPANTSE', $nbparticipantse);
         $this->_tpl->assign('NBPARTICIPANTSS', $nbparticipantss);
@@ -87,7 +92,7 @@ class recapInscriptionsZone extends jZone {
         $this->_tpl->assign('NBPARTICIPANTS', $nbparticipants);
         $this->_tpl->assign('NBEQUIPES', $nbequipes);
         $this->_tpl->assign('NBPAYEES', $nbpayees);
-        
+        $this->_tpl->assign('PRIXPAYE', $prix);
         $this->_tpl->assign('XS', $xs);
         $this->_tpl->assign('S', $s);
         $this->_tpl->assign('M', $m);

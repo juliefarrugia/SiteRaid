@@ -28,8 +28,8 @@
 <tr width="100" height="30">
 <td align="right" width="200" bgcolor="#87CEEB">Aventure :</td>
 <td width="50" align="center" bgcolor="#87CEEB">{$NBEQUIPESA}</td>
-<td align="center" width="300" bgcolor="#87CEEB"><b>Montant des inscriptions payées :</b></td>
-<td width="50" align="center" bgcolor="#87CEEB">{$PRIXPAYE}</td>
+<td align="center" width="300" bgcolor="#87CEEB"><b>Montant total des inscriptions payées :</b></td>
+<td width="50" align="center" bgcolor="#87CEEB">{$PRIXPAYE} €</td>
 </tr>
 <tr width="100" height="30">
 <td align="right" width="200" bgcolor="#D3D3D3">Expert :</td>
