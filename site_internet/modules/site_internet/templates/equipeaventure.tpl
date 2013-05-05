@@ -25,6 +25,7 @@
         <td>Validation</td>
     </tr>
     {foreach $ALLPARTICIPANT as $COURANTPARTICIPANT}
+        {if ($COURANTEQUIPE->nomEquipe)==($COURANTPARTICIPANT->nomEquipe)}
     <tr>
         <td>{$COURANTPARTICIPANT->nomParticipant} {$COURANTPARTICIPANT->prenomParticipant}</td>
         <td>{$COURANTPARTICIPANT->sexeParticipant}</td>
@@ -41,6 +42,7 @@
         <td>{$COURANTPARTICIPANT->reglement}</td>
         <td>{$COURANTPARTICIPANT->validation}</td>
     </tr>
+        {/if}
      {/foreach} 
 </table>
       {/foreach}    

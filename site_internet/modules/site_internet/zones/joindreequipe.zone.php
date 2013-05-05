@@ -13,6 +13,14 @@ class joindreEquipeZone extends jZone {
 
     protected function _prepareTpl(){
         //$this->_tpl->assign('foo','bar');
+//        if('site_internet~rejoindreEquipe@classic'==true){
+//                        echo 'ok';
+//        $connect=1;}
+//        else {echo 'non';
+//        $connect=0;
+//        echo 'disconnect';
+//        if ('site_internet~rejoindreEquipe@classic!'){$connect=1;}
+//        $this->_tpl->assign("CONNECT", $connect);
 
     }
 }

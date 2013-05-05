@@ -19,5 +19,9 @@ class equipeExpertZone extends jZone {
         $conditions->addCondition('typeRaid','=','Expert');
         $equipesE = $equipeFactory->findBy($conditions);
         $this->_tpl->assign('ALLEQUIPE', $equipesE);
+        
+        $participantsFactory = jDao::get("participant");
+        $participantsE = $participantsFactory->findAll();
+        $this->_tpl->assign('ALLPARTICIPANT', $participantsE);
     }
 }

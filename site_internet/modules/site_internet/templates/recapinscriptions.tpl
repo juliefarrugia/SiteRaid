@@ -1,41 +1,41 @@
  <h1>Tableau récapitulatif des inscriptions</h1><br /><br/>
  
- <table border="2" frame="border" bordercolor="#000000"  >
+ <table border="3" frame="box" bordercolor="#000000"  >
 <tr width="200" height="30">
-<td width="200" bgcolor="#ADD633">Participants :</td>
-<td width="50" align="center" bgcolor="#ED7F10">{$NBPARTICIPANTS}</td>
-<td width="300" align="center" bgcolor="#ADD633">Participants prenant le bus :</td>
-<td width="50" align="center" bgcolor="#ED7F10">{$NBPARTICIPANTSB}</td>
+<td width="200" bgcolor="#87CEEB"><b>Participants :</b></td>
+<td width="50" align="center" bgcolor="#87CEEB">{$NBPARTICIPANTS}</td>
+<td width="300" align="center" bgcolor="#87CEEB"><b>Participants prenant le bus :</b></td>
+<td width="50" align="center" bgcolor="#87CEEB">{$NBPARTICIPANTSB}</td>
 </tr>
 <tr width="100" height="30">
-<td align="right" bgcolor="#ED7F10" width="200">Etudiants :</td>
-<td width="50" align="center" bgcolor="#ADD633">{$NBPARTICIPANTSE}</td>
-<td align="center" width="300" bgcolor="#ED7F10">Nombre de vélo à louer :</td>
-<td width="50" align="center" bgcolor="#ADD633">{$NBVELOS}</td>
+    <td align="right" bgcolor="#C0C0C0" width="200">Etudiants :</td>
+<td width="50" align="center" bgcolor="#C0C0C0">{$NBPARTICIPANTSE}</td>
+<td align="center" width="300" bgcolor="#C0C0C0"><b>Nombre de vélo à louer :</b></td>
+<td width="50" align="center" bgcolor="#C0C0C0">{$NBVELOS}</td>
 </tr>
 <tr width="100" height="30">
-<td align="right" width="200" bgcolor="#ADD633">Salarié :</td>
-<td width="50" align="center" bgcolor="#ED7F10">{$NBPARTICIPANTSS}</td>
-<td align="center" width="300" bgcolor="#ADD633">Nombre de vélo partant de Lille :</td>
-<td width="50" align="center" bgcolor="#ED7F10">{$NBVELOSLILLE}</td>
+<td align="right" width="200" bgcolor="#87CEEB">Salarié :</td>
+<td width="50" align="center" bgcolor="#87CEEB">{$NBPARTICIPANTSS}</td>
+<td align="center" width="300" bgcolor="#87CEEB"><b>Nombre de vélo partant de Lille :</b></td>
+<td width="50" align="center" bgcolor="#87CEEB">{$NBVELOSLILLE}</td>
 </tr>
 <tr width="100" height="30">
-<td width="200" bgcolor="#ED7F10">Equipes :</td>
-<td width="50" align="center" bgcolor="#ADD633">{$NBEQUIPES}</td>
-<td align="center" width="300" bgcolor="#ED7F10">Inscriptions payées :</td>
-<td width="50" align="center" bgcolor="#ADD633">{$NBPAYEES} / {$NBPARTICIPANTS}</td>
+<td width="200" bgcolor="#C0C0C0"><b>Equipes :</b></td>
+<td width="50" align="center" bgcolor="#C0C0C0">{$NBEQUIPES}</td>
+<td align="center" width="300" bgcolor="#C0C0C0"><b>Inscriptions payées :</b></td>
+<td width="50" align="center" bgcolor="#C0C0C0">{$NBPAYEES} / {$NBPARTICIPANTS}</td>
 </tr>
 <tr width="100" height="30">
-<td align="right" width="200" bgcolor="#ADD633">Aventure :</td>
-<td width="50" align="center" bgcolor="#ED7F10">{$NBEQUIPESA}</td>
-<td align="center" width="300" bgcolor="#ADD633">Inscriptions validées :</td>
-<td width="50" align="center" bgcolor="#ED7F10">{$NBVALIDEES} / {$NBPARTICIPANTS}</td>
+<td align="right" width="200" bgcolor="#87CEEB">Aventure :</td>
+<td width="50" align="center" bgcolor="#87CEEB">{$NBEQUIPESA}</td>
+<td align="center" width="300" bgcolor="#87CEEB"><b>Inscriptions validées :</b></td>
+<td width="50" align="center" bgcolor="#87CEEB">{$NBVALIDEES} / {$NBPARTICIPANTS}</td>
 </tr>
 <tr width="100" height="30">
-<td align="right" width="200" bgcolor="#ED7F10">Expert :</td>
-<td width="50" align="center" bgcolor="#ADD633">{$NBEQUIPESE}</td>
-<td align="center" width="300" bgcolor="#ED7F10"></td>
-<td width="50" align="center" bgcolor="#ADD633"></td>
+<td align="right" width="200" bgcolor="#C0C0C0">Expert :</td>
+<td width="50" align="center" bgcolor="#C0C0C0">{$NBEQUIPESE}</td>
+<td align="center" width="300" bgcolor="#C0C0C0"></td>
+<td width="50" align="center" bgcolor="#C0C0C0"></td>
 </tr>
 </table> 
 <br>

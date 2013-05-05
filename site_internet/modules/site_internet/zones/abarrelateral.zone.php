@@ -27,6 +27,7 @@ class AbarreLateralZone extends jZone {
         $utilisateur = jAuth::getUserSession();
         $profil = $utilisateur->profil; 
         $log = $utilisateur->login;
+      
         $this->_tpl->assign('PROFIL', $profil);
         $this->_tpl->assign('OK', $ok);
         if ($profil=='3'){$this->_tpl->assign('BIENVENUE', 'Bienvenue admin');}
@@ -35,10 +36,12 @@ class AbarreLateralZone extends jZone {
          
         $participantFactory = jDao::get("site_internet~participant");
         $participant = $participantFactory->get($log);
-        
-            
-            
-            $this->_tpl->assign('BIENVENUE', 'Bienvenue '. $participant->prenomParticipant . ' ' . $participant->nomParticipant);}
+        $equipe =$participant->nomEquipe;
+        $equipeFactory = jDao::get("site_internet~equipe");
+        $eq= $equipeFactory->get($equipe);
+        if($log==($eq->login1)){ $chef="1";};
+        $this->_tpl->assign("CHEF", $chef);
+        $this->_tpl->assign('BIENVENUE', 'Bienvenue '. $participant->prenomParticipant . ' ' . $participant->nomParticipant);}
           ;
         
     }

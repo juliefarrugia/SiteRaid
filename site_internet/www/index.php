@@ -1,11 +1,11 @@
 <?php
 /**
-* @package   site_internet
-* @subpackage 
-* @author    your name
-* @copyright 2011 your name
-* @link      http://www.yourwebsite.undefined
-* @license    All rights reserved
+* @package site_internet
+* @subpackage
+* @author Julie Farrugia
+* @copyright 2013 Raid HEI
+* @link http://www.yourwebsite.undefined
+* @license All rights reserved
 */
 
 require ('../application.init.php');
@@ -17,6 +17,3 @@ jApp::loadConfig('index/config.ini.php');
 
 jApp::setCoord(new jCoordinator());
 jApp::coord()->process(new jClassicRequest());
-
-
-

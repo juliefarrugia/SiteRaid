@@ -48,6 +48,7 @@ class defaultCtrl extends jController {
         else if ($page=='joindreEquipe'){$rep->body->assignZone('PRINCIPAL', 'joindreequipe');}
         else if ($page=='nouveauParticipant'){$rep->body->assignZone('PRINCIPAL', 'nouveauparticipant');}
         else if ($page=='mdpOublie'){$rep->body->assignZone('PRINCIPAL', 'mdpoublie');}
+        else if ($page=='petitesAnnonces'){$rep->body->assignZone('PRINCIPAL', 'petitesannonces');}
 
         else {$rep->body->assignZone('PRINCIPAL', 'accueil');}    
             
@@ -85,6 +86,15 @@ class defaultCtrl extends jController {
          $rep->bodyTpl ="main";
          $utilisateur = jAuth::getUserSession();
          $profil = $utilisateur->profil; 
+         $log =$utilisateur->login; 
+         $participantFactory = jDao::get("site_internet~participant");
+         $participant = $participantFactory->get($log);
+         $equipe =$participant->nomEquipe;
+         $equipeFactory = jDao::get("site_internet~equipe");
+         $eq= $equipeFactory->get($equipe);
+         if($log==($eq->login1)){ $chef="1";};
+         
+         
          $page=$this->param('page');
          
          if ($profil=='3'){if ($page=='modifierParticipant'){$rep->body->assignZone('PRINCIPAL', 'modifierparticipant');}
@@ -105,7 +115,9 @@ class defaultCtrl extends jController {
             else if ($page=='participantEquipe'){$rep->body->assignZone('PRINCIPAL', 'participantequipe');}
             else if ($page=='changerMDP'){$rep->body->assignZone('PRINCIPAL', 'changermdp');}
             else if ($page=='formContact'){$rep->body->assignZone('PRINCIPAL', 'formcontact');}
-            else{$rep->body->assignZone('PRINCIPAL', 'profilparticipant');};}
+            else if ($chef==1 && $page=='ajouterAnnonce'){$rep->body->assignZone('PRINCIPAL', 'ajouterannonce');}
+            else{$rep->body->assignZone('PRINCIPAL', 'profilparticipant');};
+            }
 
         return $rep ;
      }
@@ -122,6 +134,7 @@ class defaultCtrl extends jController {
     function chargerEquipe(){
          
          $rep = $this->getResponse('html');
+         
          $rep->bodyTpl ="main";
          $nomEquipe=  $this->param('nomEquipe');
          $rep->body->assignZone('PRINCIPAL', 'modifierequipebis',array('nomEquipe'=>$nomEquipe));
@@ -160,6 +173,7 @@ class defaultCtrl extends jController {
      
     function supprimerEquipe(){
 
+        
         $equipeFactory = jDao::get("site_internet~equipe");
         $nomE=$equipeFactory->get($this->param('nomEquipe'));
         
@@ -263,9 +277,13 @@ class defaultCtrl extends jController {
             }}                    
             
     function rejoindreEquipe () {
+        
+           $equipeFactory = jDao::get("site_internet~equipe");
+           $equipe= $equipeFactory->get($this->param('loginE'));
+           if ($equipe->login2==""||$equipe->login3==""||$equipe->login4=="") {
 
            if (jApp::coord()->request->isAjax()){
-
+               
                $equipeFactory = jDao::get("equipe");
                $conditions= jDao::createConditions();
                $conditions->addCondition('nomEquipe','=',$this->param('loginE'));
@@ -279,7 +297,9 @@ class defaultCtrl extends jController {
                 $rep=$this->getResponse('json');
                 $rep->data=array('nomEquipe'=>$equipes[0]->nomEquipe);
                 
-                return $rep;}
+                
+                return $rep;}}
+           
             
            else {return null;}} 
 
@@ -588,23 +608,27 @@ class defaultCtrl extends jController {
         return $this->accueil();
          
      }
-            
+     
+     function saveAnnonce(){
         
- }    /*
-            
-         <property name="nomParticipant1" fieldname="nomParticipant" datatype="varchar" table="Participant1"/>
-        <property name="prenomParticipant1" fieldname="prenomParticipant" datatype="varchar" table="Participant1"/>
-        <property name="nomParticipant2" fieldname="nomParticipant" datatype="varchar" table="Participant2"/>
-        <property name="prenomParticipant2" fieldname="prenomParticipant" datatype="varchar" table="Participant2"/>
-        <property name="nomParticipant3" fieldname="nomParticipant" datatype="varchar" table="Participant3"/>
-        <property name="prenomParticipant3" fieldname="prenomParticipant" datatype="varchar" table="Participant3"/>
-        <property name="nomParticipant4" fieldname="nomParticipant" datatype="varchar" table="Participant4"/>
-        <property name="prenomParticipant4" fieldname="prenomParticipant" datatype="varchar" table="Participant4"/>
-
-
-         <foreigntable name="Participant1" realname="participant" primarykey="login" onforeignkey="login1" />
-         <foreigntable name="Participant2" realname="participant" primarykey="login" onforeignkey="login2" />
-         <foreigntable name="Participant3" realname="participant" primarykey="login" onforeignkey="login3" />
-         <foreigntable name="Participant4" realname="participant" primarykey="login" onforeignkey="login4" />
-
-  */
+        $utilisateur = jAuth::getUserSession();
+        $log = $utilisateur->login; 
+        $inscriptionAnnonce = jDao::get("site_internet~annonce");
+        $record = jDao::createRecord("site_internet~annonce");
+        
+        $record->id = $log;
+        $record->recherche = $this->param('recherche');
+        $record->typeRaid = $this->param('typeRaid');
+        $record->contact= $this->param('contact');
+        $record->statut = "0";
+        
+        
+        if ($record->check()) { 
+            $inscriptionAnnonce->insert($record);
+            return $this->accueil();}
+        else { 
+            return $this->erreur();}
+       
+     }
+        
+ }   
