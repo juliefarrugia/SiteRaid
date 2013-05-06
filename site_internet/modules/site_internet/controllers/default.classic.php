@@ -74,7 +74,7 @@ class defaultCtrl extends jController {
             jAuth::logout();
             return $this->index();
     }
- 
+   
     function erreur(){
        
         $rep = $this->getResponse('html');
@@ -239,7 +239,7 @@ class defaultCtrl extends jController {
         $record2->typeRaid = $this->param('typeRaid');
         $record2->login1= $this->param('login');
         
-        if ($record->check()&& $record2->check() ) { 
+        if ($record->check()&& $record2->check()) { 
             jAuth::saveNewUser($newUser);
             $inscriptionParticipant->insert($record);
             $inscriptionEquipe->insert($record2);
@@ -655,10 +655,7 @@ class defaultCtrl extends jController {
         $log = $utilisateur->login; 
         
         $annoncesFactory = jDao::get("annonce");
-        $conditions = jDao::createConditions();
-        $conditions->addCondition('login','=',$log);
-        $conditions->addCondition('statut','=','En cours');
-        $annonces = $annoncesFactory->findByC($conditions);
+        $annonces = $annoncesFactory->findByC($log);
         $id=$annonces->id;
 
         $inscriptionParticipant = jDao::get("site_internet~participant");

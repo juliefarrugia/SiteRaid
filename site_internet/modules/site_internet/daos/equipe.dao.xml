@@ -55,9 +55,9 @@
      
      
       <method name="findSome" type="select">
-          <parameter name="count"/>
           <parameter name="offset"/>
-          <limit offset="0" count="6"/>
+          <parameter name="count"/>
+          <limit offset="$offset" count="$count"/>
      </method>
         <!--<method name="findByStage" type="select/selectfirst/delete/update/php">
             <parameter name="" />

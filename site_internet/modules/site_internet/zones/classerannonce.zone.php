@@ -18,10 +18,7 @@ class classerAnnonceZone extends jZone {
         $log = $utilisateur->login; 
         
         $annoncesFactory = jDao::get("annonce");
-        $conditions = jDao::createConditions();
-        $conditions->addCondition('login','=',$log);
-        $conditions->addCondition('statut','=','En cours');
-        $annonces = $annoncesFactory->findByC($conditions);
+        $annonces = $annoncesFactory->findByC($log);
         $this->_tpl->assign('ANNONCE', $annonces);
     }
 }

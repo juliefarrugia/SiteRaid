@@ -4,31 +4,31 @@
     <menulist ref="cheque" required="true">
       <label>Chèque participation financière</label>
       <item value="1">Ok</item>
-      <item value="0">En attente</item>
+      <item value="0">Non reçu</item>
     </menulist>
     
     <menulist ref="caution" required="true">
       <label>Chèque de caution</label>
       <item value="1">Ok</item>
-      <item value="0">En attente</item>
+      <item value="0">Non reçu</item>
     </menulist>
     
     <menulist ref="certifMedical" required="true">
       <label>Certificat Médical</label>
       <item value="1">Ok</item>
-      <item value="0">En attente</item>
+      <item value="0">Non reçu</item>
     </menulist>
     
     <menulist ref="reglement" required="true">
       <label>Attestation de lecture du réglement</label>
       <item value="1">Ok</item>
-      <item value="0">En attente</item>
+      <item value="0">Non reçu</item>
     </menulist>
 
     <menulist ref="validation" required="true">
       <label>Validation de l'inscription</label>
       <item value="1">Ok</item>
-      <item value="0">En attente</item>
+      <item value="0">Non reçu</item>
     </menulist>
 
 </form>

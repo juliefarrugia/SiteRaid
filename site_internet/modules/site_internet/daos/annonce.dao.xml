@@ -17,9 +17,11 @@
     <factory>
         
      <method name="findByC" type="selectfirst">
-         <order>
-             <orderitem property="id" way="asc" />
-         </order>
+         <parameter name="login"/>
+            <conditions logic="and">
+                <eq property="statut" value="En cours" />
+                <eq property="login" expr="$login" />
+            </conditions>
      </method>
         
         <!--<method name="findByStage" type="select/selectfirst/delete/update/php">
