@@ -47,6 +47,9 @@
              <eq     property="login2" value=""/>
              <eq     property="login3" value=""/>
              <eq     property="login4" value=""/>
+             <isnull     property="login2"/>
+             <isnull    property="login3"/>
+             <isnull     property="login4"/>
          </conditions>
          <order>
              <orderitem property="nomEquipe" way="asc" />

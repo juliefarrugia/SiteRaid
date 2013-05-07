@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://jelix.org/ns/forms/1.1">
     
+    <hidden ref="id"/>
+    
     <menulist ref="recherche" required="true">
       <label>Vous recherchez</label>
       <item value="1 Participant">1 Participant</item>

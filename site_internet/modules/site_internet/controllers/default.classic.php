@@ -22,6 +22,7 @@ class defaultCtrl extends jController {
         'suprimerOrga'=>array('auth.required'=>true),
         'saveAnnonce'=>array('auth.required'=>true),
         'supprimerAnnonce'=>array('auth.required'=>true),
+        'modifiermdpequipe'=>array('auth.required'=>true),
      );
 
     function index() {
@@ -227,6 +228,8 @@ class defaultCtrl extends jController {
         $record->telUrgence = $this->param('telUrgence');
         $record->velo= $this->param('velo');
         $record->bus = $this->param('bus');
+        $record->prixpaye="";
+        $record->annonce="";
         $record->certifMedical = "0";
         $record->reglement = "0";
         $record->cheque = "0";
@@ -245,9 +248,11 @@ class defaultCtrl extends jController {
             $inscriptionEquipe->insert($record2);
             
             $mail = new jMailer();
-            $tpl = $mail->Tpl('site_internet~mailConfirmationInscription');
+            $tpl = $mail->Tpl('site_internet~mailConfirmationInscriptionChefEquipe');
             $tpl->assign('email', $record->login);  
             $tpl->assign('MDP', $this->param('password'));
+            $tpl->assign('equipe', $record->nomEquipe); 
+            $tpl->assign('mdpequipe', $record2->passwordEquipe); 
             $mail->Send();
             
             if ($record2->login2!=""){
@@ -340,12 +345,14 @@ class defaultCtrl extends jController {
         $record->telUrgence = $this->param('telUrgence');
         $record->velo= $this->param('velo');
         $record->bus = $this->param('bus');
+        $record->prixpaye="";
+        $record->annonce="";
         $record->certifMedical ="0";
         $record->reglement =" 0";
         $record->cheque ="0";
         $record->caution = "0";
         $record->validation = "0";
-        
+
         if ($record2->login2==NULL){ $record2->login2= $this->param('login');}
         else if ($record2->login3==NULL){ $record2->login3= $this->param('login');}
         else if ($record2->login4==NULL){ $record2->login4= $this->param('login');}     
@@ -416,7 +423,8 @@ class defaultCtrl extends jController {
              
     function saveParticipantBIS() {
         
-        $newUser = jAuth::createUserObject ($this->param('login'), $this->param('password'));
+        $pass=jAuth::getRandomPassword();
+        $newUser = jAuth::createUserObject ($this->param('login'), $pass);
         $newUser->profil = "2";
 
         $inscriptionParticipant = jDao::get("site_internet~participant");
@@ -438,6 +446,8 @@ class defaultCtrl extends jController {
         $record->telUrgence = $this->param('telUrgence');
         $record->velo= $this->param('velo');
         $record->bus = $this->param('bus');
+        $record->prixpaye=$this->param('prixpaye');
+        $record->annonce="";
         $record->certifMedical =$this->param('certifMedical');
         $record->reglement =$this->param('reglement');
         $record->cheque =$this->param('cheque');
@@ -456,7 +466,7 @@ class defaultCtrl extends jController {
             $mail = new jMailer();
             $tpl = $mail->Tpl('site_internet~mailConfirmationInscription');
             $tpl->assign('email', $record->login);   
-            $tpl->assign('MDP', $this->param('password'));   
+            $tpl->assign('MDP', $pass);   
             $mail->Send();
             
             return $this->accueil();}
@@ -467,7 +477,9 @@ class defaultCtrl extends jController {
        
     function saveEquipeBIS() {
         
-        $newUser = jAuth::createUserObject ($this->param('login'), $this->param('password'));
+        $pass=jAuth::getRandomPassword();
+        $pass2=jAuth::getRandomPassword();
+        $newUser = jAuth::createUserObject ($this->param('login'), $pass);
         $newUser->profil = "2";
         
         $inscriptionParticipant = jDao::get("site_internet~participant");
@@ -488,6 +500,8 @@ class defaultCtrl extends jController {
         $record->telUrgence = $this->param('telUrgence');
         $record->velo= $this->param('velo');
         $record->bus = $this->param('bus');
+        $record->prixpaye=$this->param('prixpaye');
+        $record->annonce="";
         $record->certifMedical =$this->param('certifMedical');
         $record->reglement =$this->param('reglement');
         $record->cheque =$this->param('cheque');
@@ -495,7 +509,7 @@ class defaultCtrl extends jController {
         $record->validation = $this->param('validation');
         $record->nomEquipe = $this->param('nomEquipe');
         $record2->nomEquipe = $this->param('nomEquipe');
-        $record2->passwordEquipe = $this->param('passwordEquipe');
+        $record2->passwordEquipe = $pass2;
         $record2->telEquipe= $this->param('telEquipe');
         $record2->typeRaid = $this->param('typeRaid');
         $record2->login1= $this->param('login');
@@ -506,9 +520,11 @@ class defaultCtrl extends jController {
             $inscriptionEquipe->insert($record2);
             
             $mail = new jMailer();
-            $tpl = $mail->Tpl('site_internet~mailConfirmationInscription');
+            $tpl = $mail->Tpl('site_internet~mailConfirmationInscriptionChefEquipe');
             $tpl->assign('email', $record->login); 
-            $tpl->assign('MDP', $this->param('password'));  
+            $tpl->assign('MDP', $pass);  
+            $tpl->assign('equipe', $record->nomEquipe); 
+            $tpl->assign('mdpequipe', $pass2); 
             $mail->Send();
             
             if ($record2->login2!=""){
@@ -518,7 +534,7 @@ class defaultCtrl extends jController {
                 $tpl->assign('PRENOM', $this->param('prenomParticipant')); 
                 $tpl->assign('NOM', $this->param('nomParticipant')); 
                 $tpl->assign('EQUIPE', $this->param('nomEquipe')); 
-                $tpl->assign('MDPE', $this->param('passwordEquipe'));
+                $tpl->assign('MDPE', $pass2);
                 $mail->Send();
             }
             if ($record2->login3!=""){
@@ -528,7 +544,7 @@ class defaultCtrl extends jController {
                 $tpl->assign('PRENOM', $this->param('prenomParticipant')); 
                 $tpl->assign('NOM', $this->param('nomParticipant')); 
                 $tpl->assign('EQUIPE', $this->param('nomEquipe')); 
-                $tpl->assign('MDPE', $this->param('passwordEquipe'));
+                $tpl->assign('MDPE', $pass2);
                 $mail->Send();  
             }
             if ($record2->login4!=""){
@@ -538,7 +554,7 @@ class defaultCtrl extends jController {
                 $tpl->assign('PRENOM', $this->param('prenomParticipant')); 
                 $tpl->assign('NOM', $this->param('nomParticipant')); 
                 $tpl->assign('EQUIPE', $this->param('nomEquipe')); 
-                $tpl->assign('MDPE', $this->param('passwordEquipe'));
+                $tpl->assign('MDPE', $pass2);
                 $mail->Send();
             }
             
@@ -563,13 +579,17 @@ class defaultCtrl extends jController {
     
         $utilisateur = jAuth::getUserSession();
         $adresse = $utilisateur->login;
-        $name = $utilisateur->nomParticipant;
+        $participantFactory = jDao::get("site_internet~participant");
+        $participant = $participantFactory->get($adresse);
+        $name = $participant->nomParticipant;
+        $prenom = $participant->prenomParticipant;
         $message=$this->param('message');
         $object=$this->param('sujet');
         $mail = new jMailer();
         $tpl = $mail->Tpl('site_internet~mailcontact');
         $tpl->assign('adresse', $adresse);
         $tpl->assign('name', $name);
+        $tpl->assign('prenom', $prenom);
         $tpl->assign('message', $message);
         $tpl->assign('object', $object);
         $mail->Send();
@@ -594,16 +614,18 @@ class defaultCtrl extends jController {
     
         $adresse = $this->param('mail');
         $name = $this->param('nom');
+        $prenom = $this->param('prenom');
         $message=$this->param('message');
         $object=$this->param('sujet');
         $mail = new jMailer();
         $tpl = $mail->Tpl('site_internet~mailcontact');
         $tpl->assign('adresse', $adresse);
+        $tpl->assign('prenom', $prenom);
         $tpl->assign('name', $name);
         $tpl->assign('message', $message);
         $tpl->assign('object', $object);
         $mail->Send();
-        return $this->accueil();
+        return $this->index();
      }
      
     function envoyerInvit(){
@@ -635,19 +657,24 @@ class defaultCtrl extends jController {
         $record = jDao::createRecord("site_internet~annonce");
         $record2 = $inscriptionParticipant->get($log);
         
+        $record->id =$this->param('id');
         $record->login = $log;
         $record->recherche = $this->param('recherche');
         $record->typeRaid = $this->param('typeRaid');
         $record->contact= $this->param('contact');
         $record->statut = "En cours";
         $record2->annonce="1";
+        
+        if ($record->check()) { 
 
-        $inscriptionAnnonce->insert($record);
-        $inscriptionParticipant->update($record2);
-        return $this->accueil();
-
-       
-     }
+            $inscriptionAnnonce->insert($record);
+            $inscriptionParticipant->update($record2);
+            return $this->accueil();}
+      
+        else { 
+            return $this->erreur();
+            
+            }}    
      
     function supprimerAnnonce(){
         
@@ -664,10 +691,27 @@ class defaultCtrl extends jController {
         
         $record->statut = "Classee";
         $record2->annonce="0";
-        
+
         $annoncesFactory->update($record);
         $inscriptionParticipant->update($record2);
-        return $this->accueil();
-    } 
+        return $this->accueil();}
+    
+    function modifiermdpequipe(){
         
+        $utilisateur = jAuth::getUserSession();
+        $log = $utilisateur->login; 
+        $participantFactory = jDao::get("site_internet~participant");
+        $participant = $participantFactory->get($log);
+        $equipe =$participant->nomEquipe;
+        
+        $equipeFactory = jDao::get("site_internet~equipe");
+        $eq= $equipeFactory->get($equipe);
+
+        if ($eq->passwordEquipe==$this->param('password')) {
+            $eq->passwordEquipe=$this->param('passwordN');
+            $equipeFactory->update($eq);
+            return $this->accueil();
+        }
+        else return $this->erreur();
+    }
  }   

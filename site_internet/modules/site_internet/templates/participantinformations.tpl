@@ -1,4 +1,4 @@
-<h1>Vos informations</h1><br /><br/>
+<h1>Vos informations</h1><br><br>
 
 <fieldset>
 <center>{formdatafull $INFOS}</center>

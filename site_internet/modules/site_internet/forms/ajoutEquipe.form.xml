@@ -2,26 +2,12 @@
 <form xmlns="http://jelix.org/ns/forms/1.1">
    
     <group ref="participant" >
-    <label>Informations concernant le chef d'équipe (Vous)</label>
+    <label>Informations concernant le chef d'équipe</label>
         
          
     <input ref="login" type="email" required="true">
         <label>E-mail</label>
     </input> 
-    
-    <secret ref="password" required="true">
-        <label>Mot de passe</label>
-        <hint>Indiquez votre mot de passe</hint>
-        <confirm>Retapez ce mot de passe</confirm>
-        <help>Votre mot de passe doit contenir 10 caractères maximum</help>
-        <alert type="required">Le mot de passe est obligatoire</alert>
-    </secret>
-    
-  <menulist ref="nomEquipe">
-      <label>Equipe</label>
-      <datasource dao="site_internet~equipe" method="findPlace"
-                  labelproperty="nomEquipe" valueproperty="nomEquipe"/>
-  </menulist>
     
     <input ref="nomParticipant" required="true">
         <label>Nom</label> 
@@ -80,31 +66,41 @@
       <item value="0">Non</item>
     </menulist>
     
-    <menulist ref="cheque" required="true">
+    <menulist ref="prixpaye">
+      <label>Prix payé</label>
+      <item value="55">55 euros (sans vélo, avec réduction)</item>
+      <item value="65">65 euros (sans vélo, sans réduction ou avec vélo, avec réduction)</item>
+      <item value="75">75 euros (avec vélo, sans réduction)</item>
+      <item value="100">100 euros (sans vélo, avec réduction)</item>
+      <item value="110">110 euros (sans vélo, sans réduction ou avec vélo, avec réduction)</item>
+      <item value="120">120 euros (avec vélo, sans réduction)</item>
+    </menulist>
+    
+    <menulist ref="cheque">
       <label>Chèque participation financière</label>
       <item value="1">Oui</item>
       <item value="0">Non</item>
     </menulist>
     
-    <menulist ref="caution" required="true">
+    <menulist ref="caution">
       <label>Chèque de caution</label>
       <item value="1">Oui</item>
       <item value="0">Non</item>
     </menulist>
     
-    <menulist ref="certifMedical" required="true">
+    <menulist ref="certifMedical">
       <label>Certificat Médical</label>
       <item value="1">Oui</item>
       <item value="0">Non</item>
     </menulist>
     
-    <menulist ref="reglement" required="true">
+    <menulist ref="reglement">
       <label>Attestation de lecture du réglement</label>
       <item value="1">Oui</item>
       <item value="0">Non</item>
     </menulist>
 
-    <menulist ref="validation" required="true">
+    <menulist ref="validation">
       <label>Validation de l'inscription</label>
       <item value="1">Oui</item>
       <item value="0">Non</item>
@@ -120,14 +116,6 @@
         <label>Nom de l'équipe</label>
         <alert type="required">Le nom de l'équipe est obligatoire</alert>  
     </input>
-    
-    <secret ref="passwordEquipe" required="true">
-        <label>Mot de passe de l'équipe</label>
-        <hint>Indiquez le mot de passe de l'équipe</hint>
-        <confirm>Retapez ce mot de passe</confirm>
-        <help>Le mot de passe de l'équipe doit contenir 10 caractères maximum</help>
-        <alert type="required">Le mot de passe de l'équipe est obligatoire</alert>
-    </secret>
     
     <input ref="telEquipe" type="string" required="true" minlength="10" maxlength="10">
         <label>Numéro de portable</label>

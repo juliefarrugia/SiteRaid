@@ -30,14 +30,17 @@ class participantEquipeZone extends jZone {
         $place=3;
         
         if ($log==($eq->login1)){ $chef="1";
-            if ($eq->login2!==""){$place=$place-1;}
-            if ($eq->login3!==""){$place=$place-1;}
-            if ($eq->login4!==""){$place=$place-1;}};
+            if ($eq->login2!==""&&$eq->login2!==NULL){$place=$place-1;}
+            if ($eq->login3!==""&&$eq->login3!==NULL){$place=$place-1;}
+            if ($eq->login4!==""&&$eq->login4!==NULL){$place=$place-1;}};
         
         $mail = jForms::create("site_internet~mailP");
+        $mdpbis = jForms::create("site_internet~changeMDPequipe");
         $this->_tpl->assign("MAIL", $mail);
         $this->_tpl->assign("CHEF", $chef);
         $this->_tpl->assign("PLACE", $place);
+        $this->_tpl->assign("MDPBIS", $mdpbis);
+
         
     }
 }

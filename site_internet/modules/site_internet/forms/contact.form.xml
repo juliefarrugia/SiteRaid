@@ -2,8 +2,13 @@
 <form xmlns="http://jelix.org/ns/forms/1.1">
    
     <input ref="nom" required="true">
-        <label>Prénom Nom</label>
+        <label>Nom</label>
         <alert type="required">Le nom est obligatoire</alert>  
+    </input>
+    
+    <input ref="prenom" required="true">
+        <label>Prénom</label>
+        <alert type="required">Le prénom est obligatoire</alert>  
     </input>
     
     <input ref="mail" type="email" required="true">

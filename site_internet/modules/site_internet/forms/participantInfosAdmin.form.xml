@@ -62,7 +62,7 @@
       <item value="0">Non</item>
     </menulist>
     
-    <menulist ref="prixpaye" required="true">
+    <menulist ref="prixpaye">
       <label>Prix payé</label>
       <item value="55">55 euros (sans vélo, avec réduction)</item>
       <item value="65">65 euros (sans vélo, sans réduction ou avec vélo, avec réduction)</item>
@@ -72,31 +72,31 @@
       <item value="120">120 euros (avec vélo, sans réduction)</item>
     </menulist>
     
-    <menulist ref="cheque" required="true">
+    <menulist ref="cheque">
       <label>Chèque participation financière</label>
       <item value="1">Oui</item>
       <item value="0">Non</item>
     </menulist>
     
-    <menulist ref="caution" required="true">
+    <menulist ref="caution">
       <label>Chèque de caution</label>
       <item value="1">Oui</item>
       <item value="0">Non</item>
     </menulist>
     
-    <menulist ref="certifMedical" required="true">
+    <menulist ref="certifMedical">
       <label>Certificat Médical</label>
       <item value="1">Oui</item>
       <item value="0">Non</item>
     </menulist>
     
-    <menulist ref="reglement" required="true">
+    <menulist ref="reglement">
       <label>Attestation de lecture du réglement</label>
       <item value="1">Oui</item>
       <item value="0">Non</item>
     </menulist>
 
-    <menulist ref="validation" required="true">
+    <menulist ref="validation">
       <label>Validation de l'inscription</label>
       <item value="1">Oui</item>
       <item value="0">Non</item>

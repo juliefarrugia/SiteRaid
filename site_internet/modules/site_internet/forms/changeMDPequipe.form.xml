@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://jelix.org/ns/forms/1.1">
+    
+    <secret ref="password" required="true">
+        <label>Mot de passe actuel de l'équipe</label>
+        <hint>Indiquez votre mot de passe</hint>
+        <help>Votre mot de passe doit contenir 10 caractères maximum</help>
+        <alert type="required">Le mot de passe est obligatoire</alert>
+    </secret>
+    
+    <secret ref="passwordN" required="true">
+        <label>Nouveau mot de passe de l'équipe</label>
+        <hint>Indiquez le mot de passe de l'équipe</hint>
+        <confirm>Retapez ce mot de passe</confirm>
+        <help>Votre mot de passe doit contenir 10 caractères maximum</help>
+        <alert type="required">Le mot de passe est obligatoire</alert>
+    </secret>
+
+<submit ref="submit">
+    <label>Confirmer le changement</label>
+</submit>
+
+</form>

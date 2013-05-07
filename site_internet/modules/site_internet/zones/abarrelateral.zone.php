@@ -39,9 +39,10 @@ class AbarreLateralZone extends jZone {
         $annonce=$participant->annonce;
         $equipeFactory = jDao::get("site_internet~equipe");
         $eq= $equipeFactory->get($equipe);
+        $chef="0";
         if($log==($eq->login1)){ $chef="1";};
         $this->_tpl->assign("CHEF", $chef);
-        if ($annonce=="1"){$this->_tpl->assign("ANNONCE", $annonce);};
+        $this->_tpl->assign("ANNONCE", $annonce);
         $this->_tpl->assign('BIENVENUE', 'Bienvenue '. $participant->prenomParticipant . ' ' . $participant->nomParticipant);}
           ;
         
