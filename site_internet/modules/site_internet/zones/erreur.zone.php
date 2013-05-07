@@ -11,6 +11,8 @@
 class erreurZone extends jZone {
     protected $_tplname='erreur';
 
+    protected $_useCache = true;
+    
     protected function _prepareTpl(){
         //$this->_tpl->assign('foo','bar');
     }

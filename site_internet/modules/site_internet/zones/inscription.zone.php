@@ -11,6 +11,8 @@
 class inscriptionZone extends jZone {
     protected $_tplname='inscription';
 
+    protected $_useCache = true;
+    
     protected function _prepareTpl(){
         //$this->_tpl->assign('foo','bar');
     }

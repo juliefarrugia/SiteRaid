@@ -10,7 +10,7 @@
 
 class MDPoublieZone extends jZone {
     protected $_tplname='mdpoublie';
-
+    
     protected function _prepareTpl(){
         //$this->_tpl->assign('foo','bar');
         
