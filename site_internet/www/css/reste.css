@@ -82,7 +82,7 @@ div.colonne{
 }
 
 aside.connexion{
-    height: 200px;
+    height: auto;
     top: 60px;
     padding: 10px;
     background-color: #d4ed8a;

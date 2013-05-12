@@ -1,7 +1,7 @@
 <h1>Listing Mail</h1>
 
-       <br>
-        <br>
+       <br/>
+        <br/>
         <h2>Listing de l'équipe organisatrice</h2>
             <fieldset>
                 {foreach $ALLORGA as $COURANTORGA}{$COURANTORGA->login} ; {/foreach}

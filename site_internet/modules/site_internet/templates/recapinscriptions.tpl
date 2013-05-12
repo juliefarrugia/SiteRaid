@@ -1,4 +1,4 @@
- <h1>Tableau récapitulatif des inscriptions</h1><br /><br/>
+ <h1>Tableau récapitulatif des inscriptions</h1><br/><br/>
  
  <table border="3" frame="box" bordercolor="#000000"  >
 <tr width="200" height="30">
@@ -38,8 +38,8 @@
 <td width="50" align="center" bgcolor="#D3D3D3">{$NBVALIDEES} / {$NBPARTICIPANTS}</td>
 </tr>
 </table> 
-<br>
-<br>
+<br/>
+<br/>
 
 <h2>Commande des Maillots</h2><br>
 
@@ -65,5 +65,5 @@
 <td width="50" align="center" bgcolor="#D3D3D3">{$XL}</td>
 </tr>
     </table></center>
-<br>
-<br>
+<br/>
+<br/>

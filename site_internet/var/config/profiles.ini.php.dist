@@ -10,10 +10,10 @@ default = "site_internet"
 driver="mysql"
 
 ; For most of drivers:
-database="jelix"
-host= "localhost"
-user= "root"
-password=
+database="db469516207"
+host= "db469516207.db.1and1.com"
+user= "dbo469516207"
+password="2013ardennes"
 persistent= on
 
 ; when you have charset issues, enable force_encoding so the connection will be

@@ -54,11 +54,11 @@ html=myHtmlResponse
 ;errorMessage="A technical error has occured (code: %code%). Sorry for this inconvenience."
 
 ;[compilation]
-;checkCacheFiletime  = on
-;force  = off
+;checkCacheFiletime = on
+;force = off
 
 [urlengine]
-; name of url engine :  "simple", "basic_significant" or "significant"
+; name of url engine : "simple", "basic_significant" or "significant"
 engine=basic_significant
 
 ; this is the url path to the jelix-www content (you can found this content in lib/jelix-www/)
@@ -103,10 +103,10 @@ simple_urlengine_https=
 
 ; script_name_without_suffix = "list of action selectors separated by a space"
 ; selector syntax :
-;   m~a@r    -> for the action "a" of the module "m" and for the request of type "r"
-;   m~c:*@r  -> for all actions of the controller "c" of the module "m" and for the request of type "r"
-;   m~*@r    -> for all actions of the module "m" and for the request of type "r"
-;   @r       -> for all actions for the request of type "r"
+; m~a@r -> for the action "a" of the module "m" and for the request of type "r"
+; m~c:*@r -> for all actions of the controller "c" of the module "m" and for the request of type "r"
+; m~*@r -> for all actions of the module "m" and for the request of type "r"
+; @r -> for all actions for the request of type "r"
 
 index="@classic"
 
@@ -158,7 +158,7 @@ webmasterEmail="raid@hei.fr"
 webmasterName=
 
 ; How to send mail : "mail" (mail()), "sendmail" (call sendmail), "smtp" (send directly to a smtp)
-;                   or "file" (store the mail into a file, in filesDir directory)
+; or "file" (store the mail into a file, in filesDir directory)
 mailerType=smtp
 ; Sets the hostname to use in Message-Id and Received headers
 ; and as default HELO string. If empty, the value returned
@@ -172,7 +172,7 @@ filesDir="mails/"
 
 ; if mailer = smtp , fill the following parameters
 
-; SMTP hosts.  All hosts must be separated by a semicolon : "smtp1.example.com:25;smtp2.example.com"
+; SMTP hosts. All hosts must be separated by a semicolon : "smtp1.example.com:25;smtp2.example.com"
 smtpHost=pod51002.outlook.com
 ; default SMTP server port
 smtpPort=587
@@ -223,4 +223,3 @@ dao_db_profile = ""
 
 [datepickers]
 ;default = jelix/js/jforms/datepickers/default/init.js
-

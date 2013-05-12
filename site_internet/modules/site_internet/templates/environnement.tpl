@@ -1,4 +1,4 @@
-                <h1>Engagement environnemental</h1><br /><br/>
+                <h1>Engagement environnemental</h1><br/><br/>
                 <div class="bloc">
                     <p>
                         Depuis maintenant quelques éditions, le Raid HEI s’est engagé dans une démarche de responsabilité en 

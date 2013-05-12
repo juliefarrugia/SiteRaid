@@ -19,6 +19,8 @@ class myHtmlResponse extends jResponseHtml {
         parent::__construct();
 
         // Include your common CSS and JS files here
+        $this->title ="Raid HEI";
+        $this->addHeadContent('<link rel="icon" href="favicon.ico"/>');
         $this->addCSSLink(jApp::config()->urlengine['basePath'].'css/menu.css');
         $this->addCSSLink(jApp::config()->urlengine['basePath'].'css/reste.css');
         $this->addCssLink(jApp::config()->urlengine['basePath'].'css/jquery-ui.css');

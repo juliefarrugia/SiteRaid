@@ -1,6 +1,6 @@
-<h1>Photos</h1>
+’<h1>Photos</h1>
 
-<link rel="stylesheet" type="text/css" href="../../engine1/style.css" />
+<link rel="stylesheet" type="text/css" href="../../engine1/style.css"/>
 
 	<div id="wowslider-container1">
 	<div class="ws_images"><ul>

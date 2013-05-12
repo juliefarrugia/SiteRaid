@@ -1,4 +1,4 @@
-                <h1>Nos partenaires</h1><br /><br/>
+                <h1>Nos partenaires</h1><br/><br/>
                 <p><strong>Voici les différents sponsors qui nous soutiennent pour cette 20ème édition du Raid HEI :</strong></p><br/><br/>
                 <div class="bloc">
                     <h3>HEI</h3>
@@ -39,8 +39,8 @@
                 <div class="bloc">
                     <h3>Métro Bowling</h3>
                     <a href="http://www.metrobowlinglille.fr/" target="_blank">{image "img/metrobowling.JPG",array('alt'=>'Metro Bowling')}</a>
-                    <p>Tu souhaites te divertir à un prix intéressant ? Voici une activité fun pour vos soirées :<br>
-                            Dimanche, Lundi et Mercredi après 20 H (sauf veilles de fêtes) :<br>
+                    <p>Tu souhaites te divertir à un prix intéressant ? Voici une activité fun pour vos soirées :<br/>
+                            Dimanche, Lundi et Mercredi après 20 H (sauf veilles de fêtes) :<br/>
                             <b>2 parties = 5,50€ + Loc. de chaussures OFFERTE</b></p>
                 </div>
                 <div class="bloc">

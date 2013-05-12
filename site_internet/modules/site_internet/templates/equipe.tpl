@@ -1,4 +1,4 @@
-                <h1>Un travail d'équipe</h1><br /><br/>
+                <h1>Un travail d'équipe</h1><br/><br/>
                 <div class="bloc">
                     <p>
                         L’association du Raid HEI a été créée en 1992. Chaque année, une vingtaine d’étudiants en font

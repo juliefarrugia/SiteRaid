@@ -1,4 +1,4 @@
-        <h1>Contact</h1><br /><br/>
+        <h1>Contact</h1><br/><br/>
 
         <h2>Vous pouvez nous contacter en utilisant le formulaire ci-dessous :</h2>
         

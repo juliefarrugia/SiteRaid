@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://jelix.org/ns/project/1.0">
-    <info id="site_internet@yourwebsite.undefined" name="site_internet" createdate="2013-01-25">
+    <info id="raid@hei.fr" name="Site Internet RAID HEI" createdate="2013-01-25">
         <version date="2013-01-25">0.1pre</version>
-        <label lang="en_US">site_internet</label>
-        <description lang="en_US"></description>
+        <label lang="fr_FR">site_internet</label>
+        <description lang="fr_FR"></description>
         <license URL="">All rights reserved</license>
-        <copyright>2011 your name</copyright>
-        <creator name="your name" email="your-email@yourwebsite.undefined" active="true" />
-        <homepageURL>http://www.yourwebsite.undefined</homepageURL>
+        <copyright>2013 RAID HEU</copyright>
+        <creator name="Julie Farrugia" email="julie.farrugia@hei.fr" active="true" />
+        <homepageURL>http://raidhei.com</homepageURL>
     </info>
     <dependencies>
         <jelix minversion="1.4.1" maxversion="1.4.*" />

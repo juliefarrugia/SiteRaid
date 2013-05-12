@@ -3,7 +3,7 @@
     
 <div class="corps">
     
-     {zone 'site_internet~abarreLateral'}
+     {zone 'site_internet~abarrelateral'}
      
 <div class="principal">
    

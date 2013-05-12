@@ -31,8 +31,7 @@ class defaultCtrl extends jController {
         $rep->bodyTpl ="main";
         $page=$this->param('page');
         
-        if ($page=='accueil'){$rep->body->assignZone('PRINCIPAL', 'accueil');}
-        else if ($page=='raidLieu'){$rep->body->assignZone('PRINCIPAL', 'raidlieu');}
+        if ($page=='raidLieu'){$rep->body->assignZone('PRINCIPAL', 'raidlieu');}
         else if ($page=='raidInfos'){$rep->body->assignZone('PRINCIPAL', 'raidinfos');}
         else if ($page=='raidMateriel'){$rep->body->assignZone('PRINCIPAL', 'raidmateriel');}
         else if ($page=='raidEpreuves'){$rep->body->assignZone('PRINCIPAL', 'raidepreuves');}

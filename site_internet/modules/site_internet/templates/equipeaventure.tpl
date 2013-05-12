@@ -1,14 +1,14 @@
-<h1>Equipes inscrites au parcours Aventure</h1><br /><br/>
+<h1>Equipes inscrites au parcours Aventure</h1><br/><br/>
 
 
-<p><br>
-<b>Ce :</b> certificat Médical<br>
-<b>Ca :</b> caution<br>
-<b>R :</b> attestation de lecture du règlement<br>
-<b>Vélo :</b> amène son vélo<br>
-<b>Bus :</b> viens en bus<br>
-<b>0 :</b> Non<br>
-<b>1 :</b> Oui<br></p><br><br>
+<p><br/>
+<b>Ce :</b> certificat Médical<br/>
+<b>Ca :</b> caution<br/>
+<b>R :</b> attestation de lecture du règlement<br/>
+<b>Vélo :</b> amène son vélo<br/>
+<b>Bus :</b> viens en bus<br/>
+<b>0 :</b> Non<br/>
+<b>1 :</b> Oui<br></p><br/><br/>
 
 {foreach $ALLEQUIPE as $COURANTEQUIPE}
 

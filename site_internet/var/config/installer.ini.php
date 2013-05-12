@@ -38,3 +38,6 @@ jelix.contexts="db:default"
 jauth.contexts="auth:index/auth.coord.ini.php"
 
 jauthdb.contexts="index/auth.coord.ini.php,db:default"
+
+
+
