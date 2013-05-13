@@ -61,7 +61,6 @@ img.logo{
 div.corps{
     position: relative;
     width: 960px;
-    zoom: 1;
     margin: 0 auto;
     padding: 0;
     border: 0;
@@ -92,7 +91,7 @@ aside.connexion{
 }
 
 aside.inscrits{
-    height: 150px;
+    height: auto;
     top: 60px;
     padding: 10px;
     background-color: #d4ed8a;
