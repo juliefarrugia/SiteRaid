@@ -1,0 +1,1873 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project version="2.0.0a12" title="">
+  <file path="application.init.php" hash="35e813abc01db06764481a87512aa8ab" package="site\internet\">
+    <docblock line="2">
+      <description></description>
+      <long-description></long-description>
+      <tag line="2" name="package" description="site_internet"/>
+      <tag line="2" name="subpackage" description=""/>
+      <tag line="2" name="author" description="your name"/>
+      <tag line="2" name="copyright" description="2011 your name"/>
+      <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+      <tag line="2" name="license" description="All rights reserved"/>
+    </docblock>
+    <include line="12" type="Require" package="Default">
+      <name/>
+    </include>
+    <parse_markers>
+      <critical line="2" code="50008">No short description for file application.init.php</critical>
+    </parse_markers>
+  </file>
+  <file path="cmd.php" hash="86f8d499ea8fa7e497ff5c081d4aa12f" package="jelix">
+    <docblock line="2">
+      <description></description>
+      <long-description></long-description>
+      <tag line="2" name="package" description="jelix"/>
+      <tag line="2" name="author" description="Laurent Jouanneau"/>
+      <tag line="2" name="contributor" description=""/>
+      <tag line="2" name="copyright" description="2011 Laurent Jouanneau"/>
+      <tag line="2" name="link" description="http://jelix.org" link="http://jelix.org"/>
+      <tag line="2" name="licence" description="http://www.gnu.org/licenses/gpl.html GNU General Public Licence, see LICENCE file"/>
+    </docblock>
+    <include line="10" type="Require" package="Default">
+      <name/>
+    </include>
+    <include line="11" type="Require" package="Default">
+      <name/>
+    </include>
+    <parse_markers>
+      <critical line="2" code="50008">No short description for file cmd.php</critical>
+    </parse_markers>
+  </file>
+  <file path="install/installer.php" hash="9fe8cbf0af644b1c320f9b843b13018c" package="site\internet">
+    <docblock line="2">
+      <description></description>
+      <long-description></long-description>
+      <tag line="2" name="package" description="site_internet"/>
+      <tag line="2" name="author" description="your name"/>
+      <tag line="2" name="copyright" description="2011 your name"/>
+      <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+      <tag line="2" name="license" description="All rights reserved"/>
+    </docblock>
+    <include line="10" type="Require Once" package="Default">
+      <name/>
+    </include>
+    <parse_markers>
+      <critical line="2" code="50008">No short description for file install/installer.php</critical>
+    </parse_markers>
+  </file>
+  <file path="install/wizard.ini.php" hash="b1546811b790eebd688916d2fe2dcec5" package="Default">
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file install/wizard.ini.php</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/controllers/default.classic.php" hash="bf5d9dbc5bbf2ed67650be11ff5828f2" package="Default">
+    <class final="false" abstract="false" namespace="global" line="3" package="Default">
+      <extends>\jController</extends>
+      <name>defaultCtrl</name>
+      <full_name>\defaultCtrl</full_name>
+      <property final="false" static="false" visibility="public" line="5" namespace="global" package="Default">
+        <name>$pluginParams</name>
+        <default>array('*' =&gt; array('auth.required' =&gt; false), 'index' =&gt; array('auth.required' =&gt; false), 'accueil' =&gt; array('auth.required' =&gt; true), 'chargerEquipe' =&gt; array('auth.required' =&gt; true), 'chargerParticipant' =&gt; array('auth.required' =&gt; true), 'supprimerParticipant' =&gt; array('auth.required' =&gt; true), 'supprimerEquipe' =&gt; array('auth.required' =&gt; true), 'saveEquipeAdmin' =&gt; array('auth.required' =&gt; true), 'saveParticipantAdmin' =&gt; array('auth.required' =&gt; true), 'chargerParticipant' =&gt; array('auth.required' =&gt; true), 'saveOrga' =&gt; array('auth.required' =&gt; true), 'saveParticipantBIS' =&gt; array('auth.required' =&gt; true), 'saveEquipeBIS' =&gt; array('auth.required' =&gt; true), 'changeMDP' =&gt; array('auth.required' =&gt; true), 'envoyerInvit' =&gt; array('auth.required' =&gt; true), 'envoyerMailContact' =&gt; array('auth.required' =&gt; true), 'suprimerOrga' =&gt; array('auth.required' =&gt; true), 'saveAnnonce' =&gt; array('auth.required' =&gt; true), 'supprimerAnnonce' =&gt; array('auth.required' =&gt; true), 'modifiermdpequipe' =&gt; array('auth.required' =&gt; true))</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="28" package="Default">
+        <name>index</name>
+        <full_name>index</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="61" package="Default">
+        <name>connexion</name>
+        <full_name>connexion</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="72" package="Default">
+        <name>deconnexion</name>
+        <full_name>deconnexion</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="78" package="Default">
+        <name>erreur</name>
+        <full_name>erreur</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="86" package="Default">
+        <name>accueil</name>
+        <full_name>accueil</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="130" package="Default">
+        <name>chargerParticipant</name>
+        <full_name>chargerParticipant</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="139" package="Default">
+        <name>chargerEquipe</name>
+        <full_name>chargerEquipe</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="149" package="Default">
+        <name>supprimerOrga</name>
+        <full_name>supprimerOrga</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="155" package="Default">
+        <name>supprimerParticipant</name>
+        <full_name>supprimerParticipant</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="185" package="Default">
+        <name>supprimerEquipe</name>
+        <full_name>supprimerEquipe</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="207" package="Default">
+        <name>saveEquipe</name>
+        <full_name>saveEquipe</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="294" package="Default">
+        <name>rejoindreEquipe</name>
+        <full_name>rejoindreEquipe</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="323" package="Default">
+        <name>saveParticipant</name>
+        <full_name>saveParticipant</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="376" package="Default">
+        <name>saveParticipantAdmin</name>
+        <full_name>saveParticipantAdmin</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="390" package="Default">
+        <name>saveEquipeAdmin</name>
+        <full_name>saveEquipeAdmin</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="404" package="Default">
+        <name>saveOrga</name>
+        <full_name>saveOrga</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="423" package="Default">
+        <name>saveParticipantBIS</name>
+        <full_name>saveParticipantBIS</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="477" package="Default">
+        <name>saveEquipeBIS</name>
+        <full_name>saveEquipeBIS</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="566" package="Default">
+        <name>changeMDP</name>
+        <full_name>changeMDP</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="577" package="Default">
+        <name>envoyerMailContact</name>
+        <full_name>envoyerMailContact</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="599" package="Default">
+        <name>envoyerMailMotdepasseOublie</name>
+        <full_name>envoyerMailMotdepasseOublie</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="612" package="Default">
+        <name>envoyerMailContact2</name>
+        <full_name>envoyerMailContact2</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="630" package="Default">
+        <name>envoyerInvit</name>
+        <full_name>envoyerInvit</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="650" package="Default">
+        <name>saveAnnonce</name>
+        <full_name>saveAnnonce</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="678" package="Default">
+        <name>supprimerAnnonce</name>
+        <full_name>supprimerAnnonce</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="698" package="Default">
+        <name>modifiermdpequipe</name>
+        <full_name>modifiermdpequipe</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/controllers/default.classic.php</error>
+      <error line="3" code="50000">No DocBlock was found for \defaultCtrl</error>
+      <error line="5" code="50018">No DocBlock was found for property $pluginParams</error>
+      <error line="28" code="50010">No DocBlock was found for method index()</error>
+      <error line="61" code="50010">No DocBlock was found for method connexion()</error>
+      <error line="72" code="50010">No DocBlock was found for method deconnexion()</error>
+      <error line="78" code="50010">No DocBlock was found for method erreur()</error>
+      <error line="86" code="50010">No DocBlock was found for method accueil()</error>
+      <error line="130" code="50010">No DocBlock was found for method chargerParticipant()</error>
+      <error line="139" code="50010">No DocBlock was found for method chargerEquipe()</error>
+      <error line="149" code="50010">No DocBlock was found for method supprimerOrga()</error>
+      <error line="155" code="50010">No DocBlock was found for method supprimerParticipant()</error>
+      <error line="185" code="50010">No DocBlock was found for method supprimerEquipe()</error>
+      <error line="207" code="50010">No DocBlock was found for method saveEquipe()</error>
+      <error line="294" code="50010">No DocBlock was found for method rejoindreEquipe()</error>
+      <error line="323" code="50010">No DocBlock was found for method saveParticipant()</error>
+      <error line="376" code="50010">No DocBlock was found for method saveParticipantAdmin()</error>
+      <error line="390" code="50010">No DocBlock was found for method saveEquipeAdmin()</error>
+      <error line="404" code="50010">No DocBlock was found for method saveOrga()</error>
+      <error line="423" code="50010">No DocBlock was found for method saveParticipantBIS()</error>
+      <error line="477" code="50010">No DocBlock was found for method saveEquipeBIS()</error>
+      <error line="566" code="50010">No DocBlock was found for method changeMDP()</error>
+      <error line="577" code="50010">No DocBlock was found for method envoyerMailContact()</error>
+      <error line="599" code="50010">No DocBlock was found for method envoyerMailMotdepasseOublie()</error>
+      <error line="612" code="50010">No DocBlock was found for method envoyerMailContact2()</error>
+      <error line="630" code="50010">No DocBlock was found for method envoyerInvit()</error>
+      <error line="650" code="50010">No DocBlock was found for method saveAnnonce()</error>
+      <error line="678" code="50010">No DocBlock was found for method supprimerAnnonce()</error>
+      <error line="698" code="50010">No DocBlock was found for method modifiermdpequipe()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/install/install.php" hash="872f7bc8ae1ecca799c3fe154d281a80" package="Default">
+    <class final="false" abstract="false" namespace="global" line="12" package="site\internet\site\internet">
+      <extends>\jInstallerModule</extends>
+      <name>site_internetModuleInstaller</name>
+      <full_name>\site_internetModuleInstaller</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="14" package="site\internet\site\internet">
+        <name>install</name>
+        <full_name>install</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/install/install.php</error>
+      <critical line="2" code="50005">No short description for class \site_internetModuleInstaller</critical>
+      <error line="14" code="50010">No DocBlock was found for method install()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/abarrelateral.zone.php" hash="5dff171c1a55560ea6818779da08d906" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>AbarreLateralZone</name>
+      <full_name>\AbarreLateralZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'abarrelateral'</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="14" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/abarrelateral.zone.php</error>
+      <critical line="2" code="50005">No short description for class \AbarreLateralZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/accueil.zone.php" hash="62b9dcd61915ca999c7ca12a7b8c92fd" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>accueilZone</name>
+      <full_name>\accueilZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'accueil'</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="14" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/accueil.zone.php</error>
+      <critical line="2" code="50005">No short description for class \accueilZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/afooter.zone.php" hash="0c785690a057da99a37c6b4a5c18c72b" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>AfooterZone</name>
+      <full_name>\AfooterZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'afooter'</default>
+      </property>
+      <property final="false" static="false" visibility="protected" line="14" namespace="global" package="Default">
+        <name>$_useCache</name>
+        <default>true</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="16" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/afooter.zone.php</error>
+      <critical line="2" code="50005">No short description for class \AfooterZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50018">No DocBlock was found for property $_useCache</error>
+      <error line="16" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/ajoutequipe.zone.php" hash="35e5692c1d016c598211a9081b3781eb" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>ajoutEquipeZone</name>
+      <full_name>\ajoutEquipeZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'ajoutequipe'</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="14" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/ajoutequipe.zone.php</error>
+      <critical line="2" code="50005">No short description for class \ajoutEquipeZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/ajouterannonce.zone.php" hash="2462c72aa9511c051141b3121f2cfd86" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>ajouterAnnonceZone</name>
+      <full_name>\ajouterAnnonceZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'ajouterannonce'</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="14" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/ajouterannonce.zone.php</error>
+      <critical line="2" code="50005">No short description for class \ajouterAnnonceZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/ajouterorganisateur.zone.php" hash="669cec86c1c7efa8aed28c8fcec1f07c" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>ajouterOrganisateurZone</name>
+      <full_name>\ajouterOrganisateurZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'ajouterorganisateur'</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="14" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/ajouterorganisateur.zone.php</error>
+      <critical line="2" code="50005">No short description for class \ajouterOrganisateurZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/ajoutparticipant.zone.php" hash="f9c21a5c7509552bebee69bb4b7476f9" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>ajoutParticipantZone</name>
+      <full_name>\ajoutParticipantZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'ajoutparticipant'</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="14" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/ajoutparticipant.zone.php</error>
+      <critical line="2" code="50005">No short description for class \ajoutParticipantZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/amenu.zone.php" hash="421c1b997c1b977eb219c0a19cf879e4" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>AmenuZone</name>
+      <full_name>\AmenuZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'amenu'</default>
+      </property>
+      <property final="false" static="false" visibility="protected" line="14" namespace="global" package="Default">
+        <name>$_useCache</name>
+        <default>true</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="16" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/amenu.zone.php</error>
+      <critical line="2" code="50005">No short description for class \AmenuZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50018">No DocBlock was found for property $_useCache</error>
+      <error line="16" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/changermdp.zone.php" hash="0ec93d687ea1614f3981bd648639c23e" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>changerMDPZone</name>
+      <full_name>\changerMDPZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'changermdp'</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="14" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/changermdp.zone.php</error>
+      <critical line="2" code="50005">No short description for class \changerMDPZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/classerannonce.zone.php" hash="ab0fcb4e4572dc354dbde26158f74bc3" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>classerAnnonceZone</name>
+      <full_name>\classerAnnonceZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'classerannonce'</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="14" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/classerannonce.zone.php</error>
+      <critical line="2" code="50005">No short description for class \classerAnnonceZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/contact.zone.php" hash="717143c0aada4042a52c5faad05125a9" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>contactZone</name>
+      <full_name>\contactZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'contact'</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="14" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/contact.zone.php</error>
+      <critical line="2" code="50005">No short description for class \contactZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/creationequipe.zone.php" hash="b3e562bc25dd0bace487932c4559f882" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>creationEquipeZone</name>
+      <full_name>\creationEquipeZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'creationequipe'</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="14" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/creationequipe.zone.php</error>
+      <critical line="2" code="50005">No short description for class \creationEquipeZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/devenirpartenaire.zone.php" hash="a9d6eb87f64f0adb830adf12393eecc7" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>devenirpartenaireZone</name>
+      <full_name>\devenirpartenaireZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'devenirpartenaire'</default>
+      </property>
+      <property final="false" static="false" visibility="protected" line="14" namespace="global" package="Default">
+        <name>$_useCache</name>
+        <default>true</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="16" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/devenirpartenaire.zone.php</error>
+      <critical line="2" code="50005">No short description for class \devenirpartenaireZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50018">No DocBlock was found for property $_useCache</error>
+      <error line="16" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/environnement.zone.php" hash="a510b527c0cb16fc973496ddfdecac4e" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>environnementZone</name>
+      <full_name>\environnementZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'environnement'</default>
+      </property>
+      <property final="false" static="false" visibility="protected" line="14" namespace="global" package="Default">
+        <name>$_useCache</name>
+        <default>true</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="16" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/environnement.zone.php</error>
+      <critical line="2" code="50005">No short description for class \environnementZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50018">No DocBlock was found for property $_useCache</error>
+      <error line="16" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/equipe.zone.php" hash="57e748829fe9c563142d061c37f405e3" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>equipeZone</name>
+      <full_name>\equipeZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'equipe'</default>
+      </property>
+      <property final="false" static="false" visibility="protected" line="14" namespace="global" package="Default">
+        <name>$_useCache</name>
+        <default>true</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="16" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/equipe.zone.php</error>
+      <critical line="2" code="50005">No short description for class \equipeZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50018">No DocBlock was found for property $_useCache</error>
+      <error line="16" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/equipeaventure.zone.php" hash="1f32ff5be33e97f7f8994742b84c2abd" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>equipeAventureZone</name>
+      <full_name>\equipeAventureZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'equipeaventure'</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="14" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/equipeaventure.zone.php</error>
+      <critical line="2" code="50005">No short description for class \equipeAventureZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/equipeexpert.zone.php" hash="281251b543a0f6be7b6863f1ade52f0f" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>equipeExpertZone</name>
+      <full_name>\equipeExpertZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'equipeexpert'</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="14" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/equipeexpert.zone.php</error>
+      <critical line="2" code="50005">No short description for class \equipeExpertZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/erreur.zone.php" hash="d90327d75c85f39e2d93c44d02d24bd6" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>erreurZone</name>
+      <full_name>\erreurZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'erreur'</default>
+      </property>
+      <property final="false" static="false" visibility="protected" line="14" namespace="global" package="Default">
+        <name>$_useCache</name>
+        <default>true</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="16" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/erreur.zone.php</error>
+      <critical line="2" code="50005">No short description for class \erreurZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50018">No DocBlock was found for property $_useCache</error>
+      <error line="16" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/formcontact.zone.php" hash="5bdba09866f742828b5a2f9978410d1c" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>formContactZone</name>
+      <full_name>\formContactZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'formcontact'</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="14" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/formcontact.zone.php</error>
+      <critical line="2" code="50005">No short description for class \formContactZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/inscription.zone.php" hash="4b520b5b94b5b80aa783870825012b48" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>inscriptionZone</name>
+      <full_name>\inscriptionZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'inscription'</default>
+      </property>
+      <property final="false" static="false" visibility="protected" line="14" namespace="global" package="Default">
+        <name>$_useCache</name>
+        <default>true</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="16" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/inscription.zone.php</error>
+      <critical line="2" code="50005">No short description for class \inscriptionZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50018">No DocBlock was found for property $_useCache</error>
+      <error line="16" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/inscriptionscloses.zone.php" hash="7926a3140803f9791db51e39f2886350" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>inscriptionsClosesZone</name>
+      <full_name>\inscriptionsClosesZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'inscriptionscloses'</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="14" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/inscriptionscloses.zone.php</error>
+      <critical line="2" code="50005">No short description for class \inscriptionsClosesZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/joindreequipe.zone.php" hash="a03c57223a9b2309cc21d55c167f29c0" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>joindreEquipeZone</name>
+      <full_name>\joindreEquipeZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'joindreequipe'</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="14" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/joindreequipe.zone.php</error>
+      <critical line="2" code="50005">No short description for class \joindreEquipeZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/listingmail.zone.php" hash="b0eb53ddfa0827f23e1ee2a38457064d" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>listingMailZone</name>
+      <full_name>\listingMailZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'listingmail'</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="14" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/listingmail.zone.php</error>
+      <critical line="2" code="50005">No short description for class \listingMailZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/mdpoublie.zone.php" hash="d52808823ec2ff70b12b739070e2f1b6" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>MDPoublieZone</name>
+      <full_name>\MDPoublieZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'mdpoublie'</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="14" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/mdpoublie.zone.php</error>
+      <critical line="2" code="50005">No short description for class \MDPoublieZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/modifierequipe.zone.php" hash="2535ba28225ab21d920c977d0743262f" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>modifierequipeZone</name>
+      <full_name>\modifierequipeZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'modifierequipe'</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="14" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/modifierequipe.zone.php</error>
+      <critical line="2" code="50005">No short description for class \modifierequipeZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/modifierequipebis.zone.php" hash="e947dc3bb8560e5d1e1352d166992c37" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>modifierequipebisZone</name>
+      <full_name>\modifierequipebisZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'modifierequipebis'</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="14" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/modifierequipebis.zone.php</error>
+      <critical line="2" code="50005">No short description for class \modifierequipebisZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/modifierparticipant.zone.php" hash="f190339ce17f3551fcd041a49c93b248" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>modifierParticipantZone</name>
+      <full_name>\modifierParticipantZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'modifierparticipant'</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="14" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/modifierparticipant.zone.php</error>
+      <critical line="2" code="50005">No short description for class \modifierParticipantZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/modifierparticipantbis.zone.php" hash="c6532fbeec85899c84d4267298e85473" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>modifierparticipantbisZone</name>
+      <full_name>\modifierparticipantbisZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'modifierparticipantbis'</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="14" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/modifierparticipantbis.zone.php</error>
+      <critical line="2" code="50005">No short description for class \modifierparticipantbisZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/nouveauparticipant.zone.php" hash="67a4e57f852319d7436f8011a344a01f" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>nouveauParticipantZone</name>
+      <full_name>\nouveauParticipantZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'nouveauparticipant'</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="14" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/nouveauparticipant.zone.php</error>
+      <critical line="2" code="50005">No short description for class \nouveauParticipantZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/partenaire.zone.php" hash="c251c9660dd213303f8528281981183e" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>partenaireZone</name>
+      <full_name>\partenaireZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'partenaire'</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="14" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/partenaire.zone.php</error>
+      <critical line="2" code="50005">No short description for class \partenaireZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/participantequipe.zone.php" hash="d4eda4cb640b031b919f26006ab09504" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>participantEquipeZone</name>
+      <full_name>\participantEquipeZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'participantequipe'</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="14" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/participantequipe.zone.php</error>
+      <critical line="2" code="50005">No short description for class \participantEquipeZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/participantetat.zone.php" hash="6aba79d4ef7e7f1239c60008df3f6268" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>participantEtatZone</name>
+      <full_name>\participantEtatZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'participantetat'</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="14" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/participantetat.zone.php</error>
+      <critical line="2" code="50005">No short description for class \participantEtatZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/participantinformations.zone.php" hash="27cf6224e5d9fb68b7b733800a7173ba" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>participantInformationsZone</name>
+      <full_name>\participantInformationsZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'participantinformations'</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="14" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/participantinformations.zone.php</error>
+      <critical line="2" code="50005">No short description for class \participantInformationsZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/petitesannonces.zone.php" hash="785bde4c5ab8617850d7bea24ed0996e" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>petitesAnnoncesZone</name>
+      <full_name>\petitesAnnoncesZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'petitesannonces'</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="14" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/petitesannonces.zone.php</error>
+      <critical line="2" code="50005">No short description for class \petitesAnnoncesZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/photo.zone.php" hash="0fbbb79231d8d12e75ff00bdd9940314" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>photoZone</name>
+      <full_name>\photoZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'photo'</default>
+      </property>
+      <property final="false" static="false" visibility="protected" line="14" namespace="global" package="Default">
+        <name>$_useCache</name>
+        <default>true</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="16" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/photo.zone.php</error>
+      <critical line="2" code="50005">No short description for class \photoZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50018">No DocBlock was found for property $_useCache</error>
+      <error line="16" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/profilparticipant.zone.php" hash="8874861ebfd9241075445763873f760d" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>profilParticipantZone</name>
+      <full_name>\profilParticipantZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'profilparticipant'</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="14" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/profilparticipant.zone.php</error>
+      <critical line="2" code="50005">No short description for class \profilParticipantZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/raidepreuves.zone.php" hash="3122238e62515ae055d443f55e837a4a" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>raidEpreuvesZone</name>
+      <full_name>\raidEpreuvesZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'raidepreuves'</default>
+      </property>
+      <property final="false" static="false" visibility="protected" line="14" namespace="global" package="Default">
+        <name>$_useCache</name>
+        <default>true</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="16" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/raidepreuves.zone.php</error>
+      <critical line="2" code="50005">No short description for class \raidEpreuvesZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50018">No DocBlock was found for property $_useCache</error>
+      <error line="16" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/raidinfos.zone.php" hash="70f5ddf1bd9e5cad5d5efcfa9fece539" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>raidInfosZone</name>
+      <full_name>\raidInfosZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'raidinfos'</default>
+      </property>
+      <property final="false" static="false" visibility="protected" line="14" namespace="global" package="Default">
+        <name>$_useCache</name>
+        <default>true</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="16" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/raidinfos.zone.php</error>
+      <critical line="2" code="50005">No short description for class \raidInfosZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50018">No DocBlock was found for property $_useCache</error>
+      <error line="16" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/raidlieu.zone.php" hash="15aec2de4a242e48b7b149d2cd71853e" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>raidLieuZone</name>
+      <full_name>\raidLieuZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'raidlieu'</default>
+      </property>
+      <property final="false" static="false" visibility="protected" line="14" namespace="global" package="Default">
+        <name>$_useCache</name>
+        <default>true</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="16" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/raidlieu.zone.php</error>
+      <critical line="2" code="50005">No short description for class \raidLieuZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50018">No DocBlock was found for property $_useCache</error>
+      <error line="16" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/raidmateriel.zone.php" hash="156c3c38ccaaddd77dd829708fd55269" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>raidMaterielZone</name>
+      <full_name>\raidMaterielZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'raidmateriel'</default>
+      </property>
+      <property final="false" static="false" visibility="protected" line="14" namespace="global" package="Default">
+        <name>$_useCache</name>
+        <default>true</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="16" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/raidmateriel.zone.php</error>
+      <critical line="2" code="50005">No short description for class \raidMaterielZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50018">No DocBlock was found for property $_useCache</error>
+      <error line="16" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/raidsprecedents.zone.php" hash="abd30a9281e37dbde02c1a087edae313" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>raidsprecedentsZone</name>
+      <full_name>\raidsprecedentsZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'raidsprecedents'</default>
+      </property>
+      <property final="false" static="false" visibility="protected" line="14" namespace="global" package="Default">
+        <name>$_useCache</name>
+        <default>true</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="16" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/raidsprecedents.zone.php</error>
+      <critical line="2" code="50005">No short description for class \raidsprecedentsZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50018">No DocBlock was found for property $_useCache</error>
+      <error line="16" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/recapinscriptions.zone.php" hash="b5287a1090b350f3062cbf3953b6b74f" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>recapInscriptionsZone</name>
+      <full_name>\recapInscriptionsZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'recapinscriptions'</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="14" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/recapinscriptions.zone.php</error>
+      <critical line="2" code="50005">No short description for class \recapInscriptionsZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/relecoles.zone.php" hash="3490477fb36b6bfd233c73a42d6ddf5f" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>RELEcolesZone</name>
+      <full_name>\RELEcolesZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'relecoles'</default>
+      </property>
+      <property final="false" static="false" visibility="protected" line="14" namespace="global" package="Default">
+        <name>$_useCache</name>
+        <default>true</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="16" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/relecoles.zone.php</error>
+      <critical line="2" code="50005">No short description for class \RELEcolesZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50018">No DocBlock was found for property $_useCache</error>
+      <error line="16" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/relinfos.zone.php" hash="37ccf007749ab9ae89e14aa6677c3723" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>RELInfosZone</name>
+      <full_name>\RELInfosZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'relinfos'</default>
+      </property>
+      <property final="false" static="false" visibility="protected" line="14" namespace="global" package="Default">
+        <name>$_useCache</name>
+        <default>true</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="16" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/relinfos.zone.php</error>
+      <critical line="2" code="50005">No short description for class \RELInfosZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50018">No DocBlock was found for property $_useCache</error>
+      <error line="16" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/rellieu.zone.php" hash="6b261200ad5351b7804d8e1678efddc3" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>RELLieuZone</name>
+      <full_name>\RELLieuZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'rellieu'</default>
+      </property>
+      <property final="false" static="false" visibility="protected" line="14" namespace="global" package="Default">
+        <name>$_useCache</name>
+        <default>true</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="16" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/rellieu.zone.php</error>
+      <critical line="2" code="50005">No short description for class \RELLieuZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50018">No DocBlock was found for property $_useCache</error>
+      <error line="16" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="modules/site_internet/zones/video.zone.php" hash="9ca7ecf51abb6d938241731ddea6b615" package="Default">
+    <class final="false" abstract="false" namespace="global" line="11" package="site\internet\site\internet">
+      <extends>\jZone</extends>
+      <name>videoZone</name>
+      <full_name>\videoZone</full_name>
+      <docblock line="2">
+        <description></description>
+        <long-description></long-description>
+        <tag line="2" name="package" description="site_internet"/>
+        <tag line="2" name="subpackage" description="site_internet"/>
+        <tag line="2" name="author" description="your name"/>
+        <tag line="2" name="copyright" description="2011 your name"/>
+        <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+        <tag line="2" name="license" description="All rights reserved"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="12" namespace="global" package="Default">
+        <name>$_tplname</name>
+        <default>'video'</default>
+      </property>
+      <property final="false" static="false" visibility="protected" line="14" namespace="global" package="Default">
+        <name>$_useCache</name>
+        <default>true</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="16" package="site\internet\site\internet">
+        <name>_prepareTpl</name>
+        <full_name>_prepareTpl</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file modules/site_internet/zones/video.zone.php</error>
+      <critical line="2" code="50005">No short description for class \videoZone</critical>
+      <error line="12" code="50018">No DocBlock was found for property $_tplname</error>
+      <error line="14" code="50018">No DocBlock was found for property $_useCache</error>
+      <error line="16" code="50010">No DocBlock was found for method _prepareTpl()</error>
+    </parse_markers>
+  </file>
+  <file path="responses/myHtmlResponse.class.php" hash="87eab01adba28c2f8b37aa61e9ead1f2" package="site\internet\">
+    <docblock line="2">
+      <description></description>
+      <long-description></long-description>
+      <tag line="2" name="package" description="site_internet"/>
+      <tag line="2" name="subpackage" description=""/>
+      <tag line="2" name="author" description="your name"/>
+      <tag line="2" name="copyright" description="2011 your name"/>
+      <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+      <tag line="2" name="license" description="All rights reserved"/>
+    </docblock>
+    <include line="12" type="Require Once" package="Default">
+      <name/>
+    </include>
+    <class final="false" abstract="false" namespace="global" line="14" package="Default">
+      <extends>\jResponseHtml</extends>
+      <name>myHtmlResponse</name>
+      <full_name>\myHtmlResponse</full_name>
+      <property final="false" static="false" visibility="public" line="16" namespace="global" package="Default">
+        <name>$bodyTpl</name>
+        <default>'site_internet~main'</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="18" package="Default">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="35" package="Default">
+        <name>doAfterActions</name>
+        <full_name>doAfterActions</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <critical line="2" code="50008">No short description for file responses/myHtmlResponse.class.php</critical>
+      <error line="14" code="50000">No DocBlock was found for \myHtmlResponse</error>
+      <error line="16" code="50018">No DocBlock was found for property $bodyTpl</error>
+      <error line="18" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="35" code="50010">No DocBlock was found for method doAfterActions()</error>
+    </parse_markers>
+  </file>
+  <file path="tests/runtests.php" hash="47231bac5fbe67ec267239b4abe777b9" package="Default">
+    <include line="3" type="Require" package="Default">
+      <name/>
+    </include>
+    <include line="5" type="Require" package="Default">
+      <name/>
+    </include>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file tests/runtests.php</error>
+    </parse_markers>
+  </file>
+  <file path="var/config/defaultconfig.ini.php" hash="1d3e3c5c9e099d8a1be8d9071c16ce6a" package="Default">
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file var/config/defaultconfig.ini.php</error>
+    </parse_markers>
+  </file>
+  <file path="var/config/index/auth.coord.ini.php" hash="e5a223a909e33546d470c70fa06fc46b" package="Default">
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file var/config/index/auth.coord.ini.php</error>
+    </parse_markers>
+  </file>
+  <file path="var/config/index/config.ini.php" hash="7bcd994e537f7ef7f37c25d5a7bfaac0" package="Default">
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file var/config/index/config.ini.php</error>
+    </parse_markers>
+  </file>
+  <file path="var/config/installer.ini.php" hash="54bc6c61d4752f924be458ad63996639" package="Default">
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file var/config/installer.ini.php</error>
+    </parse_markers>
+  </file>
+  <file path="var/config/preferences.ini.php" hash="303b74cd5825218b7d369c258832162f" package="Default">
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file var/config/preferences.ini.php</error>
+    </parse_markers>
+  </file>
+  <file path="var/config/profiles.ini.php" hash="45c52f06a2b17f4476074b71b477ba97" package="Default">
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file var/config/profiles.ini.php</error>
+    </parse_markers>
+  </file>
+  <file path="www/index.php" hash="d85b0c828209959ae05bcf3c9ee80807" package="site\internet\">
+    <docblock line="2">
+      <description></description>
+      <long-description></long-description>
+      <tag line="2" name="package" description="site_internet"/>
+      <tag line="2" name="subpackage" description=""/>
+      <tag line="2" name="author" description="Julie Farrugia"/>
+      <tag line="2" name="copyright" description="2013 Raid HEI"/>
+      <tag line="2" name="link" description="http://www.yourwebsite.undefined" link="http://www.yourwebsite.undefined"/>
+      <tag line="2" name="license" description="All rights reserved"/>
+    </docblock>
+    <include line="11" type="Require" package="Default">
+      <name>../application.init.php</name>
+    </include>
+    <include line="12" type="Require" package="Default">
+      <name/>
+    </include>
+    <parse_markers>
+      <critical line="2" code="50008">No short description for file www/index.php</critical>
+    </parse_markers>
+  </file>
+  <file path="www/install.php" hash="7018648bc888296a07be1dba8aecb159" package="Default">
+    <include line="3" type="Require" package="Default">
+      <name>site_internet/application.init.php</name>
+    </include>
+    <include line="5" type="Require" package="Default">
+      <name>jelix/lib/installwizard/installWizard.php</name>
+    </include>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file www/install.php</error>
+    </parse_markers>
+  </file>
+  <package name="Default" full_name="Default"/>
+  <package name="jelix" full_name="jelix"/>
+  <package name="site" full_name="site">
+    <package name="internet" full_name="site\internet">
+      <package name="" full_name="site\internet\"/>
+      <package name="site" full_name="site\internet\site">
+        <package name="internet" full_name="site\internet\site\internet"/>
+      </package>
+    </package>
+  </package>
+  <namespace name="global" full_name="global"/>
+  <marker count="0">todo</marker>
+  <marker count="0">fixme</marker>
+  <deprecated count="0"/>
+</project>
