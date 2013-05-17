@@ -167,16 +167,17 @@ class defaultCtrl extends jController {
         else if($record->login3==$log){$record->login3="";}
         else if($record->login4==$log){$record->login4="";}
         else if($record->login1==$log){
-            if($record->login2!==""){$record->login1=$record->login2;}
-            else if($record->login3!==""){$record->login1=$record->login3;}
-            else if($record->login4!==""){$record->login1=$record->login4;}
-            else {return $this->supprimerEquipe();}
+            if($record->login2!==""&&$record->login2!==null){$record->login1=$record->login2;$record->login2="";$eq="0";}
+            else if($record->login3!==""&&$record->login3!==null){$record->login1=$record->login3;$record->login3="";$eq="0";}
+            else if($record->login4!==""&&$record->login4!==null){$record->login1=$record->login4;$record->login4="";$eq="0";}
+            else {$eq="1";};
            
-        }
+        };
         
         if ($record->check()) { $participantFactory->delete($this->param('login')); 
                                 $utilisateurFactory->delete($this->param('login'));
-                                $equipeFactory->update($record);
+                                if($eq=="1"){$equipeFactory->delete($part->nomEquipe);}
+                                else if ($eq=="0") {$equipeFactory->update($record);};
                                 return $this->index();}
         else { return $this->erreur();}
 
